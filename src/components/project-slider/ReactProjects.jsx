@@ -17,7 +17,7 @@ export default function ReactProjects() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-yellow-100/80 font-bold">Projects using React</p>
+        <p class="text-2xl text-[#0f6dbf] font-bold">Projects using React ⚛️</p>
         <div className='container w-full h-[80%] flex justify-center items-center'>
             <Swiper
               slidesPerView={3}

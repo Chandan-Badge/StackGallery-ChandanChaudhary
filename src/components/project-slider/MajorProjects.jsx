@@ -11,13 +11,13 @@ import car from "./car.jpg";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
-export default function FullStackProjects() {
+export default function MajorProjects() {
   return (
     <>
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-[#00bdad] font-bold">Full Stack Projects</p>
+        <p class="text-2xl text-[#fc815c] font-bold">Major Projects</p>
         <div className='container w-full h-[80%] flex justify-center items-center'>
             <Swiper
               slidesPerView={3}
