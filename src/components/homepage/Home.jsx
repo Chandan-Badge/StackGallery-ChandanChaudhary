@@ -1,6 +1,7 @@
 import HomeHeader from "./HomeHeader";
 import HomeMain from "./HomeMain";
 import HomeBottom from "./HomeBottom";
+import HomeDesign from "./HomeDesign";
 
 function Home() {
     return (
@@ -8,6 +9,8 @@ function Home() {
             <HomeHeader />
             <HomeMain />
             <HomeBottom />
+
+            <HomeDesign />
         </section>
     );
 }
