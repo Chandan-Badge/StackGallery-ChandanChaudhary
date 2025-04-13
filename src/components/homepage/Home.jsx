@@ -4,7 +4,7 @@ import HomeBottom from "./HomeBottom";
 
 function Home() {
     return (
-        <section>
+        <section className="h-screen w-full">
             <HomeHeader />
             <HomeMain />
 
