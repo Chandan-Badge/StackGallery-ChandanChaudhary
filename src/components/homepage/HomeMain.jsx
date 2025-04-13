@@ -1,21 +1,21 @@
 function HomeMain() {
     return (
-        <>
-            <div>
-                <div className="h-max w-max  bg-yellow-500/40 backdrop-blur-none text-[#fff] px-52 py-28 rounded-full blur-2xl absolute -left-32 top-52 -z-10 opacity-100"></div>
-                <div className="h-max w-max  bg-[#00bcff]/40 backdrop-blur-none text-[#fff] px-44 py-28 rounded-full blur-2xl absolute right-24 top-96 -z-10 opacity-100"></div>
-                <div className="h-max w-max  bg-[#059a5d]/40 backdrop-blur-none text-[#fff] px-52 py-28 rounded-full blur-2xl absolute left-72 bottom-10 -z-10 opacity-100"></div>
-                {/* <div className="h-max w-max  bg-yellow-500/40 backdrop-blur-none text-[#fff] px-52 py-32 rounded-full blur-2xl absolute -right-32 top-52 -z-10 opacity-100"></div>
-                <div className="h-max w-max  bg-yellow-500/40 backdrop-blur-none text-[#fff] px-64 py-28 rounded-full blur-2xl absolute -left-32 bottom-52 -z-10 opacity-100"></div> */}
-            </div>
+            // {/* Main Section */}
+            <main className="h-max w-full flex justify-between items-center relative">
 
-            {/* Main Section */}
-            <main className="h-[75vh] w-full flex justify-between items-center relative">
+                <div className="absolute">
+                    <div className="h-max w-max  bg-yellow-500/40 backdrop-blur-none text-[#fff] px-52 py-28 rounded-full blur-2xl absolute -left-32 top-36 -z-10 opacity-100"></div>
+                    <div className="h-max w-max  bg-[#00bcff]/40 backdrop-blur-none text-[#fff] px-44 py-28 rounded-full blur-2xl absolute left-[1080px] top-16 -z-10 opacity-100"></div>
+                    <div className="h-max w-max  bg-[#059a5d]/40 backdrop-blur-none text-[#fff] px-52 py-28 rounded-full blur-2xl absolute left-72 bottom-10 -z-10 opacity-100"></div>
+                    {/* <div className="h-max w-max  bg-red-500/40 backdrop-blur-none text-[#fff] px-52 py-32 rounded-full blur-2xl absolute right-52 top-16 -z-10 opacity-100"></div> */}
+                    {/* <div className="h-max w-max  bg-yellow-500/40 backdrop-blur-none text-[#fff] px-64 py-28 rounded-full blur-2xl absolute -left-32 bottom-52 -z-10 opacity-100"></div> */}
+                </div>
+
                 {/* Intro Section */}
                 <div className="h-full w-full flex justify-center items-center flex-col gap-4 px-12">
                     <h1 className="text-[#fff] text-8xl font-bold" >Project <span className="text-[#00bcff]">Hub</span></h1>
-                    <p className="text-[#fff] text-4xl">By Chandan Chaudhary</p>
-                    <p className="text-[#fff] text-xl px-52 text-center">Here you can explore my all projects related to different sectors. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inventore quae dicta dolorem at! Id ea distinctio, voluptatibus, unde omnis ab doloribus pariatur voluptatum ullam vero quod perferendis, quidem quaerat!</p>
+                    <p className="text-yellow-500 text-4xl">By Chandan Chaudhary</p>
+                    <p className="text-[#fff] text-xl px-52 text-center">Here’s a curated collection of the projects I’ve worked on — from web apps and UI components to full-stack builds. Each project showcases my skills in design, development, and problem-solving. Click on any project to explore it in detail, view the code, or try a live demo.</p>
                 </div>
 
                 {/* <!-- Top-right -> Links Section --> */}
@@ -71,9 +71,7 @@ function HomeMain() {
                 </ul>
 
             </main>
-        </>
-
-        
+            
     );
 }
 

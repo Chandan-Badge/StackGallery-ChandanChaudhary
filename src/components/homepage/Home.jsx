@@ -4,10 +4,10 @@ import HomeBottom from "./HomeBottom";
 
 function Home() {
     return (
-        <section className="h-screen w-full">
+        <section className="relative h-screen w-full flex flex-col justify-between items-center">
             <HomeHeader />
             <HomeMain />
-
+            <HomeBottom />
         </section>
     );
 }

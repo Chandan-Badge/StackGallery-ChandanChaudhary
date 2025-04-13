@@ -58,21 +58,32 @@ body {
 }
 
 .swiper-button-prev {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+
 }
 
 .swiper-button-next {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+
 }
 
 .swiper-button-next, .swiper-button-prev {
   color: #111;
-  background-color: #fff;
-  padding: 40px 20px;
+  background-color: #059a5d;
+  padding: 25px;
   box-shadow: -1px 1px 3px 0px #111;
-  
+  border-radius: 50%;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  transform: scale(1.05);
+  background-color: #0ead6b;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .swiper .swiper-pagination-bullet-active {

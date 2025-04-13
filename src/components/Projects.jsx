@@ -9,9 +9,11 @@ import "./style.css"
 function Projects() {
 
   return (
-    <>
+    <div className='flex flex-col gap-8'>
       <ReactProject />
-    </>
+
+      <ReactProject />
+    </div>
   )
 }
 

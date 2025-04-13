@@ -16,8 +16,8 @@ export default function ReactProject() {
     <>
     <main className='px-8'>
 
-      <div className='relative px-4 w-full h-80 bg-[#31327c] flex flex-col gap-4'>
-        <p class="text-xl text-[#fff] font-bold">Projects using React</p>
+      <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
+        <p class="text-2xl text-[#fff] font-bold">Projects using React</p>
         <div className='container w-full h-[80%] flex justify-center items-center'>
             <Swiper
               slidesPerView={3}
@@ -31,15 +31,15 @@ export default function ReactProject() {
               navigation={true}
               // loop={true}
             >
-                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center'><a href="#"><img src={car} alt="" /></a></SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-blue-600 flex justify-center items-center'>Slide 2</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-yellow-400 flex justify-center items-center'>Slide 3</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-green-500 flex justify-center items-center'>Slide 4</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-red-600 flex justify-center items-center'>Slide 5</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-purple-600 flex justify-center items-center'>Slide 6</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-[#fff] flex justify-center items-center'>Slide 7</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-orange-600 flex justify-center items-center'>Slide 8</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-fuchsia-600 flex justify-center items-center'>Slide 9</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center'><a href="#"><img src={car} className='' alt="" /></a></SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-blue-600 flex justify-center items-center rounded-md'>Slide 2</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-yellow-400 flex justify-center items-center rounded-md'>Slide 3</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-green-500 flex justify-center items-center rounded-md'>Slide 4</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-red-600 flex justify-center items-center rounded-md'>Slide 5</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-purple-600 flex justify-center items-center rounded-md'>Slide 6</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-[#fff] flex justify-center items-center rounded-md'>Slide 7</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-orange-600 flex justify-center items-center rounded-md'>Slide 8</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-fuchsia-600 flex justify-center items-center rounded-md'>Slide 9</SwiperSlide>
 
             </Swiper>
 

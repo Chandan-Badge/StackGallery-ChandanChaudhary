@@ -2,7 +2,7 @@ import logo from "../c2-logo.png";
 
 function HomeHeader() {
     return (
-        <header className="h-max w-full  relative px-14 py-1 flex items-center justify-between">
+        <header className="h-max w-full relative px-14 py-1 flex items-center justify-between">
             <img className="h-24 w-24" src={logo} alt="" />
 
             <div class="flex justify-end w-max p-0 bg-gradient-to-b from-black/5 to-transparent backdrop-blur-sm rounded-full">
