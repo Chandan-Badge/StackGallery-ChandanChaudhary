@@ -4,15 +4,14 @@ import './App.css';
 // import 'swiper/css';
 // import 'swiper/css/pagination';
 
-import Slider from './components/Slider';
-import SliderLong from './components/SliderLong';
-import SliderShort from "./components/SliderShort"
+import ReactProject from './components/project-slider/ReactProject';
+import Projects from './components/Projects';
 
 function App() {
 
   return (
     <>
-      <Slider />
+      <Projects />
     </>
   )
 }
