@@ -34,9 +34,9 @@ export default function CSSProjects() {
               navigation={true}
               // loop={true}
             >
-                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center rounded-md'><a href="#"><img src={css1} className='hover:scale-105 transition-all duration-150 ease-in-out' alt="" /></a></SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-blue-600 flex justify-center items-center rounded-md'><a href="#"><img src={css2} className='hover:scale-105 transition-all duration-150 ease-in-out' alt="" /></a></SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-yellow-400 flex justify-center items-center rounded-md'><a href="#"><img src={css3} className='hover:scale-105 transition-all duration-150 ease-in-out' alt="" /></a></SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center rounded-md'><a href="#"><img src={css1} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" /></a></SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-blue-600 flex justify-center items-center rounded-md'><a href="#"><img src={css2} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" /></a></SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-yellow-400 flex justify-center items-center rounded-md'><a href="#"><img src={css3} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" /></a></SwiperSlide>
                 <SwiperSlide className='swiper-slide text-center text-base bg-green-500 flex justify-center items-center rounded-md'>Slide 4</SwiperSlide>
                 <SwiperSlide className='swiper-slide text-center text-base bg-red-600 flex justify-center items-center rounded-md'>Slide 5</SwiperSlide>
                 <SwiperSlide className='swiper-slide text-center text-base bg-purple-600 flex justify-center items-center rounded-md'>Slide 6</SwiperSlide>
