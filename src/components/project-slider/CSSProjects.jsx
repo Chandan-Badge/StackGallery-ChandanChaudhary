@@ -8,6 +8,9 @@ import 'swiper/css/navigation';
 
 import '../style.css';
 import car from "./car.jpg";
+import css1 from "../ProjectImages/css1.png";
+import css2 from "../ProjectImages/css2.png";
+import css3 from "../ProjectImages/css3.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -17,7 +20,7 @@ export default function CSSProjects() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-[#fff] font-bold">Projects using css</p>
+        <p class="text-2xl text-green-500 font-bold">Projects using css</p>
         <div className='container w-full h-[80%] flex justify-center items-center'>
             <Swiper
               slidesPerView={3}
@@ -31,9 +34,9 @@ export default function CSSProjects() {
               navigation={true}
               // loop={true}
             >
-                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center'><a href="#"><img src={car} className='' alt="" /></a></SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-blue-600 flex justify-center items-center rounded-md'>Slide 2</SwiperSlide>
-                <SwiperSlide className='swiper-slide text-center text-base bg-yellow-400 flex justify-center items-center rounded-md'>Slide 3</SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center rounded-md'><a href="#"><img src={css1} className='hover:scale-105 transition-all duration-150 ease-in-out' alt="" /></a></SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-blue-600 flex justify-center items-center rounded-md'><a href="#"><img src={css2} className='hover:scale-105 transition-all duration-150 ease-in-out' alt="" /></a></SwiperSlide>
+                <SwiperSlide className='swiper-slide text-center text-base bg-yellow-400 flex justify-center items-center rounded-md'><a href="#"><img src={css3} className='hover:scale-105 transition-all duration-150 ease-in-out' alt="" /></a></SwiperSlide>
                 <SwiperSlide className='swiper-slide text-center text-base bg-green-500 flex justify-center items-center rounded-md'>Slide 4</SwiperSlide>
                 <SwiperSlide className='swiper-slide text-center text-base bg-red-600 flex justify-center items-center rounded-md'>Slide 5</SwiperSlide>
                 <SwiperSlide className='swiper-slide text-center text-base bg-purple-600 flex justify-center items-center rounded-md'>Slide 6</SwiperSlide>

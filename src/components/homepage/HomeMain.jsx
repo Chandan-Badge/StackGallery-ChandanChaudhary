@@ -11,8 +11,8 @@ function HomeMain() {
                 </div>
 
                 {/* <!-- Top-right -> Links Section --> */}
-                <ul class="not-show-left ml-auto space-y-6 text-[#b0b2c3] absolute right-4 sm:right-8">
-                    <li class="hover:text-white">
+                <ul class="not-show-left ml-auto space-y-6 text-yellow-100/80 absolute right-4 sm:right-8">
+                    <li class="hover:text-yellow-300">
                         <a href="https://www.linkedin.com/in/chandan--chaudhary/" target="_blank">
                         <svg class="w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
@@ -22,7 +22,7 @@ function HomeMain() {
                         </a>
                     </li>
 
-                    <li class="hover:text-white">
+                    <li class="hover:text-yellow-300">
                         <a href="https://github.com/iamchandanchaudhary" target="_blank">
                         <svg class="w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <path
@@ -32,7 +32,7 @@ function HomeMain() {
                         </a>
                     </li>  
 
-                    <li class="hover:text-white">
+                    <li class="hover:text-yellow-300">
                         <a href="https://www.instagram.com/_.chandan_chaudhary/?hl=en" target="_blank">
                         <svg class="w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path fill="currentColor"
@@ -41,7 +41,7 @@ function HomeMain() {
                         </a>
                     </li>
 
-                    <li class="hover:text-white">
+                    <li class="hover:text-yellow-300">
                         <a href="mailto:chandanchaudhary533@gmail.com" target="_blank">
                         <svg class="w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path
@@ -52,7 +52,7 @@ function HomeMain() {
                         
                     </li>
 
-                    <li class="hover:text-white ">
+                    <li class="hover:text-yellow-300">
                         <a href="https://www.youtube.com/@c2explains" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 sm:w-7" viewBox="0 0 576 512">
                             <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
