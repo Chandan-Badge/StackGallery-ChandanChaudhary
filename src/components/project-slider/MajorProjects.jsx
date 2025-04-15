@@ -10,6 +10,7 @@ import '../style.css';
 import car from "./car.jpg";
 import safesphere from "../ProjectImages/SafeSphere.png";
 import portfolio from "../ProjectImages/Portfolio.png";
+import react1 from "../ProjectImages/react1.png";
 import react1a from "../ProjectImages/react1a.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
@@ -19,14 +20,14 @@ export default function MajorProjects() {
     <>
     <main className='px-8'>
 
-      <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
+      <div className='relative px-12 py-4 w-full h-max bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
 
-      <div className='flex items-center gap-3'>
-        <p class="text-2xl text-orange-600 font-bold">Major Projects </p>
-        <span class="material-symbols-outlined text-orange-600 text-3xl flex items-center">devices</span>
-      </div>
+        <div className='flex items-center gap-3'>
+          <p class="text-2xl text-orange-600 font-bold">Major Projects </p>
+          <span class="material-symbols-outlined text-orange-600 text-3xl flex items-center">devices</span>
+        </div>
 
-        <div className='container w-full h-[70%] flex justify-center items-center text-[#fff]'>
+        <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}
               spaceBetween={30}
@@ -39,39 +40,49 @@ export default function MajorProjects() {
               navigation={true}
               // loop={true}
             >
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  <a href="#">
-                    <img src={portfolio} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" />
+                <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
+                  <a href="#" className='flex flex-col h-max gap-2'>
+                    <img src={portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
+                    <span className='h-max'>
+                      <h3 className='font-bold text-lg text-orange-600'>Portfolio Website</h3>
+                      <p className='text-xs '>Chandan Chaudhary</p>
+                    </span>
                   </a></SwiperSlide>
 
-                <SwiperSlide 
-                  className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                    <a href="#">
-                      <img src={safesphere} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" />
-                    </a></SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
+                  <a href="#" className='flex flex-col h-max gap-2'>
+                    <img src={safesphere} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-red-500/40' alt="" />
+                    <span className='h-max'>
+                      <h3 className='font-bold text-lg text-orange-600'>SafeSphere</h3>
+                      <p className='text-xs '>Women's safety application</p>
+                    </span>
+                  </a></SwiperSlide>
 
-                  <SwiperSlide 
-                    className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                    <a href="#">
-                      <img src={react1a} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" />
-                    </a></SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
+                  <a href="#" className='flex flex-col h-max gap-2'>
+                    <img src={react1} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-purple-500/40' alt="" />
+                    <span className='h-max'>
+                      <h3 className='font-bold text-lg text-orange-600'>Strong Password Generator</h3>
+                      <p className='text-xs '>Password Suggestion application</p>
+                    </span>
+                  </a></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide h-[80%] text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 4</SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 5</SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 6</SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 7</SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 8</SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 9</SwiperSlide>
 
             </Swiper>
