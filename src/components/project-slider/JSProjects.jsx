@@ -17,7 +17,12 @@ export default function JSProjects() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-yellow-400 font-bold">Projects using Javascript</p>
+
+      <div className='flex items-center gap-3'>
+        <p class="text-2xl text-yellow-400 font-bold">Projects using Javascript </p>
+        <i class="fa-brands fa-js text-yellow-400 text-xl flex items-center"></i>
+      </div>
+
         <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}
@@ -35,7 +40,7 @@ export default function JSProjects() {
                   <a href="#">
                     <img src={car} className='' alt="" />
                   </a></SwiperSlide>
-                  
+
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
                   Slide 2</SwiperSlide>
 

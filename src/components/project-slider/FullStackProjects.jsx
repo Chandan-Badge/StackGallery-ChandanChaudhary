@@ -17,7 +17,12 @@ export default function FullStackProjects() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-[#00bdad] font-bold">Full Stack Projects</p>
+      
+      <div className='flex items-center gap-3'>
+        <p class="text-2xl text-[#00bdad] font-bold">Full Stack Projects </p>
+        <i class="fa-solid fa-bars-progress text-[#00bdad] text-xl flex items-center"></i>
+      </div>
+
         <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}
@@ -31,11 +36,11 @@ export default function FullStackProjects() {
               navigation={true}
               // loop={true}
             >
-                <SwiperSlide className='swiper-slide text-center text-base bg-pink-600 flex justify-center items-center'>
+                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center'>
                   <a href="#">
                     <img src={car} className='' alt="" />
                   </a></SwiperSlide>
-                  
+
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
                   Slide 2</SwiperSlide>
 

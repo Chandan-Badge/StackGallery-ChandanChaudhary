@@ -17,7 +17,12 @@ export default function MajorProjects() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-orange-500 font-bold">Major Projects</p>
+
+      <div className='flex items-center gap-3'>
+        <p class="text-2xl text-orange-600 font-bold">Major Projects </p>
+        <span class="material-symbols-outlined text-orange-600 text-2xl flex items-center">devices</span>
+      </div>
+
         <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}
