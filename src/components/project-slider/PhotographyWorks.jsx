@@ -17,7 +17,12 @@ export default function PhotographyWorks() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-[#fc0054] font-bold">Photography Works - using Photoshop & Canva <span class="material-symbols-outlined">palette</span></p>
+
+        <div className='flex items-center gap-3'>
+          <p class="text-2xl text-[#fc0054] font-bold">Photography Works - using Photoshop & Canva </p>
+          <span class="material-symbols-outlined text-[#fc0054] text-3xl flex items-center">palette</span>
+        </div>
+
         <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}

@@ -18,12 +18,12 @@ export default function FullStackProjects() {
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
       
-      <div className='flex items-center gap-3'>
-        <p class="text-2xl text-[#00bdad] font-bold">Full Stack Projects </p>
-        <i class="fa-solid fa-bars-progress text-[#00bdad] text-xl flex items-center"></i>
-      </div>
+        <div className='flex items-center gap-3'>
+          <p class="text-2xl text-[#00bdad] font-bold">Full Stack Projects </p>
+          <i class="fa-solid fa-bars-progress text-[#00bdad] text-2xl flex items-center"></i>
+        </div>
 
-        <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
+        <div className='container w-full h-max flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}
               spaceBetween={30}

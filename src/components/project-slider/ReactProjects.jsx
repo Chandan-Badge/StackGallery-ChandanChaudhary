@@ -22,7 +22,12 @@ export default function ReactProjects() {
     <main className='px-8'>
 
       <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
-        <p class="text-2xl text-[#0f6dbf] font-bold">Projects using React <i class="fa-brands fa-react"></i></p>
+
+      <div className='flex items-center gap-3'>
+        <p class="text-2xl text-[#0f6dbf] font-bold">Projects using React </p>
+        <i class="fa-brands fa-react text-[#0f6dbf] text-3xl flex items-center"></i>
+      </div>
+
         <div className='container w-full h-max flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}

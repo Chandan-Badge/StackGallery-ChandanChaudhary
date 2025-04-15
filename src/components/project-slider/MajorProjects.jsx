@@ -8,6 +8,9 @@ import 'swiper/css/navigation';
 
 import '../style.css';
 import car from "./car.jpg";
+import safesphere from "../ProjectImages/SafeSphere.png";
+import portfolio from "../ProjectImages/Portfolio.png";
+import react1a from "../ProjectImages/react1a.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -20,10 +23,10 @@ export default function MajorProjects() {
 
       <div className='flex items-center gap-3'>
         <p class="text-2xl text-orange-600 font-bold">Major Projects </p>
-        <span class="material-symbols-outlined text-orange-600 text-2xl flex items-center">devices</span>
+        <span class="material-symbols-outlined text-orange-600 text-3xl flex items-center">devices</span>
       </div>
 
-        <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
+        <div className='container w-full h-[70%] flex justify-center items-center text-[#fff]'>
             <Swiper
               slidesPerView={3}
               spaceBetween={30}
@@ -38,14 +41,20 @@ export default function MajorProjects() {
             >
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
                   <a href="#">
-                    <img src={car} className='' alt="" />
+                    <img src={portfolio} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" />
                   </a></SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                <SwiperSlide 
+                  className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                    <a href="#">
+                      <img src={safesphere} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" />
+                    </a></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 3</SwiperSlide>
+                  <SwiperSlide 
+                    className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                    <a href="#">
+                      <img src={react1a} className='hover:scale-105 transition-all duration-200 ease-in-out' alt="" />
+                    </a></SwiperSlide>
 
                   <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
                   Slide 4</SwiperSlide>

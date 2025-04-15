@@ -20,7 +20,7 @@ export default function JSProjects() {
 
       <div className='flex items-center gap-3'>
         <p class="text-2xl text-yellow-400 font-bold">Projects using Javascript </p>
-        <i class="fa-brands fa-js text-yellow-400 text-xl flex items-center"></i>
+        <i class="fa-brands fa-js text-yellow-400 text-3xl flex items-center "></i>
       </div>
 
         <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>

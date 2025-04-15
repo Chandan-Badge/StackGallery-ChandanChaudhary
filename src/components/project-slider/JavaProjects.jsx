@@ -20,7 +20,7 @@ export default function JavaProjects() {
 
       <div className='flex items-center gap-3'>
         <p class="text-2xl text-[#dc2626] font-bold">Projects using Java </p>
-        <i class="fa-brands fa-java text-[#dc2626] text-2xl flex items-center"></i>
+        <i class="fa-brands fa-java text-[#dc2626] text-3xl flex items-center"></i>
       </div>
 
         <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
