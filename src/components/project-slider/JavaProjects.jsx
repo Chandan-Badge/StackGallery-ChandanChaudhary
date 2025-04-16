@@ -16,58 +16,56 @@ export default function JavaProjects() {
     <>
     <main className='px-8'>
 
-      <div className='relative px-12 py-4 w-full h-80 bg-[#222]/60 backdrop-blur-none flex flex-col gap-4 rounded-lg'>
+      <div className='relative px-12 py-4 w-full h-max bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
+                        
+          <div className='flex items-center gap-3'>
+            <p class="text-2xl text-[#dc2626] font-bold">Projects using Java</p>
+            <i class="fa-brands fa-java text-[#dc2626] text-3xl flex items-center"></i>
+          </div>
 
-      <div className='flex items-center gap-3'>
-        <p class="text-2xl text-[#dc2626] font-bold">Projects using Java </p>
-        <i class="fa-brands fa-java text-[#dc2626] text-3xl flex items-center"></i>
-      </div>
+          <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                freeMode={true}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[FreeMode, Pagination, Navigation]}
+                className="swiper mySwiper w-[100%] h-[100%]"
+                navigation={true}
+                // loop={true}
+              >
+                  <SwiperSlide className='swiper-slide h-[80%] text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
+                  Slide 1</SwiperSlide>
 
-        <div className='container w-full h-[80%] flex justify-center items-center text-[#fff]'>
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={30}
-              freeMode={true}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[FreeMode, Pagination, Navigation]}
-              className="swiper mySwiper w-[100%] h-[100%]"
-              navigation={true}
-              // loop={true}
-            >
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center'>
-                  <a href="#">
-                    <img src={car} className='' alt="" />
-                  </a></SwiperSlide>
-
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide h-[80%] text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 2</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide h-[80%] text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 3</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide h-[80%] text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 4</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 5</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 6</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 7</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 8</SwiperSlide>
 
-                <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
+                  <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 9</SwiperSlide>
 
-            </Swiper>
+              </Swiper>
 
-        </div>
+          </div>
 
       </div>
     </main>
