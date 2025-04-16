@@ -45,22 +45,22 @@ export default function PhotographyWorks() {
                   Slide 2</SwiperSlide>
 
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                  Slide 3</SwiperSlide>
 
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                  Slide 4</SwiperSlide>
 
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                  Slide 5</SwiperSlide>
 
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                  Slide 6</SwiperSlide>
 
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                  Slide 7</SwiperSlide>
 
                 <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md'>
-                  Slide 2</SwiperSlide>
+                  Slide 8</SwiperSlide>
 
             </Swiper>
 

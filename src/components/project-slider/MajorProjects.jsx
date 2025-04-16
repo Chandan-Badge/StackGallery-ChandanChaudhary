@@ -12,6 +12,7 @@ import safesphere from "../ProjectImages/SafeSphere.png";
 import portfolio from "../ProjectImages/Portfolio.png";
 import strongPassword from "../ProjectImages/StrongPassword.png";
 import strongPasswordDark from "../ProjectImages/StrongPasswordDark.png";
+import linktree from "../ProjectImages/LinkTree.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -67,8 +68,14 @@ export default function MajorProjects() {
                     </span>
                   </a></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide h-[80%] text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
-                  Slide 4</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
+                  <a href="#" className='flex flex-col h-max gap-2'>
+                    <img src={linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-green-500/40' alt="" />
+                    <span className='h-max'>
+                      <h3 className='font-bold text-lg text-orange-600'>LinkTree</h3>
+                      <p className='text-xs '>Chandan Chaudhary</p>
+                    </span>
+                  </a></SwiperSlide>
 
                   <SwiperSlide className='swiper-slide text-center text-base bg-gray-800 flex justify-center items-center rounded-md py-24'>
                   Slide 5</SwiperSlide>
