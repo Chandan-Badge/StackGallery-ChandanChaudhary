@@ -8,10 +8,10 @@ import 'swiper/css/navigation';
 
 import '../style.css';
 import car from "./car.jpg";
-import react1 from "../ProjectImages/react1.png";
-import react1a from "../ProjectImages/react1a.png";
-import react2 from "../ProjectImages/react2.png";
-import react3 from "../ProjectImages/react3.png";
+import strongPassword from "../ProjectImages/StrongPassword.png";
+import strongPasswordDark from "../ProjectImages/StrongPasswordDark.png";
+import aichatBot from "../ProjectImages/AiChatBot.png";
+import bgChanger from "../ProjectImages/bgChanger.png";
 
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
@@ -43,7 +43,7 @@ export default function ReactProjects() {
               >
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                     <a href="#" className='flex flex-col h-max gap-2'>
-                      <img src={react1a} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-pink-500/40' alt="" />
+                      <img src={strongPasswordDark} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-pink-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-lg text-[#0f6dbf]'>Strong Password Generator</h3>
                         <p className='text-xs '>Password Suggestion application</p>
@@ -52,7 +52,7 @@ export default function ReactProjects() {
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                     <a href="#" className='flex flex-col h-max gap-2'>
-                      <img src={react2} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-red-500/40' alt="" />
+                      <img src={aichatBot} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-red-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-lg text-[#0f6dbf]'>AI ChatBot</h3>
                         <p className='text-xs '>ChatBot</p>
@@ -61,7 +61,7 @@ export default function ReactProjects() {
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                     <a href="#" className='flex flex-col h-max gap-2'>
-                      <img src={react3} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-blue-500/40' alt="" />
+                      <img src={bgChanger} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-blue-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-lg text-[#0f6dbf]'>React BG Changer</h3>
                         <p className='text-xs '>React App</p>

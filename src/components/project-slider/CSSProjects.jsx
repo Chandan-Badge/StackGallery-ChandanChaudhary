@@ -8,9 +8,9 @@ import 'swiper/css/navigation';
 
 import '../style.css';
 import car from "./car.jpg";
-import css1 from "../ProjectImages/css1.png";
-import css2 from "../ProjectImages/css2.png";
-import css3 from "../ProjectImages/css3.png";
+import university from "../ProjectImages/University.png";
+import amazon from "../ProjectImages/amazon.png";
+import netflix from "../ProjectImages/Netflix.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -41,7 +41,7 @@ export default function CSSProjects() {
               >
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                     <a href="#" className='flex flex-col h-max gap-2'>
-                      <img src={css1} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-pink-500/40' alt="" />
+                      <img src={university} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-pink-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-lg text-purple-600'>Integral University</h3>
                         <p className='text-xs '>University Website</p>
@@ -50,7 +50,7 @@ export default function CSSProjects() {
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                     <a href="#" className='flex flex-col h-max gap-2'>
-                      <img src={css2} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
+                      <img src={amazon} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-lg text-purple-600'>Amazon Clone</h3>
                         <p className='text-xs '>Website</p>
@@ -59,7 +59,7 @@ export default function CSSProjects() {
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                     <a href="#" className='flex flex-col h-max gap-2'>
-                      <img src={css3} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-blue-500/40' alt="" />
+                      <img src={netflix} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-blue-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-lg text-purple-600'>Netflix Clone</h3>
                         <p className='text-xs '>Website</p>

@@ -10,8 +10,8 @@ import '../style.css';
 import car from "./car.jpg";
 import safesphere from "../ProjectImages/SafeSphere.png";
 import portfolio from "../ProjectImages/Portfolio.png";
-import react1 from "../ProjectImages/react1.png";
-import react1a from "../ProjectImages/react1a.png";
+import strongPassword from "../ProjectImages/StrongPassword.png";
+import strongPasswordDark from "../ProjectImages/StrongPasswordDark.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -60,7 +60,7 @@ export default function MajorProjects() {
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-lg p-3'>
                   <a href="#" className='flex flex-col h-max gap-2'>
-                    <img src={react1} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-purple-500/40' alt="" />
+                    <img src={strongPassword} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-lg border-[6px] border-transparent hover:border-purple-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-lg text-orange-600'>Strong Password Generator</h3>
                       <p className='text-xs '>Password Suggestion application</p>
