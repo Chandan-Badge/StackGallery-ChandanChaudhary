@@ -2,8 +2,8 @@ import logo from "../c2-logo.png";
 
 function HomeHeader() {
     return (
-        <header className="h-max w-full relative px-14 py-3 flex items-center justify-between">
-            <img className="h-24 w-24 ml-1" src={logo} alt="" />
+        <header className="h-max w-full relative px-3 sm:px-6 md:px-14 py-3 flex items-center justify-between">
+            <img className="h-20 sm:h-24 w-20 sm:w-24 ml-1" src={logo} alt="" />
 
             <div class="flex justify-end w-max p-0 bg-gradient-to-b from-black/5 to-transparent backdrop-blur-sm rounded-full">
                 <nav class=" rounded-full px-4 sm:px-6 py-0 sm:py-0 shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20 backdrop-blur-md transform transition-all duration-300 max-w-[95%] sm:max-w-[600px]">
