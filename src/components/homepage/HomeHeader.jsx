@@ -1,8 +1,29 @@
 import logo from "../c2-logo.png";
+import React from "react";
+import { useEffect, useState } from "react";
 
 function HomeHeader() {
+
+    const [sticky, setSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if(window.scrollY > 0) {
+                setSticky(true);
+            } 
+            else {
+                setSticky(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        };
+    }, []);
+
     return (
-        <header className="h-max w-full relative px-3 sm:px-6 md:px-14 py-3 flex items-center justify-between">
+        <header className={`h-max w-full px-3 sm:px-6 md:px-14 py-3 flex items-center justify-between z-20 top-0 fixed ${sticky ? "bg-[#060707]/70 hover:bg-[#060707]/80 drop-shadow-lg" : ""}`}>
             <img className="h-20 sm:h-24 w-20 sm:w-24 ml-1" src={logo} alt="" />
 
             <div class="flex justify-end w-max p-0 bg-gradient-to-b from-black/5 to-transparent backdrop-blur-sm rounded-full">

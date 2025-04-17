@@ -24,7 +24,7 @@ function HomeBottom() {
 
     return (
         // {/* <!-- Bottom Button of 1st Section --> */}
-        <section className="relative flex justify-center items-center py-14">
+        <section className="absolute bottom-0 flex justify-center items-center py-14 ">
 
             <button onClick={scrollUp} className="not-show-pop-slow drag-btn text-yellow-100/80 hover:text-yellow-300 text-lg px-10 py-2 rounded font-semibold bg-gradient-to-b from-black/5 to-transparent backdrop-blur-sm border border-yellow-300/20 relative hover:scale-105 ease-in-out duration-100 group self-center group">
                 Let's Explore

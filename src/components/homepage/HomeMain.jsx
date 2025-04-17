@@ -1,7 +1,7 @@
 function HomeMain() {
     return (
             // {/* Main Section */}
-            <main className="h-max w-full flex justify-center items-center relative">
+            <main className="h-max w-full flex justify-center items-center absolute top-1/2 -translate-y-1/2">
 
                 {/* Intro Section */}
                 <div className="h-full max-w-[60vw] flex justify-center items-center flex-col gap-0 md:gap-4">
