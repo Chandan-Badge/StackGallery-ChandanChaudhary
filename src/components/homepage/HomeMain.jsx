@@ -5,7 +5,7 @@ function HomeMain() {
 
                 {/* Intro Section */}
                 <div className="h-full max-w-[60vw] flex justify-center items-center flex-col gap-0 md:gap-4">
-                    <h1 className="text-[#fff] text-4xl md:text-6xl lg:text-8xl font-bold text-center" >Stack <span className="text-yellow-500">Gallery</span></h1>
+                    <h1 className="text-[#fff] text-5xl md:text-6xl lg:text-8xl font-bold text-center" >Stack <span className="text-yellow-500">Gallery</span></h1>
                     <p className="text-yellow-500 text-lg sm:text-2xl md:text-4xl text-center">By Chandan Chaudhary</p>
                     <p className="text-[#fff] text-xs md:text-xl text-center">Here’s a curated collection of the projects I’ve worked on — from web apps and UI components to full-stack builds. Each project showcases my skills in design, development, and problem-solving. Click on any project to explore it in detail, view the code, or try a live demo.</p>
                 </div>
