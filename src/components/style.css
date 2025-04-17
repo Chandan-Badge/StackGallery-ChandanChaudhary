@@ -17,14 +17,24 @@
 
 .swiper-button-prev {
   position: absolute;
-  top: 150px;
+  top: 35%;
   left: 2px;
 }
 
 .swiper-button-next {
   position: absolute;
-  top: 150px;
+  top: 35%;
   right: 2px;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev {
+    top: 25%;
+  }
+  
+  .swiper-button-next {
+    top: 25%;
+  }
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -53,7 +63,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: darkorange;
+  background-color: #059b5e;
 }
 
 .swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal {
