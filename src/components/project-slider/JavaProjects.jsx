@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../style.css';
-import car from "./car.jpg";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -36,32 +35,32 @@ export default function JavaProjects() {
                 navigation={true}
                 // loop={true}
               >
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 1</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 2</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                  
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 3</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 4</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 5</SwiperSlide>
+                  {/* <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 6</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 7</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 8</SwiperSlide>
-
-                  <SwiperSlide className='swiper-slide text-center text-sm md:text-base bg-gray-800 flex justify-center items-center rounded-md py-12 md:py-16 lg:py-32 xl:py-36'>
-                  Slide 9</SwiperSlide>
+                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                  <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide> */}
 
               </Swiper>
 
