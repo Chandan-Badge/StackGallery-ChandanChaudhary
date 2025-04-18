@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import 'swiper/css';
+// import 'swiper/css/free-mode';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 
 import "../../../src/style.css";
 
@@ -69,25 +69,25 @@ export default function ReactProjects() {
                     </a></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
      
                     {/* <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
  
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
  
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
  
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
  
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide> */}
+                    <span className='h-20 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-[10px] md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide> */}
  
 
               </Swiper>

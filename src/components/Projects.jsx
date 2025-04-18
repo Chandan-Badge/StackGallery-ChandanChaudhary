@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
-// import 'swiper/css';
-// import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import MajorProjects from './project-slider/MajorProjects';
 import FullStackProjects from './project-slider/FullStackProjects';

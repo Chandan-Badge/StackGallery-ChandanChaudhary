@@ -4,10 +4,10 @@ function Footer() {
     return (
 
       <footer className="bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-0 py-6 lg:py-4">
-            <div className="sm:flex sm:items-end sm:justify-between py-0">
+        <div className="mx-auto w-full max-w-screen-xl px-6 py-6 lg:py-4">
+            <div className="sm:flex sm:items-end sm:justify-between">
 
-                <div href="https://chandanchaudhary-portfolio.netlify.app/" className="not-show-pop backtop relative group w-20 sm:w-24 flex items-center mb-2 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <div href="https://chandanchaudhary-portfolio.netlify.app/" className="not-show-pop backtop relative group w-20 sm:w-24 flex items-start justify-start mb-2 sm:mb-0 rtl:space-x-reverse">
 
                     {/* <!-- Popup --> */}
                     <span className="invisible group-hover:visible text-[#fff] group-hover:flex bg-[#0f6dbf] absolute top-5 left-1/2 -translate-x-1/2 px-3 py-1 rounded w-max items-center gap-1 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 group-hover:-top-9 ease-jump duration-200">Back to top
@@ -79,34 +79,6 @@ function Footer() {
           </div>
         </div>
       </footer>
-
-        // <footer className="w-full shadow-sm bg-gray-900 px-12">
-
-        //     <div className="w-full max-w-screen-xl mx-auto">
-        //         <div className="sm:flex sm:items-center sm:justify-between">
-        //             <a href="#" className="flex items-center my-1">
-        //                 <img src={logo} className="h-20" alt="Logo" />
-        //             </a>
-        //             <ul className="flex flex-wrap items-center text-sm font-medium text-gray-100 dark:text-gray-400 py-3">
-        //                 <li>
-        //                     <a href="#" className="hover:underline me-4 md:me-6">About</a>
-        //                 </li>
-        //                 <li>
-        //                     <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-        //                 </li>
-        //                 <li>
-        //                     <a href="#" className="hover:underline me-4 md:me-6">Features</a>
-        //                 </li>
-        //                 <li>
-        //                     <a href="#" className="hover:underline">Contact</a>
-        //                 </li>
-        //             </ul>
-        //         </div>
-        //         <hr className="border-gray-100 dark:border-gray-700" />
-        //         <span className="block py-2 text-sm text-gray-200 sm:text-center dark:text-gray-400">© 2025 <a href="#" className="hover:underline">Chandan Chaudhary</a>. All Rights Reserved.</span>
-        //     </div>
-
-        // </footer>
     );
 }
 
