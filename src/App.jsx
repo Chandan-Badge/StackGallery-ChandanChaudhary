@@ -6,6 +6,7 @@ import './App.css';
 
 import Projects from './components/Projects';
 import Home from './components/homepage/Home';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <Home />
       <Projects />
+      <Footer />
     </>
   )
 }
