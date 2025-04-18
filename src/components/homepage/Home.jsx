@@ -3,7 +3,7 @@ import HomeMain from "./HomeMain";
 import HomeBottom from "./HomeBottom";
 import HomeDesign from "./HomeDesign";
 
-import "../style.css";
+import "../../../src/style.css";
 
 function Home() {
     return (

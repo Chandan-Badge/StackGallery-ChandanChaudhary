@@ -11,7 +11,7 @@ import JavaProjects from './project-slider/JavaProjects';
 import PhotographyWorks from './project-slider/PhotographyWorks';
 import CSSProjects from './project-slider/CSSProjects';
 
-import "./style.css"
+import "../../src/style.css";
 
 function Projects() {
 

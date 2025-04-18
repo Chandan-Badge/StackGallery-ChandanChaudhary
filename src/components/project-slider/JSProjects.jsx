@@ -6,7 +6,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import '../style.css';
+import "../../../src/style.css";
+
 import autoTyper from "../../assets/ProjectImages/AutoTyper.png";
 import catFact from "../../assets/ProjectImages/CatFact.png";
 import darkLight from "../../assets/ProjectImages/Dark&Light.png";

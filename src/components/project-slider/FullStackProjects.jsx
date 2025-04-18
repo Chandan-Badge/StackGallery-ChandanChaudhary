@@ -6,7 +6,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import '../style.css';
+import "../../../src/style.css";
+
 import safesphere from "../../assets/ProjectImages/SafeSphere.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';

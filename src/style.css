@@ -22,13 +22,13 @@
 
 .swiper-button-prev {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 2px;
 }
 
 .swiper-button-next {
   position: absolute;
-  top: 35%;
+  top: 40%;
   right: 2px;
 }
 

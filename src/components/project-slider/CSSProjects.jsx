@@ -2,11 +2,11 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import 'swiper/css/free-mode';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 
-import '../style.css';
+import "../../../src/style.css";
 import university from "../../assets/ProjectImages/University.png";
 import amazon from "../../assets/ProjectImages/amazon.png";
 import netflix from "../../assets/ProjectImages/Netflix.png";
