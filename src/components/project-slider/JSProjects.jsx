@@ -7,18 +7,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../style.css';
-import autoTyper from "../ProjectImages/AutoTyper.png";
-import catFact from "../ProjectImages/CatFact.png";
-import darkLight from "../ProjectImages/Dark&Light.png";
-import linkTree from "../ProjectImages/LinkTree.png"
-import multiTab from "../ProjectImages/MultiTab.png";
-import randomColor from "../ProjectImages/RandomColor.png";
-import randomDog from "../ProjectImages/RandomDog.png";
-import aiChatBot from "../ProjectImages/AiChatBot.png";
-import simonSays from "../ProjectImages/SimonSays.png";
-import slider from "../ProjectImages/Slider.png";
-import tictactoe from "../ProjectImages/TicTacToe.png";
-import transform from "../ProjectImages/Transform.png"
+import autoTyper from "../../assets/ProjectImages/AutoTyper.png";
+import catFact from "../../assets/ProjectImages/CatFact.png";
+import darkLight from "../../assets/ProjectImages/Dark&Light.png";
+import linkTree from "../../assets/ProjectImages/LinkTree.png"
+import multiTab from "../../assets/ProjectImages/MultiTab.png";
+import randomColor from "../../assets/ProjectImages/RandomColor.png";
+import randomDog from "../../assets/ProjectImages/RandomDog.png";
+import aiChatBot from "../../assets/ProjectImages/AiChatBot.png";
+import simonSays from "../../assets/ProjectImages/SimonSays.png";
+import slider from "../../assets/ProjectImages/Slider.png";
+import tictactoe from "../../assets/ProjectImages/TicTacToe.png";
+import transform from "../../assets/ProjectImages/Transform.png"
 
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';

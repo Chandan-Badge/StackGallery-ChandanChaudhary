@@ -7,11 +7,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../style.css';
-import safesphere from "../ProjectImages/SafeSphere.png";
-import portfolio from "../ProjectImages/Portfolio.png";
-import strongPassword from "../ProjectImages/StrongPassword.png";
-import strongPasswordDark from "../ProjectImages/StrongPasswordDark.png";
-import linktree from "../ProjectImages/LinkTree.png";
+import safesphere from "../../assets/ProjectImages/SafeSphere.png";
+import portfolio from "../../assets/ProjectImages/Portfolio.png";
+import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
+import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
+import linktree from "../../assets/ProjectImages/LinkTree.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 

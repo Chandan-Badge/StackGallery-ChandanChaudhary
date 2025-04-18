@@ -8,10 +8,10 @@ import 'swiper/css/navigation';
 
 import '../style.css';
 
-import strongPassword from "../ProjectImages/StrongPassword.png";
-import strongPasswordDark from "../ProjectImages/StrongPasswordDark.png";
-import aichatBot from "../ProjectImages/AiChatBot.png";
-import bgChanger from "../ProjectImages/bgChanger.png";
+import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
+import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
+import aichatBot from "../../assets/ProjectImages/AiChatBot.png";
+import bgChanger from "../../assets/ProjectImages/bgChanger.png";
 
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';

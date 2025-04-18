@@ -1,15 +1,15 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
+// import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../style.css';
-import university from "../ProjectImages/University.png";
-import amazon from "../ProjectImages/amazon.png";
-import netflix from "../ProjectImages/Netflix.png";
+import university from "../../assets/ProjectImages/University.png";
+import amazon from "../../assets/ProjectImages/amazon.png";
+import netflix from "../../assets/ProjectImages/Netflix.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -34,7 +34,7 @@ export default function CSSProjects() {
                   clickable: true,
                 }}
                 modules={[FreeMode, Pagination, Navigation]}
-                className="swiper mySwiper w-[100%] h-[100%]"
+                className=" w-[100%] h-[100%]"
                 navigation={true}
                 // loop={true}
               >
