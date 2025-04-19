@@ -18,13 +18,13 @@
 
 .swiper-button-prev {
   position: absolute !important;
-  top: 7vw !important;
+  top: 8vw !important;
   left: 2px !important;
 }
 
 .swiper-button-next {
   position: absolute !important;
-  top: 7vw !important;
+  top: 8vw !important;
   right: 2px !important;
 }
 
@@ -72,7 +72,7 @@
     border-radius: 50% !important;
     margin: 0px !important;
 
-    top: 5vw !important;
+    top: 6vw !important;
   }
 
   .swiper-button-prev::after, .swiper-button-next::after {
