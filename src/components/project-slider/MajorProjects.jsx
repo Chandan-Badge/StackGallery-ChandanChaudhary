@@ -1,11 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import 'swiper/css';
-// import 'swiper/css/free-mode';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
 import "../../../src/style.css";
 
 import safesphere from "../../assets/ProjectImages/SafeSphere.png";
@@ -44,11 +39,11 @@ export default function MajorProjects() {
     <>
     <main className='px-4 sm:px-8'>
 
-      <div className='relative px-6 md:px-12 py-4 w-full h-max bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
+      <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
 
         <div className='flex items-center gap-2 md:gap-3'>
-          <p class="text-xl md:text-2xl text-orange-600 font-bold">Major Projects </p>
-          <span class="material-symbols-outlined text-orange-600 text-xl md:text-3xl flex items-center">devices</span>
+          <p class="text-xl md:text-2xl text-orange-600 font-bold pl-2 sm:pl-0">Major Projects </p>
+          <span class="material-symbols-outlined text-orange-600 text-2xl md:text-3xl flex items-center">devices</span>
         </div>
 
         <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>

@@ -1,11 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import 'swiper/css';
-// import 'swiper/css/free-mode';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
 import "../../../src/style.css";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
@@ -36,10 +31,10 @@ export default function JavaProjects() {
     <>
     <main className='px-4 sm:px-8'>
 
-      <div className='relative px-6 md:px-12 py-4 w-full h-max bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
+      <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
                         
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-[#dc2626] font-bold">Projects using Java</p>
+            <p class="text-xl md:text-2xl text-[#dc2626] font-bold pl-2 sm:pl-0">Projects using Java</p>
             <i class="fa-brands fa-java text-[#dc2626] text-xl md:text-3xl flex items-center"></i>
           </div>
 
