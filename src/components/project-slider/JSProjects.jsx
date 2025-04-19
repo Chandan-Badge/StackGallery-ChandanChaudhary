@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import 'swiper/css';
@@ -25,6 +25,27 @@ import transform from "../../assets/ProjectImages/Transform.png"
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
 export default function JSProjects() {
+
+    const [view, setView] = useState(false);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+      const handleChange = (e) => {
+        setView(e.matches);
+      };
+
+      setView(mediaQuery.matches);
+
+      mediaQuery.addEventListener('change', handleChange);
+
+      return () => {
+        mediaQuery.removeEventListener('change', handleChange);
+      };
+    }, []);
+
+    const viewCondition = view ? 2 : 3;
+
   return (
     <>
     <main className='px-4 sm:px-8'>
@@ -38,7 +59,7 @@ export default function JSProjects() {
   
           <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>
               <Swiper
-                slidesPerView={2}
+                slidesPerView={viewCondition}
                 spaceBetween={15}
                 freeMode={true}
                 pagination={{
@@ -131,7 +152,7 @@ export default function JSProjects() {
                     </a></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-24 sm:h-32 md:h-40 lg:h-52 xl:h-72 text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
+                    <span className='h-[20vw] md:h-[15vw] text-sm md:text-base text-center flex justify-center items-center bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Added soon...</span></SwiperSlide>
   
               </Swiper>
   
