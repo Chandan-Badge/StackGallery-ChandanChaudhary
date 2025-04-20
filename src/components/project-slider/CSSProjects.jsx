@@ -5,6 +5,7 @@ import "../../../src/style.css";
 import university from "../../assets/ProjectImages/University.png";
 import amazon from "../../assets/ProjectImages/amazon.png";
 import netflix from "../../assets/ProjectImages/Netflix.png";
+import tooltip from "../../assets/ProjectImages/ToolTip.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -58,7 +59,7 @@ export default function CSSProjects() {
                     <a href="#" className='flex flex-col h-max gap-1 sm:gap-2'>
                       <img src={university} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-pink-500/40' alt="" />
                       <span className='h-max'>
-                        <h3 className='font-bold text-sm md:text-lg text-purple-600'>Integral University</h3>
+                        <h3 className='font-bold text-sm md:text-lg text-purple-600'>Integral University, Lucknow</h3>
                         <p className='text-[10px] md:text-xs '>University Website</p>
                       </span>
                     </a></SwiperSlide>
@@ -68,7 +69,7 @@ export default function CSSProjects() {
                       <img src={amazon} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-purple-600'>Amazon Clone</h3>
-                        <p className='text-[10px] md:text-xs '>Website</p>
+                        <p className='text-[10px] md:text-xs '>Frontend Clone</p>
                       </span>
                     </a></SwiperSlide>
 
@@ -77,7 +78,16 @@ export default function CSSProjects() {
                       <img src={netflix} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-purple-600'>Netflix Clone</h3>
-                        <p className='text-[10px] md:text-xs '>Website</p>
+                        <p className='text-[10px] md:text-xs '>Frontend Clone</p>
+                      </span>
+                    </a></SwiperSlide>
+
+                    <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                    <a href="#" className='flex flex-col h-max gap-1 sm:gap-2'>
+                      <img src={tooltip} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-pink-500/40' alt="" />
+                      <span className='h-max'>
+                        <h3 className='font-bold text-sm md:text-lg text-purple-600'>Beautiful Tooltip</h3>
+                        <p className='text-[10px] md:text-xs '>CSS Style</p>
                       </span>
                     </a></SwiperSlide>
 
