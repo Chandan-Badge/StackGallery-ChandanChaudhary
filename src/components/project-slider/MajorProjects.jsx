@@ -60,7 +60,7 @@ export default function MajorProjects() {
               // loop={true}
             >
                 <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <a href="https://chandanchaudhary-portfolio.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                  <a href="https://chandanchaudhary-portfolio.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                     <img src={portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>Portfolio Website</h3>
@@ -69,7 +69,7 @@ export default function MajorProjects() {
                   </a></SwiperSlide>
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <a href="https://safe-sphere-sos.vercel.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                  <a href="https://safe-sphere-sos.vercel.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                     <img src={safesphere} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>SafeSphere</h3>
@@ -78,7 +78,7 @@ export default function MajorProjects() {
                   </a></SwiperSlide>
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                  <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                     <img src={strongPassword} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>Strong Password Generator</h3>
@@ -87,7 +87,7 @@ export default function MajorProjects() {
                   </a></SwiperSlide>
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <a href="https://chandanchaudhary-linktree.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                  <a href="https://chandanchaudhary-linktree.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                     <img src={linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-green-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>LinkTree</h3>

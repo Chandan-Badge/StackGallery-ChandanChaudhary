@@ -56,7 +56,7 @@ export default function CSSProjects() {
                 // loop={true}
               >
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <a href="https://comfy-kangaroo-0a832b.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                    <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                       <img src={university} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-pink-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-purple-600'>Integral University, Lucknow</h3>
@@ -65,7 +65,7 @@ export default function CSSProjects() {
                     </a></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <a href="https://comfy-kangaroo-0a832b.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                    <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                       <img src={amazon} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-purple-600'>Amazon Clone</h3>
@@ -74,7 +74,7 @@ export default function CSSProjects() {
                     </a></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <a href="https://comfy-kangaroo-0a832b.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                    <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                       <img src={netflix} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-purple-600'>Netflix Clone</h3>
@@ -83,7 +83,7 @@ export default function CSSProjects() {
                     </a></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <a href="https://comfy-kangaroo-0a832b.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2'>
+                    <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                       <img src={tooltip} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-pink-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-purple-600'>Beautiful Tooltip</h3>
