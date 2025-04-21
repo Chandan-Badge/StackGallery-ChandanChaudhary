@@ -17,7 +17,7 @@ function HomeBottom() {
 
     const scrollUp = () => {
         window.scrollTo({
-            top: 700,
+            top: 600,
             behavior: "smooth"
         })
     }
