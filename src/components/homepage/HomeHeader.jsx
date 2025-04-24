@@ -1,4 +1,4 @@
-import logo from "../c2-logo.png";
+import logo from "../../assets/c2-logo.png";
 import React from "react";
 import { useEffect, useState } from "react";
 
