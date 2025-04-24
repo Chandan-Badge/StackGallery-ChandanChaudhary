@@ -5,6 +5,7 @@ import './App.css';
 import Projects from './components/Projects';
 import Home from './components/homepage/Home';
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
       <Home />
       <Projects />
       <Footer />
+
+      <BackToTop />
     </>
   )
 }

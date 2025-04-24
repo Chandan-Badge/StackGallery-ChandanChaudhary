@@ -26,15 +26,15 @@ function Footer() {
 
                 <div className="not-show-bottom flex flex-wrap items-center justify-start text-sm font-medium mb-1 dark:text-gray-400 text-gray-500 gap-4 md:gap-6">
                 
-                    <button type="button" className="about-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] dark:border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">About</button>
+                    <button type="button" className="about-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">About</button>
                 
-                    <button type="button" className="resume-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] dark:border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Resume</button>
+                    <button type="button" className="resume-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Resume</button>
                 
-                    <button type="button" className="project-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] dark:border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Privacy Policy</button>
+                    <button type="button" className="project-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Privacy Policy</button>
                 
-                    <button type="button" className="services-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] dark:border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Services</button>
+                    <button type="button" className="services-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Services</button>
 
-                    <button type="button" className="connect-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] dark:border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Connect</button>
+                    <button type="button" className="connect-foot hover:text-[#0f6dbf] border-b-2 hover:border-[#0f6dbf] border-[#fff] border-transparent dark:hover:border-[#0f6dbf] transition-all ease-linear duration-[400ms] delay-75">Connect</button>
                 
                 </div>
             </div>
