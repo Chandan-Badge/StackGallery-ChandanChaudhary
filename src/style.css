@@ -90,3 +90,16 @@
     top: 8vw !important;
   }
 }
+
+/* Dark & Light mode */
+.show {
+  display: flex;
+  visibility: visible;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-show {
+  display: hidden;
+  visibility: hidden;
+}
