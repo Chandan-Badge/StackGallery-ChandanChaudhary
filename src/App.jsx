@@ -14,14 +14,22 @@ function App() {
   return (
     <>
       <p className='bg-[#fff] text-red-500 fixed z-50 px-4 py-1 text-xs sm:text-base'><b>Note:</b> The site is currently in developing phase</p>
-        <Home />
+        {/* <Home />
         <Projects />
         <Footer />
 
-        <BackToTop />
+        <BackToTop /> */}
 
       <Routes>
-        {/* <Route path='/' element={<Home />} /> */}
+        <Route path='/' element={
+          <>
+            <Home />
+            <Projects />
+            <Footer />
+
+            <BackToTop />
+          </>
+        } />
 
         <Route path='/profile' element={<Profile />} />
       </Routes>

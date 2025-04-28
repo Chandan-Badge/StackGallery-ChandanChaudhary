@@ -56,7 +56,7 @@ function HomeHeader() {
                 <nav class=" rounded-full px-4 sm:px-6 py-0 sm:py-0 shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20 backdrop-blur-md transform transition-all duration-300 max-w-[95%] sm:max-w-[600px]">
                     <div class="flex items-center justify-center space-x-3 sm:space-x-6">
 
-                        <button onClick={scrollUp} class="relative group">
+                        <a href="/" onClick={scrollUp} class="relative group">
                             <div class="p-2 sm:p-3 rounded-full hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ function HomeHeader() {
                                     </div>
                                 </div>
                             </div>
-                        </button>
+                        </a>
 
                         <button onClick={changeBtn} class={`relative group hidden ${turnDark}`}>
                             <div class="p-2 sm:p-3 rounded-full hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">

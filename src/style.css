@@ -1,3 +1,7 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ebb207 transparent;
+}
 
 .home {
   /* width: 100%; */
@@ -95,8 +99,6 @@
 .show {
   display: flex;
   visibility: visible;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .not-show {
