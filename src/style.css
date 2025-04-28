@@ -95,8 +95,8 @@
 .show {
   display: flex;
   visibility: visible;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .not-show {
