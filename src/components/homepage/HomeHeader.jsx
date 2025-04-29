@@ -21,7 +21,7 @@ function HomeHeader() {
 
     // Applying dark & light mode
     const [theme, setTheme] = useState(
-        localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+        localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
     );
     const element = document.documentElement;
     
@@ -38,6 +38,7 @@ function HomeHeader() {
         }
     }, [theme]);
 
+    // Fixing navbar after scroll
     useEffect(() => {
         const handleScroll = () => {
             if(window.scrollY > 0) {
@@ -54,7 +55,7 @@ function HomeHeader() {
         };
     }, []);
 
-
+        // Home button
         const scrollUp = () => {
             window.scrollTo({
                 top: 0,

@@ -88,7 +88,7 @@ export default function MajorProjects() {
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                   <a href="https://chandanchaudhary-linktree.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                    <img src={linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-green-500/40' alt="" />
+                    <img src={linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#d18cbc]/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>LinkTree</h3>
                       <p className='text-[10px] md:text-xs'>Chandan Chaudhary</p>
