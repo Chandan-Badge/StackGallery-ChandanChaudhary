@@ -97,11 +97,11 @@ html {
 
 /* Dark & Light mode */
 .show {
-  display: flex;
-  visibility: visible;
+  display: flex !important;
+  visibility: visible !important;
 }
 
 .not-show {
-  display: hidden;
-  visibility: hidden;
+  display: hidden !important;
+  visibility: hidden !important;
 }
