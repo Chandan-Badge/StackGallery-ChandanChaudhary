@@ -24,7 +24,7 @@ function BackToTop() {
 
     }, []);
     
-    const topBtn = toTop ? "visible" : "invisible";
+    const topBtn = toTop ? "visible" : "hidden";
 
     return (
         <button onClick={scrollUp} className={`fixed right-8 bottom-10 bg-yellow-400 hover:bg-yellow-300 rounded-full ${topBtn} transition-all duration-200 ease-in-out delay-75 group z-[15]`}>
