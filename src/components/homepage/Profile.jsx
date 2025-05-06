@@ -3,8 +3,6 @@ import Footer from "../Footer";
 import HomeDesign from "./HomeDesign";
 import HomeHeader from "./HomeHeader";
 
-import img from "../../assets/ProjectImages/LinkTree.png"
-
 function Profile() {
     return (
         <>
@@ -12,7 +10,7 @@ function Profile() {
                 <HomeHeader />
                 <HomeDesign />
 
-                <div className="max-w-[70vw] max-h-[70vh] mt-10 px-10 py-8 flex justify-center items-center bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm rounded-md shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20">
+                <div className="w-[90vw] sm:w-[70vw] h-[70vh] mt-10 px-10 py-8 flex justify-center items-center bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm rounded-md shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20">
                     <div class="w-full">
                         <h2 className="text-yellow-300 font-bold text-lg sm:text-2xl">OVERVIEW</h2>
                         <p className="mt-1 md:mt-2 dark:text-[#fff] text-[#1f1f1f] text-sm lg:text-base">Aspiring and results-oriented Student with a strong desire to learn and grow in the tech industry. passion for innovative technology solutions and a solid foundation in programming, algorithms, and software development.</p>
