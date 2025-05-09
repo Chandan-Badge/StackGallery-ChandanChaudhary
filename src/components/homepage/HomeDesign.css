@@ -1,0 +1,18 @@
+.circle1 {
+    animation: circle1 1.8s ease-in-out infinite;
+}
+
+/* @keyframes circle1 {
+    0%, 44% {
+        transform: translateY(0);
+    }
+
+    28% {
+        opacity: 0.4;
+        transform: translateY(-4px);
+    }
+
+    44% {
+        
+    }
+} */
