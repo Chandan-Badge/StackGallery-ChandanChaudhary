@@ -15,7 +15,7 @@ function Profile() {
                         <h2 className="text-yellow-300 font-bold text-lg sm:text-2xl">OVERVIEW</h2>
                         <p className="mt-1 md:mt-2 text-[#fff] text-sm lg:text-base">Aspiring and results-oriented Student with a strong desire to learn and grow in the tech industry. passion for innovative technology solutions and a solid foundation in programming, algorithms, and software development.</p>
 
-                        <div className="flex flex-row gap-4 lg:gap-10 mt-2">
+                        {/* <div className="flex flex-row gap-4 lg:gap-10 mt-2">
                             <div className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex flex-col gap-1">
                                 <p className="">Name:</p>
                                 <p>Profile:</p>
@@ -34,7 +34,27 @@ function Profile() {
                                 <p>Available</p>
                             </div>
 
-                        </div>
+                        </div> */}
+
+                        <table className="flex flex-row gap-4 lg:gap-10 mt-2">
+                            <tr className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex flex-col gap-1">
+                                <td>Name:</td>
+                                <td>Profile:</td>
+                                <td>Domain:</td>
+                                <td>Education:</td>
+                                <td>Age:</td>
+                                <td>Freelance:</td>
+                            </tr>
+
+                            <tr className="font-normal text-gray-300 text-xs md:text-sm lg:text-base flex flex-col gap-1">
+                                <td>Chandan Chaudhary</td>
+                                <td>Full Stack Developer & Freelancer</td>
+                                <td>Software Developement</td>
+                                <td>Bachelor of Computer Applications</td>
+                                <td>18</td>
+                                <td>Available</td>
+                            </tr>
+                        </table>
 
                         <h2 className="text-yellow-300 font-bold text-xl sm:text-2xl mt-4 md:mt-4">MERN STACK</h2>
                         <div className="relative flex mt-12 gap-8">
