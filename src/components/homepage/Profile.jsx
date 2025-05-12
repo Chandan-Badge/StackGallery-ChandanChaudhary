@@ -10,13 +10,13 @@ function Profile() {
                 <HomeHeader />
                 <HomeDesign />
 
-                <div className="w-[90vw] sm:w-[70vw] h-[70vh] mt-10 px-10 py-8 flex justify-center items-center bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm rounded-md shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20">
+                <div className="w-[90vw] sm:w-[70vw] h-[70vh] mt-10 px-6 sm:px-10 py-8 flex justify-center items-center bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm rounded-md shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20">
                     <div class="w-full">
                         <h2 className="text-yellow-300 font-bold text-lg sm:text-2xl">OVERVIEW</h2>
                         <p className="mt-1 md:mt-2 text-[#fff] text-sm lg:text-base">Aspiring and results-oriented Student with a strong desire to learn and grow in the tech industry. passion for innovative technology solutions and a solid foundation in programming, algorithms, and software development.</p>
 
-                        {/* <div className="flex flex-row gap-4 lg:gap-10 mt-2">
-                            <div className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex flex-col gap-1">
+                        {/* <div className="flex flex-row gap-4 lg:0 mt-2">
+                            <div className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex flex-col ">
                                 <p className="">Name:</p>
                                 <p>Profile:</p>
                                 <p>Domain:</p>
@@ -25,7 +25,7 @@ function Profile() {
                                 <p>Freelance:</p>
                             </div>
 
-                            <div className="font-normal text-gray-300 text-xs md:text-sm lg:text-base flex flex-col gap-1">
+                            <div className="font-normal text-gray-300 text-xs md:text-sm lg:text-base flex flex-col ">
                                 <p className="">Chandan Chaudhary</p>
                                 <p>Full Stack Developer & Freelancer</p>
                                 <p>Software Developement</p>
@@ -36,31 +36,47 @@ function Profile() {
 
                         </div> */}
 
-                        <table className="flex flex-row gap-4 lg:gap-10 mt-2">
-                            <tr className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex flex-col gap-1">
-                                <td>Name:</td>
-                                <td>Profile:</td>
-                                <td>Domain:</td>
-                                <td>Education:</td>
-                                <td>Age:</td>
-                                <td>Freelance:</td>
+                        <table className="gap-4 lg:gap-10 mt-2">
+                            <tr className="">
+                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Name:</td>
+                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Chandan Chaudhary</td>
                             </tr>
 
-                            <tr className="font-normal text-gray-300 text-xs md:text-sm lg:text-base flex flex-col gap-1">
-                                <td>Chandan Chaudhary</td>
-                                <td>Full Stack Developer & Freelancer</td>
-                                <td>Software Developement</td>
-                                <td>Bachelor of Computer Applications</td>
-                                <td>18</td>
-                                <td>Available</td>
+                            <tr>
+                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Profile:</td>
+                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Full Stack Developer & Freelancer</td>
                             </tr>
+
+                            <tr>
+                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Domain:</td>
+                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Software Developement</td>
+                            </tr>
+
+                            <tr>
+                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Education:</td>
+                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Bachelor of Computer Applications</td>
+                            </tr>
+
+                            <tr>
+                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Age:</td>
+                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">18</td>
+                            </tr>
+
+                            <tr>
+                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Freelance:</td>
+                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Available</td>
+                            </tr>
+
+                            {/* <tr className="font-normal text-gray-300 text-xs md:text-sm lg:text-base ">
+                                
+                            </tr> */}
                         </table>
 
                         <h2 className="text-yellow-300 font-bold text-xl sm:text-2xl mt-4 md:mt-4">MERN STACK</h2>
                         <div className="relative flex mt-12 gap-8">
 
                             <span className="relative flex flex-col items-center group">
-                                <span className="invisible group-hover:visible group-hover:flex w-max absolute text-[#fff] bg-[#47A248] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center gap-1 after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">MongoDB</span>
+                                <span className="invisible group-hover:visible group-hover:flex w-max absolute text-[#fff] bg-[#47A248] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center  after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">MongoDB</span>
                                 <svg className="h-8 sm:h-12 w-8 sm:w-12"
                                 xmlns="http://www.w3.org/2000/svg"
                                 
@@ -79,7 +95,7 @@ function Profile() {
                             </span>
                             
                             <span className="relative flex flex-col items-center group">
-                                <span className="invisible group-hover:visible group-hover:flex w-max absolute dark:bg-[#fff] bg-[#111] dark:text-[#111] text-[#fff] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center gap-1 after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">Express.js</span>
+                                <span className="invisible group-hover:visible group-hover:flex w-max absolute dark:bg-[#fff] bg-[#111] dark:text-[#111] text-[#fff] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center  after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">Express.js</span>
                                 <svg className="h-8 sm:h-12 w-8 sm:w-12 dark:text-[#fff] text-[#111]"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 32 32"
@@ -94,7 +110,7 @@ function Profile() {
                             </span>
 
                             <span className="relative flex flex-col items-center group">
-                                <span className="invisible group-hover:visible group-hover:flex w-max absolute text-[#fff] dark:text-[#111] bg-[#61dafb] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center gap-1 after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">React.js</span>
+                                <span className="invisible group-hover:visible group-hover:flex w-max absolute text-[#fff] dark:text-[#111] bg-[#61dafb] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center  after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">React.js</span>
                                 <svg  className="h-8 sm:h-12 w-8 sm:w-12"
                                 viewBox="175.7 78 490.6 436.9"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +126,7 @@ function Profile() {
                             </span>
 
                             <span className="relative flex flex-col items-center group">
-                                <span className="invisible group-hover:visible group-hover:flex w-max absolute text-[#fff] dark:text-[#111] bg-[#8CC84B] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center gap-1 after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">Node.js</span>
+                                <span className="invisible group-hover:visible group-hover:flex w-max absolute text-[#fff] dark:text-[#111] bg-[#8CC84B] py-1 px-3 left-1/2 -translate-x-1/2 rounded-2xl items-center  after:content-[''] after:w-2 after:h-2 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 top-2 group-hover:-top-14 duration-200 ease-in-out">Node.js</span>
                                 <svg className="h-8 sm:h-12 w-8 sm:w-12"
                                     viewBox="0 0 256 282"
                                     xmlns="http://www.w3.org/2000/svg"
