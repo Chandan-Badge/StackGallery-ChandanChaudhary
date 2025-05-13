@@ -27,7 +27,7 @@ function Footer() {
 
                 <div className="not-show-bottom flex flex-wrap items-center justify-start text-sm font-medium mb-1 dark:text-gray-400 text-gray-500 gap-4 md:gap-6">
                 
-                    <Link to={"/profile"} className="about-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">About</Link>
+                    <Link onClick={scrollUp} to={"/profile"} className="about-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">About</Link>
                 
                     <a href={"https://drive.google.com/file/d/1JwvzMMMnfaVjcqLk1Ei8RnqDI8pG4pTk/view?usp=sharing"} target="_blank" className="resume-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">Resume</a>
                 
