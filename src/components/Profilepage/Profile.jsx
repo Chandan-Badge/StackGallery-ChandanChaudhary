@@ -1,7 +1,7 @@
 import "../../style.css";
 import Footer from "../Footer";
-import HomeDesign from "./HomeDesign";
-import HomeHeader from "./HomeHeader";
+import HomeDesign from "../homepage/HomeDesign";
+import HomeHeader from "../homepage/HomeHeader";
 
 function Profile() {
     return (

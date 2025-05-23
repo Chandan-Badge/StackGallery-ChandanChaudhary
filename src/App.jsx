@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
-import Profile from './components/homepage/Profile';
+import Profile from './components/Profilepage/Profile';
 
 function App() {
 
