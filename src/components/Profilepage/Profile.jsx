@@ -13,7 +13,7 @@ function Profile() {
                 <div className="w-[90vw] sm:w-[70vw] mt-10 px-6 sm:px-10 py-8 flex justify-center items-center bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm rounded-md shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20">
                     <div className="w-full">
                         <h2 className="text-yellow-300 font-bold text-lg sm:text-2xl">About me</h2>
-                        <p className="max-w-[50vw] mt-1 md:mt-2 text-[#fff] text-sm lg:text-base">I'm Chandan Chaudhary, a 18-year-old Indian <span className="text-yellow-300">Freelance & MERN Stack developer</span>. I'm a weird guy who likes innovative things with web technologies.
+                        <p className="max-w-[50vw] mt-1 md:mt-2 text-[#fff] text-sm lg:text-base">I'm Chandan Chaudhary, a 18-year-old Indian <span className="text-yellow-300">Freelance</span> & <span className="text-yellow-300">MERN Stack developer</span>. I'm a weird guy who likes innovative things with web technologies.
                             <br />I like to <span className="text-yellow-300">resolve</span> frontend & backend problems, <span className="text-yellow-300">create</span> smart user interface and <span className="text-yellow-300">imagine</span> useful interaction, developing rich <span className="text-yellow-300">web experiences</span> & <span className="text-yellow-300">web applications</span>.
                             <br />When my code is not working or futzing around the code, I study how to <span className="text-yellow-300">resolve</span> it.</p>
 
@@ -38,7 +38,7 @@ function Profile() {
 
                         </div> */}
 
-                        <table className="gap-4 lg:gap-10 mt-2">
+                        <table className="gap-4 lg:gap-10 mt-4">
                             <tr className="">
                                 <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Name:</td>
                                 <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Chandan Chaudhary</td>
