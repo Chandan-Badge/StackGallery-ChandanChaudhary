@@ -3,6 +3,8 @@ import Footer from "../Footer";
 import HomeDesign from "../homepage/HomeDesign";
 import HomeHeader from "../homepage/HomeHeader";
 
+import coder from "../../assets/coder.png";
+
 function Profile() {
     return (
         <>
@@ -13,7 +15,7 @@ function Profile() {
                 <div className="w-[90vw] sm:w-[70vw] mt-10 px-6 sm:px-10 py-8 flex justify-center items-center bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm rounded-md shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-yellow-300/20">
                     <div className="w-full">
                         <h2 className="text-yellow-300 font-bold text-lg sm:text-2xl">About me</h2>
-                        <p className="max-w-[45vw] mt-1 md:mt-2 text-[#fff] text-sm lg:text-base">I'm Chandan Chaudhary, a 18-year-old Indian <span className="text-yellow-300">Freelance</span> & <span className="text-yellow-300">MERN Stack developer</span>. I'm a weird guy who likes innovative things with web technologies.
+                        <p className="mt-1 md:mt-2 text-[#fff] text-sm lg:text-base">I'm Chandan Chaudhary, a 18-year-old Indian <span className="text-yellow-300">Freelance</span> & <span className="text-yellow-300">MERN Stack developer</span>. I'm a weird guy who likes innovative things with web technologies.
                             <br />I like to <span className="text-yellow-300">resolve</span> frontend & backend problems, <span className="text-yellow-300">create</span> smart user interface and <span className="text-yellow-300">imagine</span> useful interaction, developing rich <span className="text-yellow-300">web experiences</span> & <span className="text-yellow-300">web applications</span>.
                             <br />When my code is not working or futzing around the code, I study how to <span className="text-yellow-300">resolve</span> it.</p>
 
@@ -69,16 +71,13 @@ function Profile() {
                                 <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Available</td>
                             </tr>
 
-                            {/* <tr className="font-normal text-gray-300 text-xs md:text-sm lg:text-base ">
-                                
-                            </tr> */}
                         </table>
 
 
                         <ul className="flex flex-wrap gap-2 md:gap-3 mt-2 md:mt-8 text-[#333] dark:text-[#fff]">
 
                             <li className="overflow-x-visible relative w-10 md:w-14 h-12 md:h-[60px] overflow-y-clip group text-center flex items-center justify-center">
-                                <div className="flex justify-center items-center w-8 md:w-10 h-8 md:h-10 p-1 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">
+                                <div className="flex justify-center items-center w-8 md:w-10 h-8 md:h-10 p-1.5 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-max fill-[#111] dark:fill-[#fff] group-hover:fill-[#ed272c]" viewBox="0 0 384 512"><path d="M277.7 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.8 0 242.8 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.2 12.2 0 0 1 -2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.3 17.3 0 0 0 -8.2 6.3 70.5 70.5 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6 .7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.8 509.4 401 461.3 348 437.4zM124.4 396c-78.7 22 47.9 67.4 148.1 24.5a185.9 185.9 0 0 1 -28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.6 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.4 60.4 0 0 1 -21.1-12.8z"/></svg>                                </div>
                                 <div className="absolute -bottom-10 left-1/2 text-[10px] md:text-xs text-center text-black dark:text-[#fff] whitespace-nowrap transition-all duration-300 ease-in-out transform -translate-x-1/2 group-hover:bottom-0">
                                     Java
@@ -105,7 +104,7 @@ function Profile() {
 
                             <li className="overflow-x-visible relative w-10 md:w-14 h-12 md:h-[60px] overflow-y-clip group text-center flex items-center justify-center">
                                 <div className="flex justify-center items-center w-8 md:w-10 h-8 md:h-10 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">
-                                    <svg className="fill-[#111] dark:fill-[#fff] group-hover:fill-[#1689b0]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z"/></svg>
+                                    <svg className="fill-[#111] dark:fill-[#fff] group-hover:fill-[#246bc4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z"/></svg>
                                 </div>
                                 <div className="absolute -bottom-10 left-1/2 text-[10px] md:text-xs text-center text-black dark:text-[#fff] whitespace-nowrap transition-all duration-300 ease-in-out transform -translate-x-1/2 group-hover:bottom-0">
                                     Express.js
@@ -140,11 +139,11 @@ function Profile() {
                             </li>
 
                             <li className="overflow-x-visible relative w-10 md:w-14 h-12 md:h-[60px] overflow-y-clip group text-center flex items-center justify-center">
-                                <div className="flex justify-center items-center w-8 md:w-10 h-8 md:h-10 p-1.5 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="w-max fill-[#111] dark:fill-[#fff] group-hover:fill-[#ff3737]" viewBox="0 0 384 512"><path d="M14 95.8C14 42.9 56.9 0 109.8 0H274.2C327.1 0 370 42.9 370 95.8C370 129.3 352.8 158.8 326.7 175.9C352.8 193 370 222.5 370 256C370 308.9 327.1 351.8 274.2 351.8H272.1C247.3 351.8 224.7 342.4 207.7 326.9V415.2C207.7 468.8 163.7 512 110.3 512C57.5 512 14 469.2 14 416.2C14 382.7 31.2 353.2 57.2 336.1C31.2 319 14 289.5 14 256C14 222.5 31.2 193 57.2 175.9C31.2 158.8 14 129.3 14 95.8zM176.3 191.6H109.8C74.2 191.6 45.4 220.4 45.4 256C45.4 291.4 74 320.2 109.4 320.4C109.5 320.4 109.7 320.4 109.8 320.4H176.3V191.6zM207.7 256C207.7 291.6 236.5 320.4 272.1 320.4H274.2C309.7 320.4 338.6 291.6 338.6 256C338.6 220.4 309.7 191.6 274.2 191.6H272.1C236.5 191.6 207.7 220.4 207.7 256zM109.8 351.8C109.7 351.8 109.5 351.8 109.4 351.8C74 352 45.4 380.8 45.4 416.2C45.4 451.7 74.6 480.6 110.3 480.6C146.6 480.6 176.3 451.2 176.3 415.2V351.8H109.8zM109.8 31.4C74.2 31.4 45.4 60.2 45.4 95.8C45.4 131.4 74.2 160.2 109.8 160.2H176.3V31.4H109.8zM207.7 160.2H274.2C309.7 160.2 338.6 131.4 338.6 95.8C338.6 60.2 309.7 31.4 274.2 31.4H207.7V160.2z"/></svg>
+                                <div className="flex justify-center items-center w-8 md:w-10 h-8 md:h-10 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">
+                                  <svg xmlns="http://www.w3.org/2000/svg" className="w-max fill-[#111] dark:fill-[#fff] group-hover:fill-[#ffcc3b]" viewBox="0 0 448 512"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
                                 </div>
                                 <div className="absolute -bottom-10 left-1/2 text-[10px] md:text-xs text-center text-black dark:text-[#fff] whitespace-nowrap transition-all duration-300 ease-in-out transform -translate-x-1/2 group-hover:bottom-0">
-                                  Figma
+                                  Python
                                 </div>
                             </li>
 
@@ -222,6 +221,10 @@ function Profile() {
                                 <p className="mt-4 text-lg sm:text-xl text-[#8CC84B]">N</p>
                             </span>
                         </div>  */}
+                    </div>
+
+                    <div className="w-[60%] relative hidden lg:flex items-center justify-center">
+                        <img className="w-[100%]" src={coder} alt="logo" />
                     </div>
                 </div>
             </div>
