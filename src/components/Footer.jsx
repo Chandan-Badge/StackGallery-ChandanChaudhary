@@ -12,7 +12,7 @@ function Footer() {
 
     return (
 
-      <footer className="bg-gray-900">
+      <footer className="bg-[#351330] dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl px-6 py-3 lg:py-2">
             <div className="sm:flex sm:items-end sm:justify-between">
 
