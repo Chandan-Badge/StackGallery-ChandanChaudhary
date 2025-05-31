@@ -7,8 +7,8 @@ function HomeHeader() {
 
     const [sticky, setSticky] = useState(false);
 
-    const [lightBtn, setLightBtn] = useState(false);
-    const [darkBtn, setDarkBtn] = useState(true);
+    const [lightBtn, setLightBtn] = useState(true);
+    const [darkBtn, setDarkBtn] = useState(false);
 
     // Dark & light button Change
     let changeBtn = () => {
@@ -21,7 +21,7 @@ function HomeHeader() {
 
     // Applying dark & light mode
     const [theme, setTheme] = useState(
-        localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+        localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
     );
     const element = document.documentElement;
     

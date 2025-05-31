@@ -25,7 +25,7 @@ function Footer() {
                     <img src={logo} className="w-full" alt="Logo" />
                 </div>
 
-                <div className="not-show-bottom flex flex-wrap items-center justify-start text-sm font-medium mb-1 dark:text-gray-400 text-gray-500 gap-4 md:gap-6">
+                <div className="not-show-bottom flex flex-wrap items-center justify-start text-sm font-medium mb-1 text-gray-300 dark:text-gray-400 gap-4 md:gap-6">
                 
                     <Link onClick={scrollUp} to={"/profile"} className="about-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">About</Link>
                 
@@ -43,11 +43,11 @@ function Footer() {
           <hr className="not-show-pop my-2 sm:mx-auto border-gray-700" />
           
           <div className="sm:flex sm:items-center sm:justify-between py-0 md:py-2">
-              <span className="not-show-top text-xs sm:text-sm sm:text-center dark:text-gray-400 text-gray-500">© 2024-25 <a href="https://chandanchaudhary-portfolio.netlify.app/" className="hover:underline">Chandan Chaudhary</a>. All Rights Reserved.
+              <span className="not-show-top text-xs sm:text-sm sm:text-center text-gray-300 dark:text-gray-400">© 2024-25 <a href="https://chandanchaudhary-portfolio.netlify.app/" className="hover:underline">Chandan Chaudhary</a>. All Rights Reserved.
               </span>
 
               <div className="not-show-top flex mt-4 sm:justify-center items-center sm:mt-0 gap-1">
-                  <a href="https://www.linkedin.com/in/chandan--chaudhary/" target="_blank" className="text-gray-500 hover:text-yellow-400 hover:scale-110 transition-all duration-500 ease-in-out">
+                  <a href="https://www.linkedin.com/in/chandan--chaudhary/" target="_blank" className="text-gray-300 dark:text-gray-400 hover:text-yellow-400 hover:scale-110 transition-all duration-500 ease-in-out">
                     <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                       <path
                           fill="currentColor"
@@ -55,7 +55,7 @@ function Footer() {
                     </svg>
                       <span className="sr-only">Linkedin</span>
                   </a>
-                  <a href="https://github.com/iamchandanchaudhary" target="_blank" className="text-gray-500 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
+                  <a href="https://github.com/iamchandanchaudhary" target="_blank" className="text-gray-300 dark:text-gray-400 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
                     <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                       <path
                       fill="currentColor"
@@ -63,14 +63,14 @@ function Footer() {
                     </svg>
                       <span className="sr-only">GitHub</span>
                   </a>
-                  <a href="https://www.instagram.com/_.chandan_chaudhary/?hl=en" target="_blank" className="text-gray-500 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
+                  <a href="https://www.instagram.com/_.chandan_chaudhary/?hl=en" target="_blank" className="text-gray-300 dark:text-gray-400 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
                     <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                       <path fill="currentColor"
                           d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                     </svg>
                       <span className="sr-only">Instagram</span>
                   </a>
-                  <a href="mailto:chandanchaudhary533@gmail.com" target="_blank" className="text-gray-500 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
+                  <a href="mailto:chandanchaudhary533@gmail.com" target="_blank" className="text-gray-300 dark:text-gray-400 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
                     <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                       <path
                           fill="currentColor"
@@ -78,7 +78,7 @@ function Footer() {
                     </svg>
                       <span className="sr-only">Gmail</span>
                   </a>
-                  <a href="https://www.youtube.com/@c2explains" target="_blank" className="text-gray-500 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
+                  <a href="https://www.youtube.com/@c2explains" target="_blank" className="text-gray-300 dark:text-gray-400 hover:text-yellow-400 ms-5 hover:scale-110 transition-all duration-500 ease-in-out">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-5" viewBox="0 0 576 512">
                       <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
                     </svg>

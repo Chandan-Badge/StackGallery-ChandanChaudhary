@@ -41,34 +41,34 @@ function Profile() {
                         </div> */}
 
                         <table className="gap-4 lg:gap-10 mt-4">
-                            <tr className="">
-                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Name:</td>
-                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Chandan Chaudhary</td>
+                            <tr className="text-xs md:text-sm lg:text-base">
+                                <td className="text-yellow-300 font-bold flex">Name:</td>
+                                <td className="font-normal text-gray-300 pl-2 sm:pl-6">Chandan Chaudhary</td>
                             </tr>
 
-                            <tr>
-                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Profile:</td>
-                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Full Stack Developer & Freelancer</td>
+                            <tr className="text-xs md:text-sm lg:text-base">
+                                <td className="text-yellow-300 font-bold flex">Profile:</td>
+                                <td className="font-normal text-gray-300 pl-2 sm:pl-6">Full Stack Developer & Freelancer</td>
                             </tr>
 
-                            <tr>
-                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Domain:</td>
-                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Software Developement</td>
+                            <tr className="text-xs md:text-sm lg:text-base">
+                                <td className="text-yellow-300 font-bold flex">Domain:</td>
+                                <td className="font-normal text-gray-300 pl-2 sm:pl-6">Software Developement</td>
                             </tr>
 
-                            <tr>
-                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Education:</td>
-                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Bachelor of Computer Applications</td>
+                            <tr className="text-xs md:text-sm lg:text-base">
+                                <td className="text-yellow-300 font-bold flex">Education:</td>
+                                <td className="font-normal text-gray-300 pl-2 sm:pl-6">Bachelor of Computer Applications</td>
                             </tr>
 
-                            {/* <tr>
-                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Age:</td>
-                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">18</td>
+                            {/* <tr className="text-xs md:text-sm lg:text-base">
+                                <td className="text-yellow-300 font-bold flex">Age:</td>
+                                <td className="font-normal text-gray-300 pl-2 sm:pl-6">18</td>
                             </tr> */}
 
-                            <tr>
-                                <td className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex">Freelance:</td>
-                                <td className="font-normal text-gray-300 text-xs md:text-sm lg:text-base pl-2 sm:pl-6">Available</td>
+                            <tr className="text-xs md:text-sm lg:text-base">
+                                <td className="text-yellow-300 font-bold flex">Freelance:</td>
+                                <td className="font-normal text-gray-300 pl-2 sm:pl-6">Available</td>
                             </tr>
 
                         </table>

@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <p className='bg-[#ff0000] text-[#fff] fixed z-50 px-4 py-1 text-xs sm:text-xs'><b>Note:</b> This site is currently in developing phase</p>
+      {/* <p className='bg-[#ff0000] text-[#fff] fixed z-50 px-4 py-1 text-xs sm:text-xs'><b>Note:</b> This site is currently in developing phase</p> */}
         {/* <Home />
         <Projects />
         <Footer />
