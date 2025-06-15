@@ -55,13 +55,13 @@ function HomeHeader() {
         };
     }, []);
 
-        // Home button
-        const scrollUp = () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            })
-        }
+    // Home button
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
 
     return (
         <header className={`h-max w-full px-3 sm:px-6 md:px-14 py-1 md:py-3 flex items-center justify-between z-20 top-0 fixed ${sticky ? "bg-[#060707]/70 hover:bg-[#060707]/80 drop-shadow-lg transition-all duration-300 ease-in-out" : ""}`}>
