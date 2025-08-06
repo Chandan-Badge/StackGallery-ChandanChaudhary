@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { assets } from '../../assets/assets.js';
+
 import "../../../src/style.css";
 
-import chatApp from "../../assets/ProjectImages/ChattingApplication.png";
+// import chatApp from "../../assets/ProjectImages/ChattingApplication.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
@@ -55,7 +57,7 @@ export default function JavaProjects() {
               >
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://github.com/iamchandanchaudhary/Java-DSA/tree/main/Projects/Chat%20Application" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                      <img src={chatApp} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#dc2626]/40' alt="" />
+                      <img src={assets.chatApp} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#dc2626]/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-[#dc2626]'>Chatting Application</h3>
                         <p className='text-[10px] md:text-xs'>Java Project</p>

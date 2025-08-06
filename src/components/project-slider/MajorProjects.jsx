@@ -1,14 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { assets } from '../../assets/assets.js';
+
 import "../../../src/style.css";
 
-import safesphere from "../../assets/ProjectImages/SafeSphere.png";
-import portfolio from "../../assets/ProjectImages/Portfolio.png";
-import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
-import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
-import linktree from "../../assets/ProjectImages/LinkTree.png";
-import c2explains from "../../assets/ProjectImages/c2explains.png";
+// import safesphere from "../../assets/ProjectImages/SafeSphere.png";
+// import portfolio from "../../assets/ProjectImages/Portfolio.png";
+// import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
+// import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
+// import linktree from "../../assets/ProjectImages/LinkTree.png";
+// import c2explains from "../../assets/ProjectImages/c2explains.png";
 
 import EmptyProject from './EmptyProject';
 
@@ -62,7 +64,7 @@ export default function MajorProjects() {
             >
                 <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                   <a href="https://chandanchaudhary-portfolio.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                    <img src={portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
+                    <img src={assets.portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>Portfolio Website</h3>
                       <p className='text-[10px] md:text-xs'>Chandan Chaudhary</p>
@@ -71,7 +73,7 @@ export default function MajorProjects() {
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                   <a href="https://safe-sphere-sos.vercel.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                    <img src={safesphere} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
+                    <img src={assets.safesphere} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>SafeSphere</h3>
                       <p className='text-[10px] md:text-xs'>Women's safety application</p>
@@ -80,7 +82,7 @@ export default function MajorProjects() {
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                      <img src={c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
+                      <img src={assets.c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-orange-600'>C2 Explains</h3>
                         <p className='text-[10px] md:text-xs '>Personal Website</p>
@@ -90,7 +92,7 @@ export default function MajorProjects() {
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                   <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                    <img src={strongPassword} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
+                    <img src={assets.strongPassword} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>Strong Password Generator</h3>
                       <p className='text-[10px] md:text-xs '>Password Suggestion application</p>
@@ -99,7 +101,7 @@ export default function MajorProjects() {
 
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                   <a href="https://chandanchaudhary-linktree.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                    <img src={linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#d18cbc]/40' alt="" />
+                    <img src={assets.linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#d18cbc]/40' alt="" />
                     <span className='h-max'>
                       <h3 className='font-bold text-sm md:text-lg text-orange-600'>LinkTree</h3>
                       <p className='text-[10px] md:text-xs'>Chandan Chaudhary</p>

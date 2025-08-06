@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { assets } from '../../assets/assets.js';
+
 import "../../../src/style.css";
 
-import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
-import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
-import aichatBot from "../../assets/ProjectImages/AiChatBot.png";
-import bgChanger from "../../assets/ProjectImages/bgChanger.png";
+// import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
+// import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
+// import aichatBot from "../../assets/ProjectImages/AiChatBot.png";
+// import bgChanger from "../../assets/ProjectImages/bgChanger.png";
 
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
@@ -59,7 +61,7 @@ export default function ReactProjects() {
               >
                   <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
-                      <img src={strongPasswordDark} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#00afb9]/40' alt="" />
+                      <img src={assets.strongPasswordDark} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#00afb9]/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-[#0f6dbf]'>Strong Password Generator</h3>
                         <p className='text-[10px] md:text-xs '>Password Suggestion application</p>
@@ -68,7 +70,7 @@ export default function ReactProjects() {
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://ai-chatbot-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
-                      <img src={aichatBot} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
+                      <img src={assets.aichatBot} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-[#0f6dbf]'>AI ChatBot</h3>
                         <p className='text-[10px] md:text-xs '>ChatBot</p>
@@ -77,7 +79,7 @@ export default function ReactProjects() {
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://bg-changer-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
-                      <img src={bgChanger} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
+                      <img src={assets.bgChanger} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-[#0f6dbf]'>React BG Changer</h3>
                         <p className='text-[10px] md:text-xs '>React App</p>
