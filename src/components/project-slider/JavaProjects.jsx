@@ -2,10 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
-
 import "../../../src/style.css";
-
-// import chatApp from "../../assets/ProjectImages/ChattingApplication.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 

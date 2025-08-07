@@ -2,15 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
-
 import "../../../src/style.css";
-
-// import safesphere from "../../assets/ProjectImages/SafeSphere.png";
-// import portfolio from "../../assets/ProjectImages/Portfolio.png";
-// import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
-// import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
-// import linktree from "../../assets/ProjectImages/LinkTree.png";
-// import c2explains from "../../assets/ProjectImages/c2explains.png";
 
 import EmptyProject from './EmptyProject';
 

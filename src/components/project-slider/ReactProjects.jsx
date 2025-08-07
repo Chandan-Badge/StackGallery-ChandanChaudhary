@@ -2,13 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
-
 import "../../../src/style.css";
-
-// import strongPassword from "../../assets/ProjectImages/StrongPassword.png";
-// import strongPasswordDark from "../../assets/ProjectImages/StrongPasswordDark.png";
-// import aichatBot from "../../assets/ProjectImages/AiChatBot.png";
-// import bgChanger from "../../assets/ProjectImages/bgChanger.png";
 
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';

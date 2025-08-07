@@ -2,11 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
-
 import "../../../src/style.css";
-
-// import safesphere from "../../assets/ProjectImages/SafeSphere.png";
-// import c2explains from "../../assets/ProjectImages/c2explains.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 

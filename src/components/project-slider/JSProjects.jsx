@@ -2,21 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
-
 import "../../../src/style.css";
-
-// import autoTyper from "../../assets/ProjectImages/AutoTyper.png";
-// import catFact from "../../assets/ProjectImages/CatFact.png";
-// import darkLight from "../../assets/ProjectImages/Dark&Light.png";
-// import linkTree from "../../assets/ProjectImages/LinkTree.png"
-// import multiTab from "../../assets/ProjectImages/MultiTab.png";
-// import randomColor from "../../assets/ProjectImages/RandomColor.png";
-// import randomDog from "../../assets/ProjectImages/RandomDog.png";
-// import aiChatBot from "../../assets/ProjectImages/AiChatBot.png";
-// import simonSays from "../../assets/ProjectImages/SimonSays.png";
-// import slider from "../../assets/ProjectImages/Slider.png";
-// import tictactoe from "../../assets/ProjectImages/TicTacToe.png";
-// import transform from "../../assets/ProjectImages/Transform.png";
 
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';

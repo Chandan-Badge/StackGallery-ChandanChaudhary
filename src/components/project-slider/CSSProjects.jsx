@@ -2,12 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
-
 import "../../../src/style.css";
-// import university from "../../assets/ProjectImages/University.png";
-// import amazon from "../../assets/ProjectImages/amazon.png";
-// import netflix from "../../assets/ProjectImages/Netflix.png";
-// import tooltip from "../../assets/ProjectImages/ToolTip.png";
 
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
