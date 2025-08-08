@@ -67,7 +67,7 @@ export default function FullStackProjects() {
                         <img src={assets.c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                         <span className='h-max'>
                           <h3 className='font-bold text-sm md:text-lg text-[#00bdad]'>C2 Explains</h3>
-                          <p className='text-[10px] md:text-xs '>Personal Website</p>
+                          <p className='text-[10px] md:text-xs '>E-Commerce & E-Learning Website</p>
                         </span>
                       </a>
                     </SwiperSlide>

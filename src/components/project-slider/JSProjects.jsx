@@ -82,7 +82,7 @@ export default function JSProjects() {
   
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://tictactoe-chandanchaudhary.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                      <img src={assets.tictactoe} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
+                      <img src={assets.tictactoe} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-yellow-400'>TicTacToe</h3>
                         <p className='text-[10px] md:text-xs '>Multiplayer Game</p>
@@ -118,7 +118,7 @@ export default function JSProjects() {
   
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                      <img src={assets.autoTyper} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
+                      <img src={assets.autoTyper} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-400/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Auto Typer</h3>
                         <p className='text-[10px] md:text-xs '>Web application</p>
@@ -127,7 +127,7 @@ export default function JSProjects() {
   
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                      <img src={assets.slider} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-gray-500/40' alt="" />
+                      <img src={assets.slider} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                       <span className='h-max'>
                         <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Image Slider</h3>
                         <p className='text-[10px] md:text-xs '>Web application</p>
