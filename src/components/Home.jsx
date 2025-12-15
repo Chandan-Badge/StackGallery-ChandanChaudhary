@@ -7,6 +7,7 @@ import HomeDesign from "./homepage/HomeDesign";
 import Profile from "./Profilepage/Profile";
 
 import "../../src/style.css";
+import HomeAnimation from "./homepage/HomeAnimation";
 
 function Home() {
 
@@ -15,6 +16,7 @@ function Home() {
 
     return (
         <section className={`home relative h-screen w-full flex flex-col items-center`}>
+            {/* <HomeAnimation /> */}
             <HomeHeader />
             <HomeMain />
             <HomeBottom />
