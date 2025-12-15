@@ -8,7 +8,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import Profile from './components/Profilepage/Profile';
-import HomeAnimation from './components/homepage/HomeAnimation';
+import MouseAnimation from './components/MouseAnimation';
 
 function App() {
 
@@ -21,10 +21,11 @@ function App() {
 
         <BackToTop /> */}
 
+      <MouseAnimation />
+
       <Routes>
         <Route path='/' element={
           <>
-            {/* <HomeAnimation /> */}
             <Home />
             <Projects />
             <Footer />

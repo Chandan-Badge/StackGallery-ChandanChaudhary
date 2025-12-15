@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./HomeDesign.css";
 
-const HomeAnimation = () => {
+const MouseAnimation = () => {
   const particlesContainerRef = useRef(null);
 
   useEffect(() => {
@@ -60,4 +60,4 @@ const HomeAnimation = () => {
   );
 };
 
-export default HomeAnimation;
+export default MouseAnimation;
