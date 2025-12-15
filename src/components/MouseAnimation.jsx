@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./HomeDesign.css";
+import "../App.css";
 
 const MouseAnimation = () => {
   const particlesContainerRef = useRef(null);
