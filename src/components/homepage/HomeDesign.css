@@ -28,7 +28,7 @@
     }
 } */
 
-.particles-container {
+/* .particles-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@
     height: 100%;
     z-index: 3;
     pointer-events: none;
-}
+} */
 
 .particle {
     position: absolute;

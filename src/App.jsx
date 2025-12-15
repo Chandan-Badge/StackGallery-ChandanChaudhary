@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import Profile from './components/Profilepage/Profile';
+import HomeAnimation from './components/homepage/HomeAnimation';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={
           <>
+            {/* <HomeAnimation /> */}
             <Home />
             <Projects />
             <Footer />
