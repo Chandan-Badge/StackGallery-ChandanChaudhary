@@ -14,6 +14,7 @@ import PhotographyWorks from './project-slider/PhotographyWorks';
 import CSSProjects from './project-slider/CSSProjects';
 
 import "../../src/style.css";
+import NextProjects from './project-slider/NextProjects';
 
 function Projects() {
 
@@ -21,6 +22,7 @@ function Projects() {
     <div className='flex flex-col gap-8 py-10'>
       <MajorProjects />
       <FullStackProjects />
+      <NextProjects />
       <ReactProjects />
       <JSProjects />
       <JavaProjects />

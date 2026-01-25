@@ -8,6 +8,7 @@ import linktree from "./ProjectImages/LinkTree.webp";
 
 // Next.js Projects
 import lth from "./ProjectImages/LTH.webp";
+import courseProject from "./ProjectImages/courseProject.webp";
 
 // React.js Projects
 import aichatBot from "./ProjectImages/AiChatBot.webp";
@@ -47,6 +48,7 @@ export const assets = {
     linktree,
 
     lth,
+    courseProject,
 
     aichatBot,
     bgChanger,
