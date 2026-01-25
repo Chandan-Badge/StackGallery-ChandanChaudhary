@@ -35,7 +35,7 @@ export default function JavaProjects() {
         <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#351330] dark:bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
 
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-[#dc2626] font-bold pl-2 sm:pl-0">Projects using Java</p>
+            <p class="text-xl md:text-2xl text-[#dc2626] font-bold pl-2 sm:pl-0">Java Projects</p>
             <i class="fa-brands fa-java text-[#dc2626] text-xl md:text-3xl flex items-center"></i>
           </div>
 

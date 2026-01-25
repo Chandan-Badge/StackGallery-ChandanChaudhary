@@ -9,83 +9,110 @@ import { Navigation, FreeMode, Pagination } from 'swiper/modules';
 
 export default function PhotographyWorks() {
 
-    const [view, setView] = useState(false);
+  const [view, setView] = useState(false);
 
-    useEffect(() => {
-      const mediaQuery = window.matchMedia('(max-width: 768px)');
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-      const handleChange = (e) => {
-        setView(e.matches);
-      };
+    const handleChange = (e) => {
+      setView(e.matches);
+    };
 
-      setView(mediaQuery.matches);
+    setView(mediaQuery.matches);
 
-      mediaQuery.addEventListener('change', handleChange);
+    mediaQuery.addEventListener('change', handleChange);
 
-      return () => {
-        mediaQuery.removeEventListener('change', handleChange);
-      };
-    }, []);
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
 
-    const viewCondition = view ? 2 : 3;
+  const viewCondition = view ? 2 : 3;
 
   return (
     <>
-    <main className='px-4 sm:px-8'>
+      <main className='px-4 sm:px-8'>
 
-      <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#351330] dark:bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
-                  
+        <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#351330] dark:bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
+
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-[#ff006e] font-bold pl-2 sm:pl-0">Photography Works - using Photoshop & Canva</p>
+            <p class="text-xl md:text-2xl text-[#ff006e] font-bold pl-2 sm:pl-0">Photography Works</p>
             <span class="material-symbols-outlined text-[#ff006e] text-3xl md:text-3xl flex items-center">palette</span>
           </div>
 
           <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>
-              <Swiper
-                slidesPerView={viewCondition}
-                spaceBetween={15}
-                freeMode={true}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[FreeMode, Pagination, Navigation]}
-                className="swiper mySwiper w-[100%] h-[100%]"
-                navigation={true}
-                // loop={true}
-              >
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-                  
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-                  <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                  <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
-    
-              </Swiper>
+            <Swiper
+              slidesPerView={viewCondition}
+              spaceBetween={15}
+              freeMode={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[FreeMode, Pagination, Navigation]}
+              className="swiper mySwiper w-[100%] h-[100%]"
+              navigation={true}
+            // loop={true}
+            >
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
+                  Coming soon...
+                </span>
+              </SwiperSlide>
+
+            </Swiper>
 
           </div>
 
-      </div>
-    </main>
+        </div>
+      </main>
     </>
   );
 }

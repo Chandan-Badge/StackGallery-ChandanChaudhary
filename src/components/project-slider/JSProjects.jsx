@@ -36,8 +36,8 @@ export default function JSProjects() {
       <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#351330] dark:bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
       
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-yellow-400 font-bold pl-2 sm:pl-0">Projects using Javascript </p>
-            <i class="fa-brands fa-js text-yellow-400 text-xl md:text-3xl flex items-center "></i>
+            <p class="text-xl md:text-2xl text-yellow-400 font-bold pl-2 sm:pl-0">Javascript Projects</p>
+            <i class="fa-brands fa-js text-yellow-400 text-xl md:text-3xl flex items-center"></i>
           </div>
   
           <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>

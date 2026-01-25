@@ -3,7 +3,7 @@ import Footer from "../Footer";
 import HomeDesign from "../homepage/HomeDesign";
 import HomeHeader from "../homepage/HomeHeader";
 
-import coder from "../../assets/coder.png";
+import coder from "../../assets/coder.webp";
 
 function Profile() {
     return (
