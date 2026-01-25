@@ -6,6 +6,9 @@ import strongPassword from "./ProjectImages/StrongPassword.webp";
 import strongPasswordDark from "./ProjectImages/StrongPasswordDark.webp";
 import linktree from "./ProjectImages/LinkTree.webp";
 
+// Next.js Projects
+import lth from "./ProjectImages/LTH.webp";
+
 // React.js Projects
 import aichatBot from "./ProjectImages/AiChatBot.webp";
 import bgChanger from "./ProjectImages/bgChanger.webp";
@@ -41,6 +44,8 @@ export const assets = {
     strongPassword,
     strongPasswordDark,
     linktree,
+
+    lth,
 
     aichatBot,
     bgChanger,
