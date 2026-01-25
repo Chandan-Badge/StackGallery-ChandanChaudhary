@@ -1,33 +1,37 @@
-import c2explains from "./ProjectImages/c2explains.png";
-import safesphere from "./ProjectImages/SafeSphere.png";
-import portfolio from "./ProjectImages/Portfolio.png";
-import strongPassword from "./ProjectImages/StrongPassword.png";
-import strongPasswordDark from "./ProjectImages/StrongPasswordDark.png";
-import linktree from "./ProjectImages/LinkTree.png";
+// Big Projects
+import c2explains from "./ProjectImages/c2explains.webp";
+import safesphere from "./ProjectImages/SafeSphere.webp";
+import portfolio from "./ProjectImages/Portfolio.webp";
+import strongPassword from "./ProjectImages/StrongPassword.webp";
+import strongPasswordDark from "./ProjectImages/StrongPasswordDark.webp";
+import linktree from "./ProjectImages/LinkTree.webp";
 
-import aichatBot from "./ProjectImages/AiChatBot.png";
-import bgChanger from "./ProjectImages/bgChanger.png";
+// React.js Projects
+import aichatBot from "./ProjectImages/AiChatBot.webp";
+import bgChanger from "./ProjectImages/bgChanger.webp";
 
-import autoTyper from "./ProjectImages/AutoTyper.png";
-import catFact from "./ProjectImages/CatFact.png";
-import darkLight from "./ProjectImages/Dark&Light.png";
-import linkTree from "./ProjectImages/LinkTree.png"
-import multiTab from "./ProjectImages/MultiTab.png";
-import randomColor from "./ProjectImages/RandomColor.png";
-import randomDog from "./ProjectImages/RandomDog.png";
-import aiChatBot from "./ProjectImages/AiChatBot.png";
-import simonSays from "./ProjectImages/SimonSays.png";
-import slider from "./ProjectImages/Slider.png";
-import tictactoe from "./ProjectImages/TicTacToe.png";
-import transform from "./ProjectImages/Transform.png";
+// JS Projects
+import autoTyper from "./ProjectImages/AutoTyper.webp";
+import catFact from "./ProjectImages/CatFact.webp";
+import darkLight from "./ProjectImages/Dark&Light.webp";
+import linkTree from "./ProjectImages/LinkTree.webp"
+import multiTab from "./ProjectImages/MultiTab.webp";
+import randomColor from "./ProjectImages/RandomColor.webp";
+import randomDog from "./ProjectImages/RandomDog.webp";
+import aiChatBot from "./ProjectImages/AiChatBot.webp";
+import simonSays from "./ProjectImages/SimonSays.webp";
+import slider from "./ProjectImages/Slider.webp";
+import tictactoe from "./ProjectImages/TicTacToe.webp";
+import transform from "./ProjectImages/Transform.webp";
 
+// Css Project
+import university from "./ProjectImages/University.webp";
+import amazon from "./ProjectImages/amazon.webp";
+import netflix from "./ProjectImages/Netflix.webp";
+import tooltip from "./ProjectImages/ToolTip.webp";
 
-import university from "./ProjectImages/University.png";
-import amazon from "./ProjectImages/amazon.png";
-import netflix from "./ProjectImages/Netflix.png";
-import tooltip from "./ProjectImages/ToolTip.png";
-
-import chatApp from "./ProjectImages/ChattingApplication.png";
+// Java Projects
+import chatApp from "./ProjectImages/ChattingApplication.webp";
 
 export const assets = {
     
