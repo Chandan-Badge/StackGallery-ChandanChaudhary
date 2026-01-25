@@ -38,7 +38,7 @@ import tooltip from "./ProjectImages/ToolTip.webp";
 import chatApp from "./ProjectImages/ChattingApplication.webp";
 
 export const assets = {
-    
+
     c2explains,
     safesphere,
     portfolio,
@@ -64,7 +64,7 @@ export const assets = {
     slider,
     tictactoe,
     transform,
-    
+
     university,
     amazon,
     netflix,
