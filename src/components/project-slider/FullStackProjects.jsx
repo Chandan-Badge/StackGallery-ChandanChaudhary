@@ -52,6 +52,17 @@ export default function FullStackProjects() {
                 navigation={true}
                 // loop={true}
               >
+
+                    <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                      <a href="https://lucknowtradinghouse.com/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                        <img src={assets.lth} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#31b4ed]/40' alt="" />
+                        <span className='h-max'>
+                          <h3 className='font-bold text-sm md:text-lg text-[#00bdad]'>Lucknow Trading House</h3>
+                          <p className='text-[10px] md:text-xs'>Internship Project</p>
+                        </span>
+                      </a>
+                    </SwiperSlide>
+
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                       <a href="https://safe-sphere-sos.vercel.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                         <img src={assets.safesphere} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-pink-500/40' alt="" />
@@ -71,9 +82,6 @@ export default function FullStackProjects() {
                         </span>
                       </a>
                     </SwiperSlide>
-
-                    <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                     <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-[#0b3954] dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>Coming soon...</span></SwiperSlide>

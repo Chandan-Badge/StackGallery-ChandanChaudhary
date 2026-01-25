@@ -36,8 +36,8 @@ export default function ReactProjects() {
       <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-[#351330] dark:bg-[#222]/80 backdrop-blur-none flex flex-col gap-2 rounded-lg'>
       
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-[#0f6dbf] font-bold pl-2 sm:pl-0">Projects using React </p>
-            <i class="fa-brands fa-react text-[#0f6dbf] text-xl md:text-3xl flex items-center"></i>
+            <p class="text-xl md:text-2xl text-[#31b4ed] font-bold pl-2 sm:pl-0">Projects using React </p>
+            <i class="fa-brands fa-react text-[#31b4ed] text-xl md:text-3xl flex items-center"></i>
           </div>
 
           <div className='container w-full h-[90%] flex justify-center items-center text-[#fff]'>
@@ -57,7 +57,7 @@ export default function ReactProjects() {
                     <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
                       <img src={assets.strongPasswordDark} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#00afb9]/40' alt="" />
                       <span className='h-max'>
-                        <h3 className='font-bold text-sm md:text-lg text-[#0f6dbf]'>Strong Password Generator</h3>
+                        <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>Strong Password Generator</h3>
                         <p className='text-[10px] md:text-xs '>Password Suggestion application</p>
                       </span>
                     </a></SwiperSlide>
@@ -66,17 +66,26 @@ export default function ReactProjects() {
                     <a href="https://ai-chatbot-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
                       <img src={assets.aichatBot} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
                       <span className='h-max'>
-                        <h3 className='font-bold text-sm md:text-lg text-[#0f6dbf]'>AI ChatBot</h3>
-                        <p className='text-[10px] md:text-xs '>ChatBot</p>
+                        <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>AI ChatBot</h3>
+                        <p className='text-[10px] md:text-xs'>ChatBot</p>
                       </span>
                     </a></SwiperSlide>
 
                     <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                    <a href="https://bg-changer-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
-                      <img src={assets.bgChanger} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
+                    <a href="https://localstorage-todoapp-c2.vercel.app/" className='flex flex-col h-max gap-2' target="_blank">
+                      <img src={assets.todoLocalstorage} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
                       <span className='h-max'>
-                        <h3 className='font-bold text-sm md:text-lg text-[#0f6dbf]'>React BG Changer</h3>
-                        <p className='text-[10px] md:text-xs '>React App</p>
+                        <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>React Todo-App</h3>
+                        <p className='text-[10px] md:text-xs'>Local Storage</p>
+                      </span>
+                    </a></SwiperSlide>
+                    
+                    <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                    <a href="https://bg-changer-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
+                      <img src={assets.bgChanger} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#facc15]/40' alt="" />
+                      <span className='h-max'>
+                        <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>React BG Changer</h3>
+                        <p className='text-[10px] md:text-xs'>React App</p>
                       </span>
                     </a></SwiperSlide>
 

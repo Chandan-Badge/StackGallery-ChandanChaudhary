@@ -65,17 +65,17 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://lucknowtradinghouse.com/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.lth} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#31b4ed]/40' alt="" />
                   <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>C2 Explains</h3>
-                    <p className='text-[10px] md:text-xs '>E-Commerce & E-Learning Website</p>
+                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>Lucknow Trading House</h3>
+                    <p className='text-[10px] md:text-xs'>Internship Project</p>
                   </span>
                 </a>
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://c2explains-chandanchaudhary.onrender.com/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>C2 Explains</h3>

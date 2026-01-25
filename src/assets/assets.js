@@ -12,6 +12,7 @@ import lth from "./ProjectImages/LTH.webp";
 // React.js Projects
 import aichatBot from "./ProjectImages/AiChatBot.webp";
 import bgChanger from "./ProjectImages/bgChanger.webp";
+import todoLocalstorage from "./ProjectImages/todo-localstorage.webp";
 
 // JS Projects
 import autoTyper from "./ProjectImages/AutoTyper.webp";
@@ -49,6 +50,7 @@ export const assets = {
 
     aichatBot,
     bgChanger,
+    todoLocalstorage,
 
     autoTyper,
     catFact,
