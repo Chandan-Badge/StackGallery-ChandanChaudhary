@@ -15,13 +15,15 @@ function App() {
   return (
     <>
       {/* <p className='bg-[#ff0000] text-[#fff] fixed z-50 px-4 py-1 text-xs sm:text-xs'><b>Note:</b> This site is currently in developing phase</p> */}
-        {/* <Home />
+      {/* <Home />
         <Projects />
         <Footer />
 
         <BackToTop /> */}
 
-      <MouseAnimation />
+      <div className='p-4 h-screen w-full fixed pointer-events-none z-50'>
+        <MouseAnimation />
+      </div>
 
       <Routes>
         <Route path='/' element={
@@ -39,7 +41,7 @@ function App() {
             <Profile />
             <BackToTop />
           </>
-          } />
+        } />
       </Routes>
     </>
   )
