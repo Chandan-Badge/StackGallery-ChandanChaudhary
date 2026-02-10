@@ -1,29 +1,132 @@
-.circle1 {
-    animation: circle1 1.8s ease-in-out infinite;
+/* ===== Animated Background Circles ===== */
+
+.bg-design-wrapper {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -10;
+    pointer-events: none;
 }
 
-/* @keyframes circle1 {
-    0%, 44% {
-        transform: translateY(0);
-    }
+/* Shared glow base */
+.glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    will-change: transform, opacity;
+}
 
-    28% {
-        opacity: 0.7;
-        transform: translateX(30%);
-    }
+/* Circle 1 — Golden amber (bottom-left) */
+.circle1 {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(234, 179, 8, 0.5) 0%, rgba(234, 179, 8, 0.15) 50%, transparent 70%);
+    left: -80px;
+    bottom: -40px;
+    animation: float1 10s ease-in-out infinite;
+}
 
-    44% {
-        opacity: 0.8;
-        transform: translateX(50%);
-    }
+/* Circle 2 — Cyan blue (bottom-right) */
+.circle2 {
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(0, 188, 255, 0.45) 0%, rgba(0, 188, 255, 0.12) 50%, transparent 70%);
+    right: -30px;
+    bottom: 20px;
+    animation: float2 12s ease-in-out infinite;
+}
 
-    74% {
-        opacity: 0.8;
-        transform: translateX(80%);
-    }
+/* Circle 3 — Emerald green (top-right) */
+.circle3 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(5, 154, 93, 0.45) 0%, rgba(5, 154, 93, 0.12) 50%, transparent 70%);
+    right: 10%;
+    top: -60px;
+    animation: float3 14s ease-in-out infinite;
+}
 
-    100% {
-        opacity: 1;
-        transform: translateX(100%);
-    }
-} */
+/* Circle 4 — Soft violet (center) */
+.circle4 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, rgba(139, 92, 246, 0.08) 50%, transparent 70%);
+    left: 35%;
+    top: 25%;
+    animation: float4 16s ease-in-out infinite;
+}
+
+/* Circle 5 — Warm rose (top-left) */
+.circle5 {
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(244, 63, 94, 0.25) 0%, rgba(244, 63, 94, 0.06) 50%, transparent 70%);
+    left: 15%;
+    top: 5%;
+    animation: float5 11s ease-in-out infinite;
+}
+
+/* Soft vignette for depth */
+.vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
+    pointer-events: none;
+}
+
+/* ===== Keyframes — smooth floating & pulsing ===== */
+
+@keyframes float1 {
+    0%   { transform: translate(0, 0) scale(1);       opacity: 0.5;  }
+    25%  { transform: translate(40px, -30px) scale(1.08);  opacity: 0.6;  }
+    50%  { transform: translate(70px, -60px) scale(1.15); opacity: 0.55; }
+    75%  { transform: translate(30px, -20px) scale(1.05); opacity: 0.65; }
+    100% { transform: translate(0, 0) scale(1);       opacity: 0.5;  }
+}
+
+@keyframes float2 {
+    0%   { transform: translate(0, 0) scale(1);        opacity: 0.45; }
+    25%  { transform: translate(-50px, -40px) scale(1.12); opacity: 0.55; }
+    50%  { transform: translate(-30px, -70px) scale(1.05); opacity: 0.5;  }
+    75%  { transform: translate(-60px, -25px) scale(1.18); opacity: 0.6;  }
+    100% { transform: translate(0, 0) scale(1);        opacity: 0.45; }
+}
+
+@keyframes float3 {
+    0%   { transform: translate(0, 0) scale(1);       opacity: 0.45; }
+    25%  { transform: translate(-30px, 50px) scale(1.1);  opacity: 0.55; }
+    50%  { transform: translate(-60px, 30px) scale(1.2);  opacity: 0.5;  }
+    75%  { transform: translate(-20px, 60px) scale(1.05); opacity: 0.6;  }
+    100% { transform: translate(0, 0) scale(1);       opacity: 0.45; }
+}
+
+@keyframes float4 {
+    0%   { transform: translate(0, 0) scale(1);        opacity: 0.25; }
+    33%  { transform: translate(30px, -40px) scale(1.15); opacity: 0.4;  }
+    66%  { transform: translate(-20px, 30px) scale(1.08); opacity: 0.3;  }
+    100% { transform: translate(0, 0) scale(1);        opacity: 0.25; }
+}
+
+@keyframes float5 {
+    0%   { transform: translate(0, 0) scale(1);        opacity: 0.2;  }
+    50%  { transform: translate(25px, 35px) scale(1.2);  opacity: 0.35; }
+    100% { transform: translate(0, 0) scale(1);        opacity: 0.2;  }
+}
+
+/* ===== Responsive adjustments ===== */
+
+@media (max-width: 768px) {
+    .circle1 { width: 260px; height: 260px; filter: blur(60px); }
+    .circle2 { width: 240px; height: 240px; filter: blur(60px); }
+    .circle3 { width: 280px; height: 280px; filter: blur(60px); }
+    .circle4 { width: 200px; height: 200px; filter: blur(50px); }
+    .circle5 { width: 180px; height: 180px; filter: blur(50px); }
+}
+
+@media (min-width: 1024px) {
+    .circle1 { width: 520px; height: 520px; filter: blur(100px); }
+    .circle2 { width: 480px; height: 480px; filter: blur(100px); }
+    .circle3 { width: 560px; height: 560px; filter: blur(110px); }
+    .circle4 { width: 380px; height: 380px; filter: blur(90px);  }
+    .circle5 { width: 340px; height: 340px; filter: blur(90px);  }
+}
