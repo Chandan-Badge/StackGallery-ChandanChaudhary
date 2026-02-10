@@ -19,7 +19,7 @@ function Footer() {
                 <div onClick={scrollUp} className="not-show-pop backtop relative group w-20 sm:w-24 flex items-start justify-start mb-2 sm:mb-0 rtl:space-x-reverse">
 
                     {/* <!-- Popup --> */}
-                    <span className="invisible group-hover:visible text-gray-900 group-hover:flex bg-yellow-400 absolute top-5 left-1/2 -translate-x-1/2 px-3 py-1 rounded w-max items-center gap-1 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 group-hover:-top-9 ease-jump duration-200">Back to top
+                    <span className="invisible group-hover:visible text-white dark:text-gray-900 group-hover:flex bg-amber-500 dark:bg-yellow-400 absolute top-5 left-1/2 -translate-x-1/2 px-3 py-1 rounded w-max items-center gap-1 after:content-[''] after:w-3 after:h-3 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-1 group-hover:-top-9 ease-jump duration-200">Back to top
                     </span>
 
                     <img src={logo} className="w-full" alt="Logo" />
