@@ -12,7 +12,7 @@ function Footer() {
 
     return (
 
-      <footer className="bg-white/90 dark:bg-[#351330] transition-colors duration-500">
+      <footer className="bg-white/90 dark:bg-[#111] transition-colors duration-500">
         <div className="mx-auto w-full max-w-screen-xl px-6 py-3 lg:py-2">
             <div className="sm:flex sm:items-end sm:justify-between">
 
