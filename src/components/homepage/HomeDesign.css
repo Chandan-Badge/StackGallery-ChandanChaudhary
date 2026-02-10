@@ -70,8 +70,12 @@
 .vignette {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
+    background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.08) 100%);
     pointer-events: none;
+}
+
+.dark .vignette {
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
 }
 
 /* ===== Keyframes — smooth floating & pulsing ===== */

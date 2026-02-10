@@ -3,11 +3,24 @@ html {
   scrollbar-color: #ebb207 transparent;
 }
 
+html.dark {
+  scrollbar-color: #ebb207 transparent;
+}
+
 .home {
-  --color: rgba(114, 114, 114, 0.3);
-  /* background-color: #ebb207; */
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  --color-light: rgba(180, 160, 130, 0.15);
+  --color-dark: rgba(114, 114, 114, 0.3);
+  background-color: #f5f0eb;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color-light) 25%, var(--color-light) 26%, transparent 27%, transparent 74%, var(--color-light) 75%, var(--color-light) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, var(--color-light) 25%, var(--color-light) 26%, transparent 27%, transparent 74%, var(--color-light) 75%, var(--color-light) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+  transition: background-color 0.5s ease, background-image 0.5s ease;
+}
+
+.dark .home {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color-dark) 25%, var(--color-dark) 26%, transparent 27%, transparent 74%, var(--color-dark) 75%, var(--color-dark) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, var(--color-dark) 25%, var(--color-dark) 26%, transparent 27%, transparent 74%, var(--color-dark) 75%, var(--color-dark) 76%, transparent 77%, transparent);
   background-size: 55px 55px;
 }
 
@@ -32,36 +45,61 @@ html {
 
 .swiper-button-next, .swiper-button-prev {
   color: #111;
-  background-color: #444;
+  background-color: #e8e0d8;
   padding: 30px !important;
   border-radius: 50% !important;
-  box-shadow: -1px 1px 3px 0px #111;
+  box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
 
   transition: all 0.1s ease-in-out;
 }
 
+.dark .swiper-button-next, .dark .swiper-button-prev {
+  background-color: #444;
+  box-shadow: -1px 1px 3px 0px #111;
+}
+
 .swiper-button-next:hover, .swiper-button-prev:hover {
   transform: scale(1.05);
+  background-color: #ddd5cc;
+}
+
+.dark .swiper-button-next:hover, .dark .swiper-button-prev:hover {
   background-color: #555;
 }
 
 .swiper-button-next:active, .swiper-button-prev:active {
   transform: scale(1.05);
+  background-color: #d4ccc3;
+}
+
+.dark .swiper-button-next:active, .dark .swiper-button-prev:active {
   background-color: #666;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
-  color: #fff;
+  color: #444;
   font-size: 20px !important;
   font-weight: 400 !important;
 }
 
+.dark .swiper-button-prev::after, .dark .swiper-button-next::after {
+  color: #fff;
+}
+
 .swiper .swiper-pagination-bullet-active {
+  background-color: #92400e !important;
+}
+
+.dark .swiper .swiper-pagination-bullet-active {
   background-color: #fff !important;
 }
 
 .swiper-pagination-bullet {
+  background-color: #92400e !important;
+}
+
+.dark .swiper-pagination-bullet {
   background-color: #fff !important;
 }
 

@@ -10,9 +10,13 @@
 
 .particle {
     position: absolute;
-    background: white;
+    background: #92400e;
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
     z-index: 50;
+}
+
+.dark .particle {
+    background: white;
 }
