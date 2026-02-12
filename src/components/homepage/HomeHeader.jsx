@@ -1,10 +1,13 @@
 import logo from "../../assets/c2-logo.png";
 import blackLogo from "../../assets/c2-logo-black.png";
-import React from "react";
+import React, { useContext } from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { StackContext } from "../../context/StackContext";
 
 function HomeHeader() {
+
+    const { theme, setTheme } = useContext(StackContext);
 
     const [sticky, setSticky] = useState(false);
 
@@ -12,6 +15,7 @@ function HomeHeader() {
         const saved = localStorage.getItem("theme");
         return saved === "light" ? false : true;
     });
+
     const [darkBtn, setDarkBtn] = useState(() => {
         const saved = localStorage.getItem("theme");
         return saved === "light" ? true : false;
@@ -23,27 +27,8 @@ function HomeHeader() {
         setDarkBtn(!darkBtn);
     }
 
-    let turnLight = lightBtn ? "show" : "not-show";
-    let turnDark = darkBtn ? "show" : "not-show";
-
-    // Applying dark & light mode
-    const [theme, setTheme] = useState(
-        localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
-    );
-    const element = document.documentElement;
-
-    useEffect(() => {
-        if (theme === "dark") {
-            element.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-            document.body.classList.add("dark");
-        }
-        else {
-            element.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-            document.body.classList.remove("dark");
-        }
-    }, [theme]);
+    let turnLight = (theme === "dark" ? "not-show" : "show");
+    let turnDark = (theme === "dark" ? "show" : "not-show");
 
     // Fixing navbar after scroll
     useEffect(() => {

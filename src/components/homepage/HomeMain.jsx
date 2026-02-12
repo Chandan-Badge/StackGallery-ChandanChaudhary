@@ -1,17 +1,17 @@
 function HomeMain() {
     return (
             // {/* Main Section */}
-            <main className="h-max w-full flex justify-center items-center absolute top-1/2 -translate-y-1/2">
+            <main className="h-screen w-full flex justify-center items-center absolute top-1/2 -translate-y-1/2">
 
                 {/* Intro Section */}
-                <div className="h-full max-w-[60vw] flex justify-center items-center flex-col gap-2 md:gap-4">
+                <div className="h-full max-w-full flex justify-center items-center flex-col gap-2 md:gap-4">
                     <h1 className="text-gray-800 dark:text-[#fff] text-6xl lg:text-8xl font-bold text-center" >Stack <span className="text-amber-600 dark:text-yellow-500">Gallery</span></h1>
                     <p className="text-amber-600 dark:text-yellow-400 text-lg sm:text-2xl md:text-4xl text-center">By Chandan Chaudhary</p>
-                    <p className="text-gray-700 dark:text-[#fff] text-xs md:text-xl text-center">Here's a curated <span className="text-amber-600 dark:text-yellow-400">collection</span> of the projects I've <span className="text-amber-600 dark:text-yellow-400">worked</span> on — from web apps and UI components to full-stack builds. Each project showcases my <span className="text-amber-600 dark:text-yellow-400">skills</span> in design, development, and <span className="text-amber-600 dark:text-yellow-400">problem-solving</span>. Click on any project to explore it in detail, <span className="text-amber-600 dark:text-yellow-400">view</span> the code, or try a live demo.</p>
+                    <p className="text-gray-700 dark:text-[#fff] text-xs md:text-xl text-center w-[70%] md:w-[55%]">Here's a curated <span className="text-amber-600 dark:text-yellow-400">collection</span> of the projects I've <span className="text-amber-600 dark:text-yellow-400">worked</span> on — from web apps and UI components to full-stack builds. Each project showcases my <span className="text-amber-600 dark:text-yellow-400">skills</span> in design, development, and <span className="text-amber-600 dark:text-yellow-400">problem-solving</span>. Click on any project to explore it in detail, <span className="text-amber-600 dark:text-yellow-400">view</span> the code, or try a live demo.</p>
                 </div>
 
                 {/* <!-- Top-right -> Links Section --> */}
-                <ul class="not-show-left ml-auto space-y-6 text-amber-800/80 dark:text-yellow-100/80 absolute right-4 sm:right-8">
+                <ul class="ml-auto space-y-6 text-amber-800/80 dark:text-yellow-100/80 absolute right-4 sm:right-8">
                     <li class="hover:text-amber-600 dark:hover:text-yellow-300">
                         <a href="https://www.linkedin.com/in/chandan--chaudhary/" target="_blank">
                         <svg class="w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

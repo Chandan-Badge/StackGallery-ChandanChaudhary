@@ -2,7 +2,7 @@ import logo from "../assets/c2-logo.png";
 import blackLogo from "../assets/c2-logo-black.png";
 import { Link } from "react-router-dom";
 import { StackContext } from "../context/StackContext";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 function Footer() {
 
