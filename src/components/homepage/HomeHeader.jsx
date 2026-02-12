@@ -90,7 +90,7 @@ function HomeHeader() {
                             </div>
                         </Link>
 
-                        {/* {
+                        {
                             theme === "dark" ?
                                 (
                                     <button onClick={changeBtn} className={`relative group hidden ${turnDark}`}>
@@ -100,11 +100,8 @@ function HomeHeader() {
 
 
                                             <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mb-2 left-1/2 transform -translate-x-1/2 z-50 -bottom-10 md:-bottom-12">
-                                                <div class="bg-black/85 backdrop-blur-md text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
+                                                <div class="bg-white/45 dark:bg-black/85 backdrop-blur-md text-amber-700 dark:text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
                                                     Dark Mode
-                                                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1">
-                                                        <div class="border-4 border-transparent border-t-black/85"></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -119,45 +116,14 @@ function HomeHeader() {
 
 
                                             <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mb-2 left-1/2 transform -translate-x-1/2 z-50 -bottom-10 md:-bottom-12">
-                                                <div class="bg-black/85 backdrop-blur-md text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
+                                                <div class="bg-white/45 dark:bg-black/85 backdrop-blur-md text-amber-700 dark:text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
                                                     Light Mode
-                                                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1">
-                                                        <div class="border-4 border-transparent border-t-black/85"></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </button>
                                 )
-                        } */}
-
-                        <button onClick={changeBtn} className={`relative group hidden ${turnDark}`}>
-                            <div class="p-2 sm:p-3 rounded-full hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">
-
-                                <svg onClick={() => setTheme("light")} xmlns="http://www.w3.org/2000/svg" class="feather feather-moon w-5 h-5 sm:w-6 sm:h-6 text-amber-700 group-hover:text-amber-500 dark:text-yellow-100/80 dark:group-hover:text-yellow-300 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-
-
-                                <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mb-2 left-1/2 transform -translate-x-1/2 z-50 -bottom-10 md:-bottom-12">
-                                    <div class="bg-white/45 dark:bg-black/85 backdrop-blur-md text-amber-700 dark:text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
-                                        Dark Mode
-                                    </div>
-                                </div>
-                            </div>
-                        </button>
-
-                        <button onClick={changeBtn} className={`relative group hidden ${turnLight}`}>
-                            <div class="p-2 sm:p-3 rounded-full hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">
-
-                                <svg onClick={() => setTheme("dark")} xmlns="http://www.w3.org/2000/svg" class="feather feather-sun w-5 h-5 sm:w-6 sm:h-6 text-amber-700 group-hover:text-amber-500 dark:text-yellow-100/80 dark:group-hover:text-yellow-300 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-
-
-                                <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mb-2 left-1/2 transform -translate-x-1/2 z-50 -bottom-10 md:-bottom-12">
-                                    <div class="bg-white/45 dark:bg-black/85 backdrop-blur-md text-amber-700 dark:text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
-                                        Light Mode
-                                    </div>
-                                </div>
-                            </div>
-                        </button>
+                        }
 
                         <a href="tel:+91-6394543387" target="_blank" class="relative group">
                             <div class="p-2 sm:p-3 rounded-full hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">
