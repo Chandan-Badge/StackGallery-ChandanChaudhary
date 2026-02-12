@@ -19,27 +19,6 @@ function Profile() {
                             <br />I like to <span className="text-amber-600 dark:text-yellow-300">resolve</span> frontend & backend problems, <span className="text-amber-600 dark:text-yellow-300">create</span> smart user interface and <span className="text-amber-600 dark:text-yellow-300">imagine</span> useful interaction, developing rich <span className="text-amber-600 dark:text-yellow-300">web experiences</span> & <span className="text-amber-600 dark:text-yellow-300">web applications</span>.
                             When my code is not working or futzing around the code, I study how to <span className="text-amber-600 dark:text-yellow-300">resolve</span> it.</p>
 
-                        {/* <div className="flex flex-row gap-4 lg:0 mt-2">
-                            <div className="text-yellow-300 text-xs md:text-sm lg:text-base font-bold flex flex-col ">
-                                <p className="">Name:</p>
-                                <p>Profile:</p>
-                                <p>Domain:</p>
-                                <p>Education:</p>
-                                <p>Age:</p>
-                                <p>Freelance:</p>
-                            </div>
-
-                            <div className="font-normal text-gray-300 text-xs md:text-sm lg:text-base flex flex-col ">
-                                <p className="">Chandan Chaudhary</p>
-                                <p>Full Stack Developer & Freelancer</p>
-                                <p>Software Developement</p>
-                                <p>Bachelor of Computer Applications</p>
-                                <p>18</p>
-                                <p>Available</p>
-                            </div>
-
-                        </div> */}
-
                         <table className="gap-4 lg:gap-10 mt-4">
                             <tr className="text-xs md:text-sm lg:text-base">
                                 <td className="text-amber-600 dark:text-yellow-300 font-bold flex">Name:</td>
@@ -93,14 +72,14 @@ function Profile() {
                                 </div>
                             </li>
 
-                            {/* <li className="overflow-x-visible relative w-10 md:w-16 h-12 md:h-[72px] overflow-y-clip group text-center flex items-center justify-center">
+                            <li className="overflow-x-visible relative w-10 md:w-16 h-12 md:h-[72px] overflow-y-clip group text-center flex items-center justify-center">
                                 <div className="flex justify-center items-center w-8 md:w-12 h-8 md:h-12 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">
                                   <svg xmlns="http://www.w3.org/2000/svg" className="w-max fill-gray-800 dark:fill-[#fff] group-hover:fill-[#ff3737]" viewBox="0 0 128 128"><path d="M74.6 96.7c1 0 1.9-.8 1.9-1.9s-.9-1.8-1.9-1.8H50.4c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9h24.2zM83.9 100.4H41.1c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9H84c1 0 1.9-.8 1.9-1.9s-.9-1.9-2-1.9zM20.6 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7 3.7 1.7 3.7 3.7-1.7 3.7-3.7 3.7zM37.3 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S39.4 24 37.3 24zM54.1 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S56.2 24 54.1 24z"></path><path d="M7.5 7.2V119h111.8V7.2H7.5zm3.7 3.8h104.4v18.6H11.2V11zm104.4 104.3H11.2v-82h104.4v82z"></path><path d="M47.5 81.4l1.7 1.4c.1 0 .1.1.2.1.4.3.7.5 1.1.7.2.1.5.3.7.4.4.2.7.4 1.1.6.3.2.6.3.9.5.3.1.6.3.9.4.6.3 1.3.5 1.9.7.2.1.5.1.7.2.5.1 1 .3 1.5.4.3.1.5.1.8.2.5.1 1 .2 1.5.2.2 0 .5.1.7.1.7.1 1.5.1 2.2.1s1.5 0 2.2-.1c.2 0 .5-.1.7-.1.5-.1 1-.1 1.5-.2.3 0 .5-.1.8-.1.5-.1 1-.2 1.5-.4.2-.1.4-.1.7-.2.6-.2 1.3-.4 1.9-.7.3-.1.6-.3.9-.4.3-.2.7-.3 1-.5.4-.2.7-.4 1-.6.2-.1.5-.3.7-.4.4-.2.7-.5 1.1-.7.1 0 .1-.1.2-.1l1.9-1.4-.1-.1c5.1-4.4 8.3-10.9 8.3-18.2C87.7 49.8 76.8 39 63.5 39S39.2 49.8 39.2 63.1c0 7.3 3.2 13.8 8.3 18.3zM58.4 83c-.7-.2-1.5-.4-2.2-.7-.1 0-.2-.1-.2-.1-.7-.3-1.5-.6-2.2-1l4.5-2.5c1.4-.8 2.3-2.2 2.3-3.8v-3.1l-.4-.5s-1.5-1.8-2.1-4.3l-.2-.9-.6-.4.1-2.8.6-.6v-4.9c0-.1-.1-1.4.8-2.5.9-1 2.5-1.5 4.8-1.5s3.9.5 4.8 1.5c1 1.1.8 2.4.8 2.5v4.1l.1.9.6.6v2.7c0 .1-.1.1-.1.1l-.9.3-.3.9c-.4 1.3-1 2.5-1.8 3.5-.2.2-.3.5-.5.6l-.5.5V75c0 1.6.9 3.1 2.4 3.9l4.8 2.4h-.1c-.7.3-1.3.6-2 .9-.1 0-.2.1-.3.1-.7.3-1.4.5-2.2.7-3.4.8-6.7.8-10 0 .1 0 0 0 0 0zm5-40.4c11.3 0 20.5 9.2 20.5 20.5 0 6.4-2.9 12.1-7.5 15.8-.1-.1-.2-.1-.3-.2l-6.5-3.2c-.2-.1-.3-.3-.3-.5v-1.9c.1-.1.2-.2.3-.4.8-1.1 1.5-2.4 2-3.8 1.1-.7 1.8-1.9 1.8-3.3v-2.7c0-.8-.2-1.5-.7-2.2v-3.1c.1-.7.1-3.1-1.7-5.2-1.6-1.8-4.2-2.8-7.6-2.8s-6 .9-7.6 2.8C54 54.5 54 57 54.1 57.6v3.1c-.4.6-.7 1.4-.7 2.2v2.7c0 1 .4 2 1.1 2.7.6 2.1 1.6 3.8 2.2 4.6V75c0 .2-.1.4-.3.5l-6 3.3c-.1 0-.1.1-.2.1-4.5-3.8-7.4-9.4-7.4-15.8.1-11.3 9.3-20.5 20.6-20.5z"></path></svg>
                                 </div>
                                 <div className="absolute -bottom-10 left-1/2 text-[10px] md:text-xs text-center text-gray-700 dark:text-[#fff] whitespace-nowrap transition-all duration-300 ease-in-out transform -translate-x-1/2 group-hover:bottom-0">
                                   UI/UX
                                 </div>
-                            </li> */}
+                            </li>
 
                             <li className="overflow-x-visible relative w-10 md:w-16 h-12 md:h-[72px] overflow-y-clip group text-center flex items-center justify-center">
                                 <div className="flex justify-center items-center w-8 md:w-12 h-8 md:h-12 rounded-full transition-all duration-150 absolute top-0 group-hover:origin-top text-white">

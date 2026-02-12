@@ -26,10 +26,17 @@ function HomeBottom() {
         // Bottom Button of 1st Section
         <section className="absolute bottom-0 flex justify-center items-center py-14 ">
 
-            <button onClick={scrollUp} className="not-show-pop-slow drag-btn text-amber-800/80 hover:text-amber-600 dark:text-yellow-100/80 dark:hover:text-yellow-300 text-lg px-10 py-2 rounded font-semibold bg-gradient-to-b from-white/30 dark:from-black/5 to-transparent backdrop-blur-sm border border-amber-600/30 dark:border-yellow-300/20 relative hover:scale-105 ease-in-out duration-100 group self-center group">
-                Let's Explore
-    
-                <svg xmlns="http://www.w3.org/2000/svg" className="absolute fill-amber-800/80 group-hover:fill-amber-600 dark:fill-yellow-100/80 dark:group-hover:fill-yellow-300 h-10 w-10 left-1/2 -translate-x-1/2 top-12 group-hover:top-14 ease-in-out duration-100" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-80 200-360l56-56 184 183v-647h80v647l184-184 56 57L480-80Z"/></svg>
+            <button onClick={scrollUp} className="not-show-pop-slow drag-btn text-amber-800/80 hover:text-amber-600 dark:text-yellow-100/80 dark:hover:text-yellow-300 text-lg px-10 py-2 rounded font-semibold bg-gradient-to-b from-orange-200/30 dark:from-black/5 to-transparent backdrop-blur-sm border border-amber-600/30 dark:border-yellow-300/20 relative hover:scale-105 ease-in-out duration-100 group self-center group">
+                <span className="relative z-10 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                    Let's Explore
+                </span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" className="absolute fill-amber-800/80 group-hover:fill-amber-600 dark:fill-yellow-100/80 dark:group-hover:fill-yellow-300 h-10 w-10 left-1/2 -translate-x-1/2 top-12 group-hover:top-14 ease-in-out duration-100" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-80 200-360l56-56 184 183v-647h80v647l184-184 56 57L480-80Z" /></svg>
             </button>
         </section>
     );
