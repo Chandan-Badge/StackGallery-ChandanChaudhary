@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import Profile from './components/Profilepage/Profile';
 import MouseAnimation from './components/MouseAnimation';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -42,6 +43,8 @@ function App() {
             <BackToTop />
           </>
         } />
+
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </>
   )

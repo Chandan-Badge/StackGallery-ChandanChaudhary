@@ -150,6 +150,22 @@ function HomeHeader() {
                             </div>
                         </a>
 
+                        <Link to={"/contact"} onClick={scrollUp} className="relative group">
+                            <div class="p-2 sm:p-3 rounded-full hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6 text-amber-700 group-hover:text-amber-500 dark:text-yellow-100/80 dark:group-hover:text-yellow-300 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+
+                                <div class="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mb-2 left-1/2 transform -translate-x-1/2 z-50 -bottom-10 md:-bottom-12">
+                                    <div class="bg-white/45 dark:bg-black/85 backdrop-blur-md text-amber-700 dark:text-yellow-300 text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg whitespace-nowrap font-light tracking-wider shadow-[0_0_15px_rgba(0,0,0,0.3)] border border-yellow-300/10">
+                                        Contact
+                                    </div>
+                                </div>
+                            </div>
+                        </Link>
+
                         <Link to={"/profile"} onClick={scrollUp} className="relative group">
                             <div class="p-2 sm:p-3 rounded-full hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">
 
