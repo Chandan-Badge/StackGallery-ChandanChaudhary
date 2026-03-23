@@ -36,10 +36,6 @@ function Footer() {
 
             <a href={"https://drive.google.com/file/d/1JwvzMMMnfaVjcqLk1Ei8RnqDI8pG4pTk/view?usp=sharing"} target="_blank" className="resume-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">Resume</a>
 
-            <button type="button" className="project-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">Privacy Policy</button>
-
-            <button type="button" className="services-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">Services</button>
-
             <button type="button" className="connect-foot hover:text-yellow-400 border-b-2 hover:border-yellow-400 border-transparent transition-all ease-linear duration-[400ms] delay-75">Connect</button>
 
           </div>
