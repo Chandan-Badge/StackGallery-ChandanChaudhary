@@ -37,10 +37,10 @@ function Contact() {
     setStatus({ loading: true, success: false, error: false, message: "" });
 
     try {
-      // EmailJS configuration - fill these with your actual values
-      const serviceId = "YOUR_SERVICE_ID"; // Replace with your EmailJS service ID
-      const templateId = "YOUR_TEMPLATE_ID"; // Replace with your EmailJS template ID
-      const publicKey = "YOUR_PUBLIC_KEY"; // Replace with your EmailJS public key
+      // EmailJS configuration
+      const serviceId = "service_qst9i3n";
+      const templateId = "template_o98mepv";
+      const publicKey = "cdzIGhhjfK4fMd49u";
 
       const templateParams = {
         from_name: formData.name,
