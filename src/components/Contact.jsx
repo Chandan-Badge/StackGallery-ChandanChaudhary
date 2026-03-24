@@ -37,10 +37,10 @@ function Contact() {
     setStatus({ loading: true, success: false, error: false, message: "" });
 
     try {
-      // EmailJS configuration
-      const serviceId = "service_qst9i3n";
-      const templateId = "template_o98mepv";
-      const publicKey = "cdzIGhhjfK4fMd49u";
+      // EmailJS configuration from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       const templateParams = {
         from_name: formData.name,
