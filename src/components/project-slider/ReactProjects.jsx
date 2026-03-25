@@ -54,6 +54,36 @@ export default function ReactProjects() {
             // loop={true}
             >
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <a href="https://www.nexeraonline.in/" className='flex flex-col h-max gap-2' target="_blank">
+                  <img src={assets.nexera} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#926c50]/60' alt="" />
+                  <span className='h-max'>
+                    <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>Nexera</h3>
+                    <p className='text-[10px] md:text-xs '>Client Project</p>
+                  </span>
+                </a>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <a href="https://gate-ugcnet-practice-platform-1.onrender.com/" className='flex flex-col h-max gap-2' target="_blank">
+                  <img src={assets.gateUBCNET} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/60' alt="" />
+                  <span className='h-max'>
+                    <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>GATE UGCNET Practice Platform</h3>
+                    <p className='text-[10px] md:text-xs '>Final Year Project</p>
+                  </span>
+                </a>
+              </SwiperSlide>
+
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
+                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
+                  <img src={assets.PMS} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-green-600/60' alt="" />
+                  <span className='h-max'>
+                    <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>Patient Management Syatem</h3>
+                    <p className='text-[10px] md:text-xs '>Hospital Management Application</p>
+                  </span>
+                </a>
+              </SwiperSlide>
+              
+              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                 <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
                   <img src={assets.strongPasswordDark} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#00afb9]/40' alt="" />
                   <span className='h-max'>
@@ -64,18 +94,18 @@ export default function ReactProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://ai-chatbot-c2.netlify.app/" className='flex flex-col h-max gap-2' target="_blank">
-                  <img src={assets.aichatBot} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
+                <a href="https://c2-ai-assistant.vercel.app/" className='flex flex-col h-max gap-2' target="_blank">
+                  <img src={assets.aiAssistant} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#885df5]/60' alt="" />
                   <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>AI ChatBot</h3>
-                    <p className='text-[10px] md:text-xs'>ChatBot</p>
+                    <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>AI Assistant</h3>
+                    <p className='text-[10px] md:text-xs'>Assistant ChatBot</p>
                   </span>
                 </a>
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
                 <a href="https://localstorage-todoapp-c2.vercel.app/" className='flex flex-col h-max gap-2' target="_blank">
-                  <img src={assets.todoLocalstorage} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/40' alt="" />
+                  <img src={assets.todoLocalstorage} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#ccbed7]/60' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>React Todo-App</h3>
                     <p className='text-[10px] md:text-xs'>Local Storage</p>

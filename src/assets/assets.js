@@ -1,4 +1,4 @@
-// Big Projects
+// Major Projects
 import c2explains from "./ProjectImages/c2explains.webp";
 import safesphere from "./ProjectImages/SafeSphere.webp";
 import portfolio from "./ProjectImages/Portfolio.webp";
@@ -11,11 +11,15 @@ import lth from "./ProjectImages/LTH.webp";
 import courseProject from "./ProjectImages/courseProject.webp";
 
 // React.js Projects
-import aichatBot from "./ProjectImages/AiChatBot.webp";
+import nexera from "./ProjectImages/Nexera2.webp";
+import PMS from "./ProjectImages/PMS.webp";
+import gateUBCNET from "./ProjectImages/GATE-UGCNET.webp";
+import aiAssistant from "./ProjectImages/AI-Assistant.webp";
 import bgChanger from "./ProjectImages/bgChanger.webp";
 import todoLocalstorage from "./ProjectImages/todo-localstorage.webp";
 
 // JS Projects
+import aiChatBot from "./ProjectImages/AI-ChatBot.webp";
 import autoTyper from "./ProjectImages/AutoTyper.webp";
 import catFact from "./ProjectImages/CatFact.webp";
 import darkLight from "./ProjectImages/Dark&Light.webp";
@@ -23,7 +27,6 @@ import linkTree from "./ProjectImages/LinkTree.webp"
 import multiTab from "./ProjectImages/MultiTab.webp";
 import randomColor from "./ProjectImages/RandomColor.webp";
 import randomDog from "./ProjectImages/RandomDog.webp";
-import aiChatBot from "./ProjectImages/AiChatBot.webp";
 import simonSays from "./ProjectImages/SimonSays.webp";
 import slider from "./ProjectImages/Slider.webp";
 import tictactoe from "./ProjectImages/TicTacToe.webp";
@@ -40,6 +43,7 @@ import chatApp from "./ProjectImages/ChattingApplication.webp";
 
 export const assets = {
 
+    // Major Projects
     c2explains,
     safesphere,
     portfolio,
@@ -47,13 +51,20 @@ export const assets = {
     strongPasswordDark,
     linktree,
 
+    // Next.js Projects
     lth,
     courseProject,
 
-    aichatBot,
+    // React.js Projects
+    nexera,
+    gateUBCNET,
+    PMS,
+    aiAssistant,
     bgChanger,
     todoLocalstorage,
 
+    // JavaScript Projects
+    aiChatBot,
     autoTyper,
     catFact,
     darkLight,
@@ -61,12 +72,12 @@ export const assets = {
     multiTab,
     randomColor,
     randomDog,
-    aiChatBot,
     simonSays,
     slider,
     tictactoe,
     transform,
 
+    // CSS Projects
     university,
     amazon,
     netflix,
