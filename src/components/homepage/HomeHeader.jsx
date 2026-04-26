@@ -56,7 +56,7 @@ function HomeHeader() {
     }
 
     return (
-        <header className={`h-max w-full px-3 sm:px-6 md:px-14 py-1 md:py-3 flex items-center justify-between z-20 top-0 fixed transition-all duration-300 ease-in-out ${sticky ? "bg-white/70 dark:bg-[#060707]/70 hover:bg-white/80 dark:hover:bg-[#060707]/80 drop-shadow-lg" : ""}`}>
+        <header className={`h-max w-full px-3 sm:px-6 md:px-14 py-1 md:py-3 flex items-center justify-between z-20 top-0 fixed transition-all duration-300 ease-in-out ${sticky ? "bg-white/70 dark:bg-[#060707]/70 hover:bg-white/80 dark:hover:bg-[#060707]/80 drop-shadow-lg backdrop-blur-sm" : ""}`}>
             <img className="h-20 sm:h-24 w-20 sm:w-24 ml-1" src={theme === "dark" ? logo : blackLogo} alt="" />
 
             <div class="flex justify-end w-max p-0 bg-gradient-to-b from-black/5 dark:from-black/5 to-transparent backdrop-blur-sm rounded-full">

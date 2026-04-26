@@ -363,7 +363,7 @@ function Contact() {
                     <>
                       Send Message
                       <svg
-                        className="w-5 h-5 group-hover:rotate-45 transition-all duration-200 ease-in-out"
+                        className="w-5 h-5 rotate-[24deg] group-hover:rotate-45 transition-all duration-200 ease-in-out"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
