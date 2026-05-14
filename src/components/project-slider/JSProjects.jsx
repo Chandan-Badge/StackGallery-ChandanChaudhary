@@ -54,7 +54,7 @@ export default function JSProjects() {
             // loop={true}
             >
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-portfolio.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://portfolio.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Portfolio Website</h3>

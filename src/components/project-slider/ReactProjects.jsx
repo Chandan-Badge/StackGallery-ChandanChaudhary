@@ -64,7 +64,7 @@ export default function ReactProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://gate-ugcnet-practice-platform-1.onrender.com/" className='flex flex-col h-max gap-2' target="_blank">
+                <a href="https://gateugcnet.chandanchaudhary.in" className='flex flex-col h-max gap-2' target="_blank">
                   <img src={assets.gateUBCNET} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/60' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-[#31b4ed]'>GATE UGCNET Practice Platform</h3>
