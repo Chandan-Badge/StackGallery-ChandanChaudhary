@@ -15,12 +15,14 @@ import CSSProjects from './project-slider/CSSProjects';
 
 import "../../src/style.css";
 import NextProjects from './project-slider/NextProjects';
+import FreelanceProjects from './project-slider/FreelanceProjects';
 
 function Projects() {
 
   return (
     <div className='flex flex-col gap-8 py-10'>
       <MajorProjects />
+      <FreelanceProjects />
       <FullStackProjects />
       <NextProjects />
       <ReactProjects />

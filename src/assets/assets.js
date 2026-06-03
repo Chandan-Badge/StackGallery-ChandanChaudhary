@@ -6,6 +6,9 @@ import strongPassword from "./ProjectImages/StrongPassword.webp";
 import strongPasswordDark from "./ProjectImages/StrongPasswordDark.webp";
 import linktree from "./ProjectImages/LinkTree.webp";
 
+// Freelance Project
+import saronex from "./ProjectImages/Saronex.png";
+
 // Next.js Projects
 import lth from "./ProjectImages/LTH.webp";
 import courseProject from "./ProjectImages/courseProject.webp";
@@ -50,6 +53,9 @@ export const assets = {
     strongPassword,
     strongPasswordDark,
     linktree,
+
+    // Freelance Projects
+    saronex,
 
     // Next.js Projects
     lth,
