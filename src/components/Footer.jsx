@@ -78,7 +78,7 @@ function Footer() {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/1JwvzMMMnfaVjcqLk1Ei8RnqDI8pG4pTk/view?usp=sharing"
+                href="https://drive.google.com/file/d/1hnpSs6E-Zj1Ywm52S3xDGPH13zn7eBwS/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-all duration-300 text-sm flex items-center gap-2 group"
