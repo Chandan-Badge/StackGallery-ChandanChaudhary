@@ -103,9 +103,9 @@ function Profile() {
                     <div className="max-w-6xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                             {/* About Text */}
-                            <div className="p-6 sm:p-8 rounded-2xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-xl shadow-gray-200/20 dark:shadow-black/20">
+                            <div className="p-6 sm:p-8 rounded-2xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-md">
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-                                    <span className="w-10 h-1 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 rounded-full"></span>
+                                    {/* <span className="w-10 h-1 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 rounded-full"></span> */}
                                     About Me
                                 </h2>
                                 <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -138,7 +138,7 @@ function Profile() {
                                 ].map((item, index) => (
                                     <div
                                         key={index}
-                                        className="group p-4 rounded-xl bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 hover:border-amber-300/50 dark:hover:border-yellow-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/5 flex items-center gap-4"
+                                        className="group p-4 rounded-xl bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 hover:border-amber-300/50 dark:hover:border-yellow-500/30 transition-all duration-300 shadow-md flex items-center gap-4"
                                     >
                                         <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 text-amber-600 dark:text-yellow-400 transition-transform duration-300">
                                             {item.icon === "user" && (
@@ -187,7 +187,7 @@ function Profile() {
                 <section className="py-16 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-12">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                            <h2 className="text-2xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                                 Tech <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-400">Stack</span>
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
@@ -246,7 +246,7 @@ function Profile() {
                 {/* CTA Section */}
                 <section className="py-16 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#fff] to-orange-[#fff] dark:from-yellow-400/10 dark:to-amber-500/10 border border-amber-200/50 dark:border-yellow-500/20 backdrop-blur-sm shadow-md">
+                        <div className="p-8 sm:p-12 rounded-xl bg-gradient-to-br from-[#fff] to-orange-[#fff] dark:from-yellow-400/10 dark:to-amber-500/10 border border-amber-200/50 dark:border-yellow-500/20 backdrop-blur-sm shadow-md">
                             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
                                 Let's Work Together
                             </h2>
