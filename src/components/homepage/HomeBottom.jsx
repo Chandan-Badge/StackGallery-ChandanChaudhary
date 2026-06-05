@@ -26,7 +26,7 @@ function HomeBottom() {
         // Bottom Button of 1st Section
         <section className="absolute bottom-0 flex justify-center items-center py-14 ">
 
-            <button onClick={scrollUp} className="not-show-pop-slow drag-btn text-amber-800/80 hover:text-amber-600 dark:text-yellow-100/80 dark:hover:text-yellow-300 text-lg px-10 py-2 rounded font-semibold bg-gradient-to-b from-orange-200/30 dark:from-black/5 to-transparent backdrop-blur-sm border border-amber-600/30 dark:border-yellow-300/20 relative hover:scale-105 ease-in-out duration-100 group self-center group">
+            <button onClick={scrollUp} className="not-show-pop-slow drag-btn text-amber-800/80 hover:text-amber-600 dark:text-yellow-100/80 dark:hover:text-yellow-300 text-lg px-10 py-2 rounded font-semibold bg-gradient-to-b from-orange-200/30 dark:from-black/5 to-transparent backdrop-blur-sm border border-amber-600/30 dark:border-yellow-300/20 relative ease-in-out duration-100 group self-center group">
                 <span className="relative z-10 flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         stroke-width="2">

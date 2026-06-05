@@ -61,7 +61,7 @@ function HomeHeader() {
 
             <div class="flex justify-end w-max p-0 bg-gradient-to-b from-black/5 dark:from-black/5 to-transparent backdrop-blur-sm rounded-full">
                 <nav class=" rounded-full px-4 sm:px-6 py-0 sm:py-0 shadow-[0_0_15px_rgba(0,0,0,0.08)] dark:shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-amber-400/30 dark:border-yellow-300/20 backdrop-blur-md transform transition-all duration-300 max-w-[95%] sm:max-w-[600px]">
-                    <div class="flex items-center justify-center space-x-3 sm:space-x-6">
+                    <div class="flex items-center justify-center space-x-3 sm:space-x-4">
 
                         <Link to={"/"} onClick={scrollUp} className="relative group">
                             <div class="p-2 sm:p-3 rounded-full hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,191,36,0.1)] active:scale-95">

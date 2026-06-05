@@ -4,7 +4,7 @@
 
 ### A Personal Project Showcase Built with React
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify)](https://stackgallery-chandanchaudhary.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=browser)](https://stackgallery.chandanchaudhary.in)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-🔗 **[stackgallery-chandanchaudhary.netlify.app](https://stackgallery-chandanchaudhary.netlify.app/)**
+🔗 **[stackgallery.chandanchaudhary.in](https://stackgallery.chandanchaudhary.in)**
 
 ---
 

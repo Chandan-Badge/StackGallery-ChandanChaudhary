@@ -5,7 +5,7 @@ import HomeHeader from "../homepage/HomeHeader";
 
 import coder from "../../assets/coder.webp";
 
-function Profile() {
+const Profile = () => {
     const skills = [
         { name: "Java", icon: "java" },
         { name: "React.js", icon: "react" },
@@ -73,7 +73,7 @@ function Profile() {
                                         href="https://drive.google.com/file/d/1hnpSs6E-Zj1Ywm52S3xDGPH13zn7eBwS/view"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-xl hover:shadow-lg hover:shadow-amber-500/30 dark:hover:shadow-yellow-400/20 transition-all duration-300 flex items-center gap-2"
+                                        className="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-lg hover:shadow-lg hover:shadow-amber-500/30 dark:hover:shadow-yellow-400/20 transition-all duration-300 flex items-center gap-2"
                                     >
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -84,7 +84,7 @@ function Profile() {
                                     </a>
                                     <a
                                         href="mailto:chandanchaudhary533@gmail.com"
-                                        className="px-6 py-3 border-2 border-amber-500 dark:border-yellow-400 text-amber-600 dark:text-yellow-400 font-semibold rounded-xl hover:bg-amber-50 dark:hover:bg-yellow-400/10 transition-all duration-300 flex items-center gap-2"
+                                        className="px-6 py-3 border-2 border-amber-500 dark:border-yellow-400 text-amber-600 dark:text-yellow-400 font-semibold rounded-lg hover:bg-amber-50 dark:hover:bg-yellow-400/10 transition-all duration-300 flex items-center gap-2"
                                     >
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -103,7 +103,7 @@ function Profile() {
                     <div className="max-w-6xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                             {/* About Text */}
-                            <div className="p-6 sm:p-8 rounded-2xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-md">
+                            <div className="p-6 sm:p-8 rounded-0xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-md">
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
                                     {/* <span className="w-10 h-1 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 rounded-full"></span> */}
                                     About Me
@@ -138,7 +138,7 @@ function Profile() {
                                 ].map((item, index) => (
                                     <div
                                         key={index}
-                                        className="group p-4 rounded-xl bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 hover:border-amber-300/50 dark:hover:border-yellow-500/30 transition-all duration-300 shadow-md flex items-center gap-4"
+                                        className="cursor-pointer group p-4 rounded-lg bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 hover:border-amber-300/50 dark:hover:border-yellow-500/30 transition-all duration-300 shadow-md flex items-center gap-4"
                                     >
                                         <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 text-amber-600 dark:text-yellow-400 transition-transform duration-300">
                                             {item.icon === "user" && (
@@ -257,7 +257,7 @@ function Profile() {
                             <div className="flex flex-wrap justify-center items-center gap-4">
                                 <a
                                     href="/contact"
-                                    className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-xl transform transition-all duration-300"
+                                    className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-lg transform transition-all duration-300"
                                 >
                                     Start a Project
                                 </a>
@@ -266,7 +266,7 @@ function Profile() {
                                     href="https://wa.me/6394543387?text=Hi, I'm coming from your Portfolio..."
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="px-8 py-4 border-2 border-green-500 text-green-600 dark:text-green-400 font-semibold rounded-xl hover:bg-green-50 dark:hover:bg-green-400/10 transition-all duration-300 flex items-center gap-2"
+                                    className="px-8 py-4 border-2 border-green-500 text-green-600 dark:text-green-400 font-semibold rounded-lg hover:bg-green-50 dark:hover:bg-green-400/10 transition-all duration-300 flex items-center gap-2"
                                 >
                                     <svg class="svg-inline--fa fa-whatsapp fa-w-14 w-6 h-6 transition-all duration-300" fill="currentColor" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
                                     WhatsApp
@@ -283,7 +283,7 @@ function Profile() {
 }
 
 // Skill Icon Component
-function SkillIcon({ name, color }) {
+const SkillIcon = ({ name, color }) => {
     const icons = {
         java: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-black dark:fill-[#fff] group-hover:fill-[#ed272c]" viewBox="0 0 384 512">
