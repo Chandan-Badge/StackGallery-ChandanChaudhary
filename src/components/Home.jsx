@@ -4,7 +4,6 @@ import HomeHeader from "./homepage/HomeHeader";
 import HomeMain from "./homepage/HomeMain";
 import HomeBottom from "./homepage/HomeBottom";
 import HomeDesign from "./homepage/HomeDesign";
-import Profile from "./Profilepage/Profile";
 
 import "../../src/style.css";
 import MouseAnimation from "./MouseAnimation";

@@ -7,9 +7,10 @@ import Projects from './components/Projects';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
-import Profile from './components/Profilepage/Profile';
+import Profile from './Pages/Profile';
 import MouseAnimation from './components/MouseAnimation';
-import Contact from './components/Contact';
+import Contact from './Pages/Contact';
+
 
 function App() {
 
@@ -29,7 +30,6 @@ function App() {
         } />
 
         <Route path='/profile' element={<Profile />} />
-
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </>

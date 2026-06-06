@@ -1,9 +1,9 @@
-import "../../style.css";
-import Footer from "../Footer";
-import HomeDesign from "../homepage/HomeDesign";
-import HomeHeader from "../homepage/HomeHeader";
+import "../style.css";
+import Footer from "../components/Footer";
 
-import coder from "../../assets/coder.webp";
+import coder from "../assets/coder.webp";
+import HomeHeader from "../components/homepage/HomeHeader";
+import HomeDesign from "../components/homepage/HomeDesign";
 
 const Profile = () => {
     const skills = [
@@ -48,7 +48,7 @@ const Profile = () => {
                                     {/* Status Badge */}
                                     <div className="absolute -bottom-3 -right-3 px-4 py-2 bg-green-500 dark:bg-green-400 text-white dark:text-gray-900 text-xs font-semibold rounded-full shadow-lg flex items-center gap-2">
                                         <span className="w-2 h-2 bg-white dark:bg-gray-900 rounded-full animate-pulse"></span>
-                                        Available
+                                        Freelance Available
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const Profile = () => {
                     <div className="max-w-6xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                             {/* About Text */}
-                            <div className="p-6 sm:p-8 rounded-0xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-md">
+                            <div className="p-6 sm:p-8 rounded-xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-md">
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
                                     {/* <span className="w-10 h-1 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 rounded-full"></span> */}
                                     About Me
