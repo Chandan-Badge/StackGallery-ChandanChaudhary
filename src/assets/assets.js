@@ -7,14 +7,14 @@ import strongPasswordDark from "./ProjectImages/StrongPasswordDark.webp";
 import linktree from "./ProjectImages/LinkTree.webp";
 
 // Freelance Project
-import saronex from "./ProjectImages/Saronex.png";
+import saronex from "./ProjectImages/Saronex.webp";
 
 // Next.js Projects
 import lth from "./ProjectImages/LTH.webp";
 import courseProject from "./ProjectImages/courseProject.webp";
 
 // React.js Projects
-import nexera from "./ProjectImages/Nexera2.webp";
+import nexera from "./ProjectImages/Nexera.webp";
 import PMS from "./ProjectImages/PMS.webp";
 import gateUBCNET from "./ProjectImages/GATE-UGCNET.webp";
 import aiAssistant from "./ProjectImages/AI-Assistant.webp";
@@ -36,7 +36,7 @@ import tictactoe from "./ProjectImages/TicTacToe.webp";
 import transform from "./ProjectImages/Transform.webp";
 
 // Css Project
-import university from "./ProjectImages/University.webp";
+import IU from "./ProjectImages/IntegralUniversity.webp";
 import amazon from "./ProjectImages/amazon.webp";
 import netflix from "./ProjectImages/Netflix.webp";
 import tooltip from "./ProjectImages/ToolTip.webp";
@@ -84,7 +84,7 @@ export const assets = {
     transform,
 
     // CSS Projects
-    university,
+    IU,
     amazon,
     netflix,
     tooltip,
