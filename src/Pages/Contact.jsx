@@ -79,7 +79,7 @@ function Contact() {
 
   return (
     <>
-      <section className="min-h-screen w-full bg-gradient-to-br from-white via-amber-50/30 to-orange-50/50 dark:from-[#080808] dark:via-[#0a0a0a] dark:to-[#0c0c0c] transition-colors duration-500 relative overflow-hidden">
+      <section className="min-h-screen w-full bg-gradient-to-br from-white via-amber-50/30 to-orange-50/50 dark:from-[#080808] dark:via-[#0a0a0a] dark:to-[#0c0c0c] transition-colors duration-500 relative overflow-hidden pb-10">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-amber-200/30 to-orange-200/30 dark:from-amber-500/10 dark:to-orange-500/10 rounded-full blur-3xl"></div>
@@ -123,7 +123,7 @@ function Contact() {
         {/* Main Content */}
         <main className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 pt-28 sm:pt-40 pb-12">
           <div className="text-center mb-10 sm:mb-14">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4">
               Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-400">Touch</span>
             </h1>
             <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto text-sm sm:text-base">
@@ -388,6 +388,7 @@ function Contact() {
           </div>
         </main>
       </section>
+
       <Footer />
     </>
   );
