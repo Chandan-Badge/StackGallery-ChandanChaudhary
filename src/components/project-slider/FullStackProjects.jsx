@@ -54,7 +54,7 @@ export default function FullStackProjects() {
             >
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://c2explains.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://c2codebase.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-[#00bdad]'>C2 Explains</h3>

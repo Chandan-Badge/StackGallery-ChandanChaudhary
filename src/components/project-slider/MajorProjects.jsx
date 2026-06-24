@@ -65,7 +65,7 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://lucknowtradinghouse.com/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://lucknowtradinghouse.com" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.lth} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#31b4ed]/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>Lucknow Trading House</h3>
@@ -75,7 +75,7 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://c2explains.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://c2codebase.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>C2 Explains</h3>
@@ -85,7 +85,7 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://www.nexeraonline.in/" className='flex flex-col h-max gap-2' target="_blank">
+                <a href="https://www.nexeraonline.in" className='flex flex-col h-max gap-2' target="_blank">
                   <img src={assets.nexera} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#926c50]/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>Nexera</h3>
@@ -105,7 +105,7 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://gateugcnet.chandanchaudhary.in/" className='flex flex-col h-max gap-2' target="_blank">
+                <a href="https://gateugcnet.chandanchaudhary.in" className='flex flex-col h-max gap-2' target="_blank">
                   <img src={assets.gateUBCNET} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/60' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>GATE UGCNET Practice Platform</h3>
@@ -115,7 +115,7 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://strong-password-generator-c2.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://strong-password-generator-c2.netlify.app" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.strongPassword} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>Strong Password Generator</h3>
@@ -125,7 +125,7 @@ export default function MajorProjects() {
               </SwiperSlide>
 
               <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-linktree.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
+                <a href="https://chandanchaudhary-linktree.netlify.app" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
                   <img src={assets.linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#d18cbc]/40' alt="" />
                   <span className='h-max'>
                     <h3 className='font-bold text-sm md:text-lg text-orange-600'>LinkTree</h3>

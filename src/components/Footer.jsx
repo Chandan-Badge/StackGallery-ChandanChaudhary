@@ -1,5 +1,5 @@
-import logo from "../assets/c2-logo.png";
-import blackLogo from "../assets/c2-logo-black.png";
+import logo from "../assets/c2codebase.png";
+import blackLogo from "../assets/c2codebase-black.png";
 import { Link } from "react-router-dom";
 import { StackContext } from "../context/StackContext";
 import { useContext } from "react";
@@ -35,7 +35,7 @@ function Footer() {
             >
               <img
                 src={theme === "dark" ? logo : blackLogo}
-                className="w-20 sm:w-24"
+                className="w-16 sm:w-20"
                 alt="Chandan Chaudhary Logo"
               />
             </div>
