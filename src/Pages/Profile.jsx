@@ -2,8 +2,8 @@ import "../style.css";
 import Footer from "../components/Footer";
 
 import coder from "../assets/coder.webp";
-import HomeHeader from "../components/homepage/HomeHeader";
-import HomeDesign from "../components/homepage/HomeDesign";
+import Navbar from "../components/Navbar";
+import HeroDesign from "../components/hero/HeroDesign";
 
 const Profile = () => {
     const skills = [
@@ -25,8 +25,8 @@ const Profile = () => {
     return (
         <>
             <div className="min-h-screen w-full bg-gradient-to-br from-white via-amber-50/20 to-orange-50/30 dark:from-[#080808] dark:via-[#0a0a0a] dark:to-[#0c0c0c] transition-colors duration-500 py-14">
-                <HomeHeader />
-                <HomeDesign />
+                <Navbar />
+                <HeroDesign />
 
                 {/* Hero Section */}
                 <section className="relative pt-28 sm:pt-32 pb-12 px-4 sm:px-6 lg:px-8">

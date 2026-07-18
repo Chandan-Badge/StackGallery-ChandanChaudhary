@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-function HomeBottom() {
+function HeroBottom() {
 
     const [dragBtn, setDragBtn] = useState(false);
 
@@ -42,4 +42,4 @@ function HomeBottom() {
     );
 }
 
-export default HomeBottom;
+export default HeroBottom;

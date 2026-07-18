@@ -5,8 +5,8 @@ import logo from "../assets/c2-logo.png";
 import blackLogo from "../assets/c2-logo-black.png";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
-import HomeHeader from "../components/homepage/HomeHeader";
-import HomeDesign from "../components/homepage/HomeDesign";
+import Navbar from "../components/Navbar";
+import HeroDesign from "../components/hero/HeroDesign";
 
 function Contact() {
   const { theme } = useContext(StackContext);
@@ -117,8 +117,8 @@ function Contact() {
           </Link>
         </header> */}
 
-        <HomeHeader />
-        <HomeDesign />
+        <Navbar />
+        <HeroDesign />
 
         {/* Main Content */}
         <main className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 pt-28 sm:pt-40 pb-12">
@@ -338,7 +338,7 @@ function Contact() {
                 <button
                   type="submit"
                   disabled={status.loading}
-                  className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold hover:shadow-lg transform transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2 group transition-all"
+                  className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold hover:shadow-lg transform transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2 group"
                 >
                   {status.loading ? (
                     <>

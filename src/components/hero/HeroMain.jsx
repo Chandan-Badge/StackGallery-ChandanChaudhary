@@ -1,4 +1,4 @@
-function HomeMain() {
+function HeroMain() {
     return (
             // {/* Main Section */}
             <main className="h-screen w-full flex justify-center items-center absolute top-1/2 -translate-y-1/2">
@@ -67,4 +67,4 @@ function HomeMain() {
     );
 }
 
-export default HomeMain;
+export default HeroMain;

@@ -1,11 +1,11 @@
-import logo from "../../assets/c2codebase.png";
-import blackLogo from "../../assets/c2codebase-black.png";
+import logo from "../assets/c2codebase.png";
+import blackLogo from "../assets/c2codebase-black.png";
 import React, { useContext } from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { StackContext } from "../../context/StackContext";
+import { StackContext } from "../context/StackContext";
 
-function HomeHeader() {
+function Navbar() {
 
     const { theme, setTheme } = useContext(StackContext);
 
@@ -47,7 +47,7 @@ function HomeHeader() {
         };
     }, []);
 
-    // Home button
+    // Hero button
     const scrollUp = () => {
         window.scrollTo({
             top: 0,
@@ -188,4 +188,4 @@ function HomeHeader() {
     );
 }
 
-export default HomeHeader;
+export default Navbar;

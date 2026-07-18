@@ -1,6 +1,6 @@
-import "./HomeDesign.css";
+import "./HeroDesign.css";
 
-function HomeDesign() {
+function HeroDesign() {
     return (
         <div className="bg-design-wrapper">
             {/* Primary accent circles */}
@@ -18,4 +18,4 @@ function HomeDesign() {
     );
 }
 
-export default HomeDesign;
+export default HeroDesign;
