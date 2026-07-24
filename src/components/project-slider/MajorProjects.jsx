@@ -1,12 +1,83 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
 import "../../../src/style.css";
 
-import EmptyProject from './EmptyProject';
-
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
+import ProjectCard from '../ProjectCard.jsx';
+import ComingSoon from '../ComingSoon.jsx';
+
+// Accent color for this section (title text + card titles).
+const ACCENT = 'text-orange-600';
+
+// Shared class for every slide wrapper.
+const SLIDE_CLASS =
+  'swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4';
+
+// Add / edit projects here.
+// hoverBorder must be a FULL Tailwind class literal so it isn't purged.
+const majorProjects = [
+  {
+    href: 'https://portfolio.chandanchaudhary.in',
+    img: assets.portfolio,
+    title: 'Portfolio Website',
+    subtitle: 'Chandan Chaudhary',
+    hoverBorder: 'hover:border-yellow-500/40',
+  },
+  {
+    href: 'https://lucknowtradinghouse.com',
+    img: assets.lth,
+    title: 'Lucknow Trading House',
+    subtitle: 'Internship Project',
+    hoverBorder: 'hover:border-[#31b4ed]/40',
+  },
+  {
+    href: 'https://c2codebase.chandanchaudhary.in',
+    img: assets.c2explains,
+    title: 'C2 Explains',
+    subtitle: 'Developer Tools Platform',
+    hoverBorder: 'hover:border-[#b6bee5]/40',
+  },
+  {
+    href: 'https://www.nexeraonline.in',
+    img: assets.nexera,
+    title: 'Nexera',
+    subtitle: 'Client Project',
+    hoverBorder: 'hover:border-[#926c50]/40',
+  },
+  {
+    href: 'https://safe-sphere-sos.vercel.app/',
+    img: assets.safesphere,
+    title: 'SafeSphere',
+    subtitle: "Women's safety application",
+    hoverBorder: 'hover:border-red-500/40',
+  },
+  {
+    href: 'https://gateugcnet.chandanchaudhary.in',
+    img: assets.gateUBCNET,
+    title: 'GATE UGCNET Practice Platform',
+    subtitle: 'Final Year Project',
+    hoverBorder: 'hover:border-blue-500/60',
+  },
+  {
+    href: 'https://strong-password-generator-c2.netlify.app',
+    img: assets.strongPassword,
+    title: 'Strong Password Generator',
+    subtitle: 'Password Suggestion application',
+    hoverBorder: 'hover:border-purple-500/40',
+  },
+  {
+    href: 'https://chandanchaudhary-linktree.netlify.app',
+    img: assets.linktree,
+    title: 'LinkTree',
+    subtitle: 'Chandan Chaudhary',
+    hoverBorder: 'hover:border-[#d18cbc]/40',
+  },
+];
+
+// How many "Coming soon..." placeholder slides to show at the end.
+const COMING_SOON_COUNT = 2;
 
 export default function MajorProjects() {
 
@@ -37,8 +108,8 @@ export default function MajorProjects() {
         <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-white/80 dark:bg-[#111] backdrop-blur-none flex flex-col gap-2 rounded-lg'>
 
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-orange-600 font-bold pl-2 sm:pl-0">Major Projects </p>
-            <span class="material-symbols-outlined text-orange-600 text-2xl md:text-3xl flex items-center">devices</span>
+            <p className={`text-xl md:text-2xl ${ACCENT} font-bold pl-2 sm:pl-0`}>Major Projects </p>
+            <span className="material-symbols-outlined text-orange-600 text-2xl md:text-3xl flex items-center">devices</span>
           </div>
 
           <div className='container w-full h-[90%] flex justify-center items-center text-gray-700 dark:text-[#fff]'>
@@ -52,101 +123,18 @@ export default function MajorProjects() {
               modules={[FreeMode, Pagination, Navigation]}
               className="swiper mySwiper w-[100%] h-[100%]"
               navigation={true}
-            // loop={true}
             >
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://portfolio.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>Portfolio Website</h3>
-                    <p className='text-[10px] md:text-xs'>Chandan Chaudhary</p>
-                  </span>
-                </a>
-              </SwiperSlide>
+              {majorProjects.map((project) => (
+                <SwiperSlide key={project.title} className={SLIDE_CLASS}>
+                  <ProjectCard {...project} accent={ACCENT} />
+                </SwiperSlide>
+              ))}
 
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://lucknowtradinghouse.com" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.lth} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#31b4ed]/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>Lucknow Trading House</h3>
-                    <p className='text-[10px] md:text-xs'>Internship Project</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://c2codebase.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.c2explains} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>C2 Explains</h3>
-                    <p className='text-[10px] md:text-xs '>Developer Tools Platform</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://www.nexeraonline.in" className='flex flex-col h-max gap-2' target="_blank">
-                  <img src={assets.nexera} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#926c50]/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>Nexera</h3>
-                    <p className='text-[10px] md:text-xs '>Client Project</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://safe-sphere-sos.vercel.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.safesphere} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>SafeSphere</h3>
-                    <p className='text-[10px] md:text-xs'>Women's safety application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://gateugcnet.chandanchaudhary.in" className='flex flex-col h-max gap-2' target="_blank">
-                  <img src={assets.gateUBCNET} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-blue-500/60' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>GATE UGCNET Practice Platform</h3>
-                    <p className='text-[10px] md:text-xs '>Final Year Project</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://strong-password-generator-c2.netlify.app" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.strongPassword} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>Strong Password Generator</h3>
-                    <p className='text-[10px] md:text-xs '>Password Suggestion application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-linktree.netlify.app" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.linktree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#d18cbc]/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-orange-600'>LinkTree</h3>
-                    <p className='text-[10px] md:text-xs'>Chandan Chaudhary</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              {/* <EmptyProject /> */}
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-gray-200 dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
-                  Coming soon...
-                </span>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-gray-200 dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
-                  Coming soon...
-                </span>
-              </SwiperSlide>
-
+              {Array.from({ length: COMING_SOON_COUNT }).map((_, i) => (
+                <SwiperSlide key={`coming-soon-${i}`} className={SLIDE_CLASS}>
+                  <ComingSoon />
+                </SwiperSlide>
+              ))}
             </Swiper>
 
           </div>

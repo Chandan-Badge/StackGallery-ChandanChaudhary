@@ -1,11 +1,97 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { assets } from '../../assets/assets.js';
 import "../../../src/style.css";
 
-
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
+import ProjectCard from '../ProjectCard.jsx';
+import ComingSoon from '../ComingSoon.jsx';
+
+// Accent color for this section (title text + card titles).
+const ACCENT = 'text-yellow-400';
+
+// Shared class for every slide wrapper.
+const SLIDE_CLASS =
+  'swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4';
+
+// Add / edit projects here.
+// hoverBorder must be a FULL Tailwind class literal so it isn't purged.
+const jsProjects = [
+  {
+    href: 'https://portfolio.chandanchaudhary.in',
+    img: assets.portfolio,
+    title: 'Portfolio Website',
+    subtitle: 'Chandan Chaudhary',
+    hoverBorder: 'hover:border-yellow-500/40',
+  },
+  {
+    href: 'https://chandanchaudhary-linktree.netlify.app/',
+    img: assets.linkTree,
+    title: 'LinkTree',
+    subtitle: 'Chandan Chaudhary',
+    hoverBorder: 'hover:border-pink-500/40',
+  },
+  {
+    href: 'https://simonsays-chandanchaudhary.netlify.app/',
+    img: assets.simonSays,
+    title: 'SimonSays',
+    subtitle: 'Brain Game',
+    hoverBorder: 'hover:border-yellow-500/40',
+  },
+  {
+    href: 'https://ai-chatbot-c2.netlify.app/',
+    img: assets.aiChatBot,
+    title: 'AI ChatBot',
+    subtitle: 'ChatBot',
+    hoverBorder: 'hover:border-purple-600/60',
+  },
+  {
+    href: 'https://chandanchaudhary-soon.netlify.app/',
+    img: assets.darkLight,
+    title: 'Dark Mode & Light Mode',
+    subtitle: 'Web application',
+    hoverBorder: 'hover:border-gray-500/60',
+  },
+  {
+    href: 'https://tictactoe-chandanchaudhary.netlify.app/',
+    img: assets.tictactoe,
+    title: 'TicTacToe',
+    subtitle: 'Multiplayer Game',
+    hoverBorder: 'hover:border-[#ffffc7]/80',
+  },
+  {
+    href: 'https://colorgenerator-c2.netlify.app/',
+    img: assets.randomColor,
+    title: 'Random Color Generator',
+    subtitle: 'Web application',
+    hoverBorder: 'hover:border-green-500/40',
+  },
+  {
+    href: 'https://chandanchaudhary-soon.netlify.app/',
+    img: assets.randomDog,
+    title: 'Dog image Generator',
+    subtitle: 'Web application',
+    hoverBorder: 'hover:border-red-500/40',
+  },
+  {
+    href: 'https://chandanchaudhary-soon.netlify.app/',
+    img: assets.autoTyper,
+    title: 'Auto Typer',
+    subtitle: 'Web application',
+    hoverBorder: 'hover:border-purple-400/40',
+  },
+  {
+    href: 'https://chandanchaudhary-soon.netlify.app/',
+    img: assets.slider,
+    title: 'Image Slider',
+    subtitle: 'Web application',
+    hoverBorder: 'hover:border-[#b6bee5]/40',
+  },
+];
+
+// How many "Coming soon..." placeholder slides to show at the end.
+const COMING_SOON_COUNT = 1;
 
 export default function JSProjects() {
 
@@ -36,8 +122,8 @@ export default function JSProjects() {
         <div className='relative px-3 sm:px-6 lg:px-12 py-4 w-full h-max bg-white/80 dark:bg-[#111] backdrop-blur-none flex flex-col gap-2 rounded-lg'>
 
           <div className='flex items-center gap-2 md:gap-3'>
-            <p class="text-xl md:text-2xl text-yellow-400 font-bold pl-2 sm:pl-0">Javascript Projects</p>
-            <i class="fa-brands fa-js text-yellow-400 text-xl md:text-3xl flex items-center"></i>
+            <p className={`text-xl md:text-2xl ${ACCENT} font-bold pl-2 sm:pl-0`}>Javascript Projects</p>
+            <i className="fa-brands fa-js text-yellow-400 text-xl md:text-3xl flex items-center"></i>
           </div>
 
           <div className='container w-full h-[90%] flex justify-center items-center text-gray-700 dark:text-[#fff]'>
@@ -51,115 +137,18 @@ export default function JSProjects() {
               modules={[FreeMode, Pagination, Navigation]}
               className="swiper mySwiper w-[100%] h-[100%]"
               navigation={true}
-            // loop={true}
             >
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://portfolio.chandanchaudhary.in" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.portfolio} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Portfolio Website</h3>
-                    <p className='text-[10px] md:text-xs'>Chandan Chaudhary</p>
-                  </span>
-                </a>
-              </SwiperSlide>
+              {jsProjects.map((project) => (
+                <SwiperSlide key={project.title} className={SLIDE_CLASS}>
+                  <ProjectCard {...project} accent={ACCENT} />
+                </SwiperSlide>
+              ))}
 
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-linktree.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.linkTree} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-pink-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>LinkTree</h3>
-                    <p className='text-[10px] md:text-xs '>Chandan Chaudhary</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://simonsays-chandanchaudhary.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.simonSays} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-yellow-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>SimonSays</h3>
-                    <p className='text-[10px] md:text-xs '>Brain Game</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://ai-chatbot-c2.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.aiChatBot} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-600/60' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>AI ChatBot</h3>
-                    <p className='text-[10px] md:text-xs '>ChatBot</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.darkLight} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-gray-500/60' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Dark Mode & Light Mode</h3>
-                    <p className='text-[10px] md:text-xs '>Web application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://tictactoe-chandanchaudhary.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.tictactoe} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#ffffc7]/80' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>TicTacToe</h3>
-                    <p className='text-[10px] md:text-xs '>Multiplayer Game</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://colorgenerator-c2.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.randomColor} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-green-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Random Color Generator</h3>
-                    <p className='text-[10px] md:text-xs '>Web application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.randomDog} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-red-500/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Dog image Generator</h3>
-                    <p className='text-[10px] md:text-xs '>Web application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.autoTyper} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-purple-400/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Auto Typer</h3>
-                    <p className='text-[10px] md:text-xs '>Web application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <a href="https://chandanchaudhary-soon.netlify.app/" className='flex flex-col h-max gap-1 sm:gap-2' target="_blank">
-                  <img src={assets.slider} className='h-[90%] hover:scale-105 transition-all duration-200 ease-in-out rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent hover:border-[#b6bee5]/40' alt="" />
-                  <span className='h-max'>
-                    <h3 className='font-bold text-sm md:text-lg text-yellow-400'>Image Slider</h3>
-                    <p className='text-[10px] md:text-xs '>Web application</p>
-                  </span>
-                </a>
-              </SwiperSlide>
-
-              {/* <EmptyProject /> */}
-              <SwiperSlide className='swiper-slide text-center text-base flex justify-center items-center rounded-md md:rounded-lg p-2 md:p-4'>
-                <span className='h-[20vw] md:h-[15vw] text-[10px] md:text-base text-center flex justify-center items-center bg-gray-200 dark:bg-gray-800 rounded-md md:rounded-lg border-[3px] md:border-[6px] border-transparent'>
-                  Coming soon...
-                </span>
-              </SwiperSlide>
-
+              {Array.from({ length: COMING_SOON_COUNT }).map((_, i) => (
+                <SwiperSlide key={`coming-soon-${i}`} className={SLIDE_CLASS}>
+                  <ComingSoon />
+                </SwiperSlide>
+              ))}
             </Swiper>
 
           </div>
