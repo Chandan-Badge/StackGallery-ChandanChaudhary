@@ -4,6 +4,7 @@ import { StackContext } from "../context/StackContext";
 import logo from "../assets/c2-logo.png";
 import blackLogo from "../assets/c2-logo-black.png";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
@@ -19,12 +20,7 @@ function Contact() {
     message: ""
   });
 
-  const [status, setStatus] = useState({
-    loading: false,
-    success: false,
-    error: false,
-    message: ""
-  });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,7 +32,9 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus({ loading: true, success: false, error: false, message: "" });
+    setLoading(true);
+
+    const toastId = toast.loading("Sending your message...");
 
     try {
       // EmailJS configuration from environment variables
@@ -54,22 +52,19 @@ function Contact() {
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
-      setStatus({
-        loading: false,
-        success: true,
-        error: false,
-        message: "Message sent successfully! I'll get back to you soon."
+      toast.success("Message sent successfully! I'll get back to you soon.", {
+        id: toastId
       });
 
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error("EmailJS Error:", error);
-      setStatus({
-        loading: false,
-        success: false,
-        error: true,
-        message: "Failed to send message. Please try again or contact directly via email."
-      });
+      toast.error(
+        "Failed to send message. Please try again or contact directly via email.",
+        { id: toastId }
+      );
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -322,25 +317,13 @@ function Contact() {
                   />
                 </div>
 
-                {/* Status Messages */}
-                {status.success && (
-                  <div className="mb-4 p-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400 text-sm">
-                    {status.message}
-                  </div>
-                )}
-                {status.error && (
-                  <div className="mb-4 p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 text-sm">
-                    {status.message}
-                  </div>
-                )}
-
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  disabled={status.loading}
+                  disabled={loading}
                   className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold hover:shadow-lg transform transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2 group"
                 >
-                  {status.loading ? (
+                  {loading ? (
                     <>
                       <svg
                         className="animate-spin h-5 w-5"
