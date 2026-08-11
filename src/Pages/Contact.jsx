@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
+import SEO from "../components/SEO";
 
 function Contact() {
   const { theme } = useContext(StackContext);
@@ -74,6 +75,12 @@ function Contact() {
 
   return (
     <>
+      <SEO
+        title="Contact"
+        description="Get in touch with Chandan Chaudhary - MERN Stack Developer & Freelancer from India. Have a project in mind? Reach out for freelance web development, React applications, UI/UX design and full stack solutions."
+        keywords="Contact Chandan Chaudhary, Hire MERN Stack Developer, Hire Freelance Web Developer India, Hire React Developer"
+        path="/contact"
+      />
       <section className="min-h-screen w-full bg-gradient-to-br from-white via-amber-50/30 to-orange-50/50 dark:from-[#080808] dark:via-[#0a0a0a] dark:to-[#0c0c0c] transition-colors duration-500 relative overflow-hidden pb-10">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">

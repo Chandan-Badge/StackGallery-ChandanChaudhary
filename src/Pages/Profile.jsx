@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import coder from "../assets/coder.webp";
 import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
+import SEO from "../components/SEO";
+import { personSchema } from "../components/seoSchemas";
 
 const Profile = () => {
     const skills = [
@@ -24,6 +26,14 @@ const Profile = () => {
 
     return (
         <>
+            <SEO
+                title="Profile"
+                description="Meet Chandan Chaudhary - an 18-year-old MERN Stack Developer & Freelancer from India, skilled in Java, React.js, Node.js, Express.js, UI/UX design and databases. BCA student building modern, scalable web applications."
+                keywords="About Chandan Chaudhary, Chandan Chaudhary Profile, MERN Stack Developer India, BCA Student Developer, Java Developer, React.js Developer"
+                path="/profile"
+                type="profile"
+                structuredData={personSchema}
+            />
             <div className="min-h-screen w-full bg-gradient-to-br from-white via-amber-50/20 to-orange-50/30 dark:from-[#080808] dark:via-[#0a0a0a] dark:to-[#0c0c0c] transition-colors duration-500 py-14">
                 <Navbar />
                 <HeroDesign />
