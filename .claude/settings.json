@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npx eslint src/components/SEO.jsx src/App.jsx src/Pages/Profile.jsx src/Pages/Contact.jsx)"
+    ]
+  }
+}
