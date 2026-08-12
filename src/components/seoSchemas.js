@@ -1,5 +1,5 @@
 export const SITE_URL = "https://stackgallery.chandanchaudhary.in";
-export const SITE_NAME = "StackGallery - Chandan Chaudhary";
+export const SITE_NAME = "StackGallery - Chandan Chaudhary | Software Developer";
 export const DEFAULT_IMAGE = `${SITE_URL}/c2icon.png`;
 export const DEFAULT_DESCRIPTION =
   "Chandan Chaudhary is a MERN Stack Developer & Freelancer from India, building modern web applications with React, Next.js, Node.js and Tailwind CSS. Explore projects in React, JavaScript, Java, CSS and Full Stack development.";

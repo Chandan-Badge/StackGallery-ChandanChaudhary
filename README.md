@@ -31,7 +31,7 @@
 - **Dark / Light Mode** — Theme toggle with persistence via `localStorage`.
 - **Mouse Particle Animation** — Custom cursor-following particle effect for an engaging visual experience.
 - **Responsive Design** — Fully adaptive layout, optimized for mobile, tablet, and desktop.
-- **Profile Page** — Dedicated `/profile` route with bio, skills, and tech stack overview.
+- **About Page** — Dedicated `/about` route with bio, skills, and tech stack overview.
 - **Back to Top Button** — Smooth scroll-to-top with visibility toggle on scroll.
 - **Glassmorphism UI** — Modern backdrop blur and translucent card aesthetics.
 - **SEO Optimized** — Open Graph meta tags and descriptive meta content.
@@ -74,8 +74,8 @@ StackGallery-ChandanChaudhary/
 │   │   │   ├── HomeBottom.jsx     # "Let's Explore" CTA button
 │   │   │   ├── HomeDesign.jsx     # Animated gradient background
 │   │   │   └── HomeDesign.css     # Background glow styling
-│   │   ├── Profilepage/
-│   │   │   └── Profile.jsx        # About me page with skills
+│   │   ├── Aboutpage/
+│   │   │   └── About.jsx        # About me page with skills
 │   │   └── project-slider/
 │   │       ├── MajorProjects.jsx       # Featured / major projects
 │   │       ├── FullStackProjects.jsx   # Full-stack projects

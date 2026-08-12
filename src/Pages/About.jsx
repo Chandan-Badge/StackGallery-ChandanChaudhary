@@ -1,13 +1,11 @@
-import "../style.css";
-import Footer from "../components/Footer";
-
+import { personSchema } from "../components/seoSchemas";
 import coder from "../assets/coder.webp";
 import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
-import { personSchema } from "../components/seoSchemas";
+import "../style.css";
 
-const Profile = () => {
+const About = () => {
     const skills = [
         { name: "Java", icon: "java" },
         { name: "React.js", icon: "react" },
@@ -27,11 +25,11 @@ const Profile = () => {
     return (
         <>
             <SEO
-                title="Profile"
+                title="About"
                 description="Meet Chandan Chaudhary - an 18-year-old MERN Stack Developer & Freelancer from India, skilled in Java, React.js, Node.js, Express.js, UI/UX design and databases. BCA student building modern, scalable web applications."
-                keywords="About Chandan Chaudhary, Chandan Chaudhary Profile, MERN Stack Developer India, BCA Student Developer, Java Developer, React.js Developer"
-                path="/profile"
-                type="profile"
+                keywords="About Chandan Chaudhary, About Chandan Chaudhary, Chandan Chaudhary Profile, MERN Stack Developer India, BCA Student Developer, Java Developer, React.js Developer"
+                path="/about"
+                type="about"
                 structuredData={personSchema}
             />
             <div className="min-h-screen w-full bg-gradient-to-br from-white via-amber-50/20 to-orange-50/30 dark:from-[#080808] dark:via-[#0a0a0a] dark:to-[#0c0c0c] transition-colors duration-500 py-14">
@@ -42,7 +40,7 @@ const Profile = () => {
                 <section className="relative pt-28 sm:pt-32 pb-12 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
-                            {/* Profile Image */}
+                            {/* About Image */}
                             <div className="relative flex-shrink-0">
                                 <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64">
                                     <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 dark:from-yellow-400 dark:to-amber-500 rounded-3xl rotate-6 opacity-80"></div>
@@ -63,7 +61,7 @@ const Profile = () => {
                                 </div>
                             </div>
 
-                            {/* Profile Info */}
+                            {/* About Info */}
                             <div className="flex-1 text-center lg:text-left">
                                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-yellow-400 rounded-full text-sm font-medium mb-4">
                                     <span className="w-2 h-2 bg-amber-500 dark:bg-yellow-400 rounded-full"></span>
@@ -285,8 +283,6 @@ const Profile = () => {
                         </div>
                     </div>
                 </section>
-
-                <Footer />
             </div>
         </>
     );
@@ -342,4 +338,4 @@ const SkillIcon = ({ name, color }) => {
     return icons[name] || null;
 }
 
-export default Profile;
+export default About;
