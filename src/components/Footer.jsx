@@ -17,7 +17,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gradient-to-b from-white/95 via-amber-50/30 to-orange-50/40 dark:from-[#0a0a0a] dark:via-[#0f0f0f] dark:to-[#111] transition-colors duration-500 overflow-hidden">
+    <footer className="relative bg-gradient-to-b pt-6 md:pt-10 pb-6 from-white/95 via-amber-50/30 to-orange-50/40 dark:from-[#0a0a0a] dark:via-[#0f0f0f] dark:to-[#111] transition-colors duration-500 overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br from-amber-200/20 to-orange-200/20 dark:from-amber-500/5 dark:to-orange-500/5 rounded-full blur-3xl"></div>
@@ -61,7 +61,7 @@ function Footer() {
 
               <Link
                 onClick={scrollUp}
-                to={"/profile"}
+                to={"/about"}
                 className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-all duration-300 text-sm flex items-center gap-2 group"
               >
                 <span className="w-0 group-hover:w-4 h-0.5 bg-amber-500 dark:bg-yellow-400 transition-all duration-300"></span>
@@ -178,18 +178,18 @@ function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col sm:flex-row items-center justify-between pt-2 gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between pt-4 gap-4">
           <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-            © 2024-26 <a href="https://chandanchaudhary-portfolio.netlify.app/" className="hover:underline hover:text-white">Chandan Chaudhary</a>. All rights reserved.
+            © 2024-26 <a href="https://www.chandanchaudhary.in" className="hover:underline hover:text-white">Chandan Chaudhary</a>. All rights reserved.
           </p>
 
           <button
             onClick={scrollUp}
-            className="group flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-colors duration-300"
+            className="group flex items-center gap-2 text-xs text-gray-900 dark:text-gray-400 bg-gray-200 dark:bg-gray-800 px-4 py-2 rounded-full border-gray-500 hover:border-amber-600 dark:border-gray-700 dark:hover:border-yellow-400 border-2 hover:text-amber-600 dark:hover:text-yellow-400 transition-colors duration-300"
           >
             <span>Back to top</span>
             <svg
-              className="w-4 h-4 transform group-hover:-translate-y-1 transition-transform duration-300"
+              className="w-4 h-4 transform transition-transform duration-300"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"

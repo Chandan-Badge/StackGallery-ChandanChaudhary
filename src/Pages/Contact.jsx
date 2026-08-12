@@ -5,7 +5,6 @@ import logo from "../assets/c2-logo.png";
 import blackLogo from "../assets/c2-logo-black.png";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
@@ -378,8 +377,6 @@ function Contact() {
           </div>
         </main>
       </section>
-
-      <Footer />
     </>
   );
 }

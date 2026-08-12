@@ -5,9 +5,6 @@ import {
   DEFAULT_DESCRIPTION,
 } from "./seoSchemas";
 
-// React 19 automatically hoists <title>, <meta> and <link> tags rendered
-// anywhere in the tree into the document <head>, so this component needs
-// no external library (react-helmet etc.).
 function SEO({
   title,
   description = DEFAULT_DESCRIPTION,
