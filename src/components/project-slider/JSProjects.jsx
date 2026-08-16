@@ -47,7 +47,7 @@ const jsProjects = [
     hoverBorder: 'hover:border-purple-600/60',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.darkLight,
     title: 'Dark Mode & Light Mode',
     subtitle: 'Web application',
@@ -68,21 +68,21 @@ const jsProjects = [
     hoverBorder: 'hover:border-green-500/40',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.randomDog,
     title: 'Dog image Generator',
     subtitle: 'Web application',
     hoverBorder: 'hover:border-red-500/40',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.autoTyper,
     title: 'Auto Typer',
     subtitle: 'Web application',
     hoverBorder: 'hover:border-purple-400/40',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.slider,
     title: 'Image Slider',
     subtitle: 'Web application',
