@@ -54,7 +54,7 @@ const fullStackProjects = [
     hoverBorder: 'hover:border-blue-500/60',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.PMS,
     title: 'Patient Management Syatem',
     subtitle: 'Hospital Management Application',

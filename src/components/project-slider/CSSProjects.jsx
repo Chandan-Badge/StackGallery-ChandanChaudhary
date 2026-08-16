@@ -19,28 +19,28 @@ const SLIDE_CLASS =
 // hoverBorder must be a FULL Tailwind class literal so it isn't purged.
 const cssProjects = [
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.IU,
     title: 'Integral University, Lucknow',
     subtitle: 'University Website',
     hoverBorder: 'hover:border-pink-500/40',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.amazon,
     title: 'Amazon Clone',
     subtitle: 'Frontend Clone',
     hoverBorder: 'hover:border-yellow-500/40',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.netflix,
     title: 'Netflix Clone',
     subtitle: 'Frontend Clone',
     hoverBorder: 'hover:border-blue-500/40',
   },
   {
-    href: 'https://chandanchaudhary-soon.netlify.app/',
+    href: 'https://soon.chandanchaudhary.in',
     img: assets.tooltip,
     title: 'Beautiful Tooltip',
     subtitle: 'CSS Style',
