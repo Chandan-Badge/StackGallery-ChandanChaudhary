@@ -5,6 +5,8 @@ import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
 import "../style.css";
 
+const highlight = "text-amber-600 dark:text-yellow-400 font-medium";
+
 const About = () => {
     const skills = [
         { name: "Java", icon: "java" },
@@ -17,17 +19,12 @@ const About = () => {
         { name: "Python", icon: "python" },
     ];
 
-    const experiences = [
-        { title: "Freelance Developer", company: "Self-Employed", period: "2023 - Present", description: "Building custom web solutions for clients worldwide" },
-        { title: "MERN Stack Developer", company: "Various Projects", period: "2022 - Present", description: "Developing full-stack applications with modern technologies" },
-    ];
-
     return (
         <>
             <SEO
                 title="About"
-                description="Meet Chandan Chaudhary - an 18-year-old MERN Stack Developer & Freelancer from India, skilled in Java, React.js, Node.js, Express.js, UI/UX design and databases. BCA student building modern, scalable web applications."
-                keywords="About Chandan Chaudhary, About Chandan Chaudhary, Chandan Chaudhary Profile, MERN Stack Developer India, BCA Student Developer, Java Developer, React.js Developer"
+                description="A Software Developer and BCA graduate with Freelance experience and hands-on industry exposure through a Software Development Internship. I build scalable web applications with the Full Stack and Next.js, and cross-platform mobile applications with React Native — backed by REST APIs, authentication systems and solid database design. Strong DSA foundations in Java, and actively building CI/CD and Docker skills."
+                keywords="About Chandan Chaudhary, About Chandan Chaudhary, Chandan Chaudhary Profile, Software Developer, MERN Stack Developer India, BCA Student Developer, Java Developer, React.js Developer"
                 path="/about"
                 type="about"
                 structuredData={personSchema}
@@ -71,7 +68,7 @@ const About = () => {
                                     Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-400">Chandan Chaudhary</span>
                                 </h1>
                                 <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed max-w-2xl mb-6">
-                                    A passionate <span className="text-amber-600 dark:text-yellow-400 font-medium">MERN Stack Developer</span> & <span className="text-amber-600 dark:text-yellow-400 font-medium">Freelancer</span> from India.
+                                    A passionate <span className="text-amber-600 dark:text-yellow-400 font-medium">Full Stack Developer</span> & <span className="text-amber-600 dark:text-yellow-400 font-medium">Freelancer</span> from India.
                                     I specialize in building modern web applications, creating intuitive user interfaces, and delivering exceptional digital experiences.
                                 </p>
 
@@ -116,21 +113,15 @@ const About = () => {
                                     {/* <span className="w-10 h-1 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 rounded-full"></span> */}
                                     About Me
                                 </h2>
-                                <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+                                <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                                     <p>
-                                        I'm an 18-year-old developer who loves turning ideas into reality through code.
-                                        My journey in tech started with curiosity and has evolved into a passion for creating
-                                        <span className="text-amber-600 dark:text-yellow-400 font-medium"> innovative web solutions</span>.
+                                        A <span className={highlight}>Software Developer</span> and BCA graduate with <span className={highlight}>Freelance</span> experience and hands-on industry exposure 
+                                        through a Software Development Internship. 
                                     </p>
                                     <p>
-                                        I specialize in <span className="text-amber-600 dark:text-yellow-400 font-medium">resolving</span> frontend & backend challenges,
-                                        <span className="text-amber-600 dark:text-yellow-400 font-medium"> creating</span> intuitive user interfaces, and
-                                        <span className="text-amber-600 dark:text-yellow-400 font-medium"> imagining</span> useful interactions that make
-                                        digital experiences memorable.
-                                    </p>
-                                    <p>
-                                        When I'm not coding, I'm exploring new technologies, contributing to open-source projects,
-                                        or helping fellow developers solve problems.
+                                         Build scalable web applications with the Full Stack and <span className={highlight}>Next.js</span>, and cross-platform mobile 
+                                         applications with <span className={highlight}>React Native</span> — backed by REST APIs, authentication systems and solid database design. 
+                                         Strong DSA foundations in Java, and actively building CI/CD and Docker
                                     </p>
                                 </div>
                             </div>
@@ -142,7 +133,7 @@ const About = () => {
                                     { label: "Profile", value: "Full Stack Developer & Freelancer", icon: "code" },
                                     { label: "Domain", value: "Software Development", icon: "laptop" },
                                     { label: "Education", value: "Bachelor of Computer Applications", icon: "education" },
-                                    { label: "Location", value: "India", icon: "location" },
+                                    { label: "Location", value: "Lucknow, U.P., India", icon: "location" },
                                 ].map((item, index) => (
                                     <div
                                         key={index}

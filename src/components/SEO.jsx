@@ -19,7 +19,7 @@ function SEO({
   const canonicalUrl = `${SITE_URL}${path}`;
 
   const baseKeywords =
-    "Chandan Chaudhary, StackGallery, MERN Stack Developer, React Developer, Full Stack Developer, Freelance Web Developer India, Web Developer Portfolio";
+    "Chandan Chaudhary, StackGallery, Software Engineer, Software Developer, MERN Stack Developer, React Developer, Full Stack Developer, Freelance Web Developer India, Web Developer Portfolio";
   const allKeywords = keywords ? `${keywords}, ${baseKeywords}` : baseKeywords;
 
   return (

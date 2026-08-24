@@ -57,10 +57,14 @@ function Navbar() {
 
     return (
         <header className={`h-max w-full px-3 sm:px-6 md:px-14 py-1 md:py-3 flex items-center justify-between z-20 top-0 fixed transition-all duration-300 ease-in-out ${sticky ? "bg-white/70 dark:bg-[#060707]/70 hover:bg-white/80 dark:hover:bg-[#060707]/80 drop-shadow-lg backdrop-blur-sm" : ""}`}>
-            <img className="h-16 sm:h-20 w-16 sm:w-20 ml-1" src={theme === "dark" ? logo : blackLogo} alt="" />
+            <img
+                className="h-14 sm:h-20 w-14 sm:w-20 ml-1"
+                src={theme === "dark" ? logo : blackLogo}
+                alt="c2codebase-logo"
+            />
 
             <div class="flex justify-end w-max p-0 bg-gradient-to-b from-black/5 dark:from-black/5 to-transparent backdrop-blur-sm rounded-full">
-                <nav class=" rounded-full px-4 sm:px-6 py-0 sm:py-0 shadow-[0_0_15px_rgba(0,0,0,0.08)] dark:shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-amber-400/30 dark:border-yellow-300/20 backdrop-blur-md transform transition-all duration-300 max-w-[95%] sm:max-w-[600px]">
+                <nav class="rounded-full px-4 sm:px-6 py-0 sm:py-0 shadow-[0_0_15px_rgba(0,0,0,0.08)] dark:shadow-[0_0_15px_rgba(0,0,0,0.2)] border border-amber-400/30 dark:border-yellow-300/20 backdrop-blur-md transform transition-all duration-300 max-w-[95%] sm:max-w-[600px]">
                     <div class="flex items-center justify-center space-x-3 sm:space-x-4">
 
                         <Link to={"/"} onClick={scrollUp} className="relative group">

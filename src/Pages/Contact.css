@@ -1,0 +1,103 @@
+/* ===== Contact page — decoration & motion layer ===== */
+
+/* Subtle blueprint grid that fades out toward the page bottom */
+.contact-grid {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 75% 55% at 50% 0%, #000 20%, transparent 78%);
+    mask-image: radial-gradient(ellipse 75% 55% at 50% 0%, #000 20%, transparent 78%);
+}
+
+.contact-grid:is(.dark *) {
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* ===== Staggered entrance ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: contactReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-1 { animation-delay: 0.05s; }
+.reveal-2 { animation-delay: 0.12s; }
+.reveal-3 { animation-delay: 0.19s; }
+.reveal-4 { animation-delay: 0.26s; }
+.reveal-5 { animation-delay: 0.33s; }
+.reveal-6 { animation-delay: 0.4s; }
+
+@keyframes contactReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Sweeping shine across the submit button ===== */
+.btn-shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -60%;
+    width: 45%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    transform: skewX(-20deg);
+    animation: btnShine 3.4s ease-in-out infinite;
+}
+
+.btn-shine:disabled::after {
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes btnShine {
+    0%   { left: -60%; }
+    55%  { left: 130%; }
+    100% { left: 130%; }
+}
+
+/* ===== Live availability dot ===== */
+.status-dot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: currentColor;
+    animation: statusPing 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes statusPing {
+    0%   { transform: scale(1); opacity: 0.55; }
+    75%, 100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* ===== FAQ chevron ===== */
+.faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-item > summary::-webkit-details-marker {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+    .btn-shine::after,
+    .status-dot::before {
+        animation: none;
+    }
+}

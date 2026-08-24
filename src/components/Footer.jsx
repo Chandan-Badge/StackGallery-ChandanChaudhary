@@ -42,6 +42,13 @@ function Footer() {
             <p className="text-sm text-gray-600 dark:text-gray-400 max-w-xs leading-relaxed">
               Crafting digital experiences with passion and precision. Let's build something amazing together.
             </p>
+
+            <div className="mt-3 reveal reveal-1 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/70 dark:bg-white/[0.04] backdrop-blur-md border border-green-200/70 dark:border-green-400/20 shadow-sm">
+              <span className="status-dot relative inline-block w-1.5 h-1.5 rounded-full bg-green-500 text-green-500 dark:bg-green-400 dark:text-green-400" />
+              <span className="text-xs sm:text-xs font-medium text-gray-700 dark:text-gray-300">
+                Available for new Project
+              </span>
+            </div>
           </div>
 
           {/* Quick Links */}

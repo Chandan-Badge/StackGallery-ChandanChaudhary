@@ -1,3 +1,5 @@
+import coder from "./coder.webp";
+
 // Major Projects
 import c2explains from "./ProjectImages/c2explains.webp";
 import safesphere from "./ProjectImages/SafeSphere.webp";
@@ -45,6 +47,8 @@ import tooltip from "./ProjectImages/ToolTip.webp";
 import chatApp from "./ProjectImages/ChattingApplication.webp";
 
 export const assets = {
+
+    coder,
 
     // Major Projects
     c2explains,
