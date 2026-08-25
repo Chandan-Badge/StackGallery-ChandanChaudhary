@@ -18,9 +18,7 @@ function App() {
 
   return (
     <>
-      <div className='p-4 h-screen w-full fixed pointer-events-none z-50'>
-        <MouseAnimation />
-      </div>
+      <MouseAnimation />
 
       <Toaster
         position='bottom-right'

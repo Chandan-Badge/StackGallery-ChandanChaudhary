@@ -4,6 +4,24 @@ import { Link } from "react-router-dom";
 import { StackContext } from "../context/StackContext";
 import { useContext } from "react";
 
+const quickLinkClass =
+  "w-fit text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 hover:translate-x-1 transition-[color,transform] duration-300 text-sm flex items-center gap-2 group";
+
+// Fixed width + scaleX keeps the bar out of the layout flow, so revealing it on
+// hover never resizes the link — and therefore never shifts the other links.
+const quickLinkBarClass =
+  "w-4 shrink-0 h-0.5 origin-left scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100 bg-amber-500 dark:bg-yellow-400 transition-[transform,opacity] duration-300";
+
+const quickLinks = [
+  { label: "Home", to: "/" },
+  { label: "About Me", to: "/about" },
+  { label: "Contact", to: "/contact" },
+  {
+    label: "Resume",
+    href: "https://drive.google.com/file/d/1hnpSs6E-Zj1Ywm52S3xDGPH13zn7eBwS/view"
+  }
+];
+
 function Footer() {
   const { theme } = useContext(StackContext);
 
@@ -57,42 +75,30 @@ function Footer() {
               Quick Links
             </h3>
             <nav className="flex flex-col gap-3">
-              <Link
-                onClick={scrollUp}
-                to={"/"}
-                className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-all duration-300 text-sm flex items-center gap-2 group"
-              >
-                <span className="w-0 group-hover:w-4 h-0.5 bg-amber-500 dark:bg-yellow-400 transition-all duration-300"></span>
-                Home
-              </Link>
-
-              <Link
-                onClick={scrollUp}
-                to={"/about"}
-                className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-all duration-300 text-sm flex items-center gap-2 group"
-              >
-                <span className="w-0 group-hover:w-4 h-0.5 bg-amber-500 dark:bg-yellow-400 transition-all duration-300"></span>
-                About Me
-              </Link>
-
-              <Link
-                onClick={scrollUp}
-                to={"/contact"}
-                className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-all duration-300 text-sm flex items-center gap-2 group"
-              >
-                <span className="w-0 group-hover:w-4 h-0.5 bg-amber-500 dark:bg-yellow-400 transition-all duration-300"></span>
-                Contact
-              </Link>
-
-              <a
-                href="https://drive.google.com/file/d/1hnpSs6E-Zj1Ywm52S3xDGPH13zn7eBwS/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-all duration-300 text-sm flex items-center gap-2 group"
-              >
-                <span className="w-0 group-hover:w-4 h-0.5 bg-amber-500 dark:bg-yellow-400 transition-all duration-300"></span>
-                Resume
-              </a>
+              {quickLinks.map(({ label, to, href }) =>
+                href ? (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={quickLinkClass}
+                  >
+                    <span className={quickLinkBarClass}></span>
+                    {label}
+                  </a>
+                ) : (
+                  <Link
+                    key={label}
+                    onClick={scrollUp}
+                    to={to}
+                    className={quickLinkClass}
+                  >
+                    <span className={quickLinkBarClass}></span>
+                    {label}
+                  </Link>
+                )
+              )}
             </nav>
           </div>
 

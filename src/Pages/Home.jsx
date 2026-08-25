@@ -2,6 +2,7 @@ import React from 'react'
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
+import CTA from '../components/CTA';
 import { websiteSchema } from '../components/seoSchemas';
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
 
             <Hero />
             <Projects />
+            <CTA />
         </div>
     )
 }

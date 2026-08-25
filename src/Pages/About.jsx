@@ -1,13 +1,26 @@
+import { Link } from "react-router-dom";
 import { personSchema } from "../components/seoSchemas";
 import coder from "../assets/coder.webp";
 import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
 import "../style.css";
+import { CONSULTATION_LINK } from "../components/ConsultationCTA";
+import { Calendar, Download, ExternalLink } from "lucide-react";
 
 const highlight = "text-amber-600 dark:text-yellow-400 font-medium";
 
+const WHATSAPP_LINK =
+    "https://wa.me/6394543387?text=Hi, I%27m coming from your Portfolio...";
+
 const About = () => {
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     const skills = [
         { name: "Java", icon: "java" },
         { name: "React.js", icon: "react" },
@@ -78,13 +91,9 @@ const About = () => {
                                         href="https://drive.google.com/file/d/1hnpSs6E-Zj1Ywm52S3xDGPH13zn7eBwS/view"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-lg hover:shadow-lg hover:shadow-amber-500/30 dark:hover:shadow-yellow-400/20 transition-all duration-300 flex items-center gap-2"
+                                        className="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-lg shadow-sm hover:shadow-md hover:shadow-amber-500/30 dark:hover:shadow-yellow-400/20 transition-all duration-300 flex items-center gap-2"
                                     >
-                                        <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                            <polyline points="7 10 12 15 17 10" />
-                                            <line x1="12" y1="15" x2="12" y2="3" />
-                                        </svg>
+                                        <Download className="w-5" />
                                         Download Resume
                                     </a>
                                     <a
@@ -115,13 +124,13 @@ const About = () => {
                                 </h2>
                                 <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                                     <p>
-                                        A <span className={highlight}>Software Developer</span> and BCA graduate with <span className={highlight}>Freelance</span> experience and hands-on industry exposure 
-                                        through a Software Development Internship. 
+                                        A <span className={highlight}>Software Developer</span> and BCA graduate with <span className={highlight}>Freelance</span> experience and hands-on industry exposure
+                                        through a Software Development Internship.
                                     </p>
                                     <p>
-                                         Build scalable web applications with the Full Stack and <span className={highlight}>Next.js</span>, and cross-platform mobile 
-                                         applications with <span className={highlight}>React Native</span> — backed by REST APIs, authentication systems and solid database design. 
-                                         Strong DSA foundations in Java, and actively building CI/CD and Docker
+                                        Build scalable web applications with the Full Stack and <span className={highlight}>Next.js</span>, and cross-platform mobile
+                                        applications with <span className={highlight}>React Native</span> — backed by REST APIs, authentication systems and solid database design.
+                                        Strong DSA foundations in Java, and actively building CI/CD and Docker
                                     </p>
                                 </div>
                             </div>
@@ -243,33 +252,61 @@ const About = () => {
                 </section> */}
 
                 {/* CTA Section */}
-                <section className="py-16 px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <div className="p-8 sm:p-12 rounded-xl bg-gradient-to-br from-[#fff] to-orange-[#fff] dark:from-yellow-400/10 dark:to-amber-500/10 border border-amber-200/50 dark:border-yellow-500/20 backdrop-blur-sm shadow-md">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                                Let's Work Together
-                            </h2>
-                            <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
-                                Have a project in mind? I'd love to hear about it. Let's create something amazing together.
-                            </p>
+                <section className="w-full px-4 sm:px-6 pt-4 pb-16">
+                    <div className="mx-auto max-w-6xl rounded-xl p-[1px] bg-gradient-to-b from-amber-200/80 via-gray-200/40 to-transparent dark:from-yellow-400/25 dark:via-white/10 dark:to-transparent shadow-xl shadow-gray-200/50 dark:shadow-black/40">
+                        <div className="relative overflow-hidden rounded-xl bg-white/85 dark:bg-[#0b0b0b]/85 backdrop-blur-2xl px-6 py-10 sm:px-12 sm:py-14">
+                            {/* Decorative glow */}
+                            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                                <div className="absolute -top-20 -right-16 w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-amber-200/25 to-orange-200/25 dark:from-amber-500/5 dark:to-orange-500/5"></div>
+                                <div className="absolute -bottom-20 -left-16 w-64 h-64 rounded-full blur-3xl bg-gradient-to-tr from-yellow-200/25 to-amber-200/25 dark:from-yellow-500/5 dark:to-amber-500/5"></div>
+                            </div>
 
-                            <div className="flex flex-wrap justify-center items-center gap-4">
-                                <a
-                                    href="/contact"
-                                    className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 dark:from-yellow-400 dark:to-amber-500 text-white dark:text-gray-900 font-semibold rounded-lg transform transition-all duration-300"
-                                >
-                                    Start a Project
-                                </a>
+                            <div className="relative flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+                                <div className="flex-1 text-center lg:text-left">
+                                    <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-semibold uppercase tracking-[0.16em] bg-amber-50 dark:bg-yellow-400/10 text-amber-700 dark:text-yellow-400 border border-amber-200/70 dark:border-yellow-400/20">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 dark:bg-yellow-400"></span>
+                                        Open for projects
+                                    </span>
 
-                                <a
-                                    href="https://wa.me/6394543387?text=Hi, I'm coming from your Portfolio..."
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-8 py-4 border-2 border-green-500 text-green-600 dark:text-green-400 font-semibold rounded-lg hover:bg-green-50 dark:hover:bg-green-400/10 transition-all duration-300 flex items-center gap-2"
-                                >
-                                    <svg class="svg-inline--fa fa-whatsapp fa-w-14 w-6 h-6 transition-all duration-300" fill="currentColor" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
-                                    WhatsApp
-                                </a>
+                                    <h2 className="mt-5 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Let&apos;s work{" "}
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 dark:from-yellow-400 dark:via-amber-400 dark:to-yellow-400">
+                                            together
+                                        </span>
+                                    </h2>
+
+                                    <p className="mt-4 text-sm sm:text-base leading-relaxed text-gray-600 dark:text-gray-400 max-w-xl mx-auto lg:mx-0">
+                                        Have a project in mind? I&apos;d love to hear about it — send
+                                        me the details or ping me on WhatsApp, and let&apos;s create
+                                        something amazing together.
+                                    </p>
+                                </div>
+
+                                <div className="w-full lg:w-auto shrink-0 flex flex-col items-center gap-4">
+                                    <div className="w-full flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+                                        <Link
+                                            to={"https://clientportal.chandanchaudhary.in"}
+                                            className="btn-shine relative w-full sm:w-auto overflow-hidden inline-flex items-center justify-center gap-2 py-3.5 px-8 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 dark:from-yellow-400 dark:via-amber-400 dark:to-yellow-400 text-white dark:text-gray-900 font-semibold shadow-sm shadow-amber-500/25 dark:shadow-yellow-400/20 hover:shadow-md hover:shadow-amber-500/35 transition-all duration-300 group"
+                                        >
+                                            Client Portal
+                                            <ExternalLink className="w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                                        </Link>
+
+                                        <a
+                                            href={CONSULTATION_LINK}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3.5 px-8 rounded-full text-sm sm:text-base font-semibold text-amber-600 dark:text-yellow-400 border-2 border-amber-500/70 dark:border-yellow-400/50 hover:bg-amber-50 dark:hover:bg-yellow-400/10 transition-all duration-300"
+                                        >
+                                            <Calendar className="w-4" />
+                                            Book Consultation
+                                        </a>
+                                    </div>
+
+                                    <p className="text-[11px] text-gray-400 dark:text-gray-600 text-center">
+                                        Usually replies within 24 hours.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -295,7 +332,7 @@ const SkillIcon = ({ name, color }) => {
         ),
         uiux: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 fill-black dark:fill-[#fff] group-hover:fill-[#ff3737] transition-all" viewBox="0 0 128 128"><path d="M74.6 96.7c1 0 1.9-.8 1.9-1.9s-.9-1.8-1.9-1.8H50.4c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9h24.2zM83.9 100.4H41.1c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9H84c1 0 1.9-.8 1.9-1.9s-.9-1.9-2-1.9zM20.6 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7 3.7 1.7 3.7 3.7-1.7 3.7-3.7 3.7zM37.3 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S39.4 24 37.3 24zM54.1 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S56.2 24 54.1 24z"></path><path d="M7.5 7.2V119h111.8V7.2H7.5zm3.7 3.8h104.4v18.6H11.2V11zm104.4 104.3H11.2v-82h104.4v82z"></path><path d="M47.5 81.4l1.7 1.4c.1 0 .1.1.2.1.4.3.7.5 1.1.7.2.1.5.3.7.4.4.2.7.4 1.1.6.3.2.6.3.9.5.3.1.6.3.9.4.6.3 1.3.5 1.9.7.2.1.5.1.7.2.5.1 1 .3 1.5.4.3.1.5.1.8.2.5.1 1 .2 1.5.2.2 0 .5.1.7.1.7.1 1.5.1 2.2.1s1.5 0 2.2-.1c.2 0 .5-.1.7-.1.5-.1 1-.1 1.5-.2.3 0 .5-.1.8-.1.5-.1 1-.2 1.5-.4.2-.1.4-.1.7-.2.6-.2 1.3-.4 1.9-.7.3-.1.6-.3.9-.4.3-.2.7-.3 1-.5.4-.2.7-.4 1-.6.2-.1.5-.3.7-.4.4-.2.7-.5 1.1-.7.1 0 .1-.1.2-.1l1.9-1.4-.1-.1c5.1-4.4 8.3-10.9 8.3-18.2C87.7 49.8 76.8 39 63.5 39S39.2 49.8 39.2 63.1c0 7.3 3.2 13.8 8.3 18.3zM58.4 83c-.7-.2-1.5-.4-2.2-.7-.1 0-.2-.1-.2-.1-.7-.3-1.5-.6-2.2-1l4.5-2.5c1.4-.8 2.3-2.2 2.3-3.8v-3.1l-.4-.5s-1.5-1.8-2.1-4.3l-.2-.9-.6-.4.1-2.8.6-.6v-4.9c0-.1-.1-1.4.8-2.5.9-1 2.5-1.5 4.8-1.5s3.9.5 4.8 1.5c1 1.1.8 2.4.8 2.5v4.1l.1.9.6.6v2.7c0 .1-.1.1-.1.1l-.9.3-.3.9c-.4 1.3-1 2.5-1.8 3.5-.2.2-.3.5-.5.6l-.5.5V75c0 1.6.9 3.1 2.4 3.9l4.8 2.4h-.1c-.7.3-1.3.6-2 .9-.1 0-.2.1-.3.1-.7.3-1.4.5-2.2.7-3.4.8-6.7.8-10 0 .1 0 0 0 0 0zm5-40.4c11.3 0 20.5 9.2 20.5 20.5 0 6.4-2.9 12.1-7.5 15.8-.1-.1-.2-.1-.3-.2l-6.5-3.2c-.2-.1-.3-.3-.3-.5v-1.9c.1-.1.2-.2.3-.4.8-1.1 1.5-2.4 2-3.8 1.1-.7 1.8-1.9 1.8-3.3v-2.7c0-.8-.2-1.5-.7-2.2v-3.1c.1-.7.1-3.1-1.7-5.2-1.6-1.8-4.2-2.8-7.6-2.8s-6 .9-7.6 2.8C54 54.5 54 57 54.1 57.6v3.1c-.4.6-.7 1.4-.7 2.2v2.7c0 1 .4 2 1.1 2.7.6 2.1 1.6 3.8 2.2 4.6V75c0 .2-.1.4-.3.5l-6 3.3c-.1 0-.1.1-.2.1-4.5-3.8-7.4-9.4-7.4-15.8.1-11.3 9.3-20.5 20.6-20.5z">
-                </path>
+            </path>
             </svg>
 
         ),

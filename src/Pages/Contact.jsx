@@ -6,6 +6,8 @@ import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
 import "./Contact.css";
 import { assets } from "../assets/assets";
+import ConsultationCTA, { CONSULTATION_LINK } from "../components/ConsultationCTA";
+import CTA from "../components/CTA";
 
 const EMAIL = "chandanchaudhary533@gmail.com";
 const WHATSAPP_LINK =
@@ -373,37 +375,118 @@ function Contact() {
                   </svg>
                   Your details stay private and are only used to reply to you.
                 </p>
+
+                {/* Alternative: book a call instead of writing */}
+                <div className="mt-8 pt-6 border-t border-gray-200 dark:border-white/10">
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div className="text-center sm:text-left">
+                      <p className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                        Prefer a quick call?
+                      </p>
+                      <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                        Book a free 30-minute consultation and we&apos;ll scope it
+                        out together.
+                      </p>
+                    </div>
+
+                    <a
+                      href={CONSULTATION_LINK}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="shrink-0 inline-flex items-center justify-center gap-2 py-3 px-8 rounded-full text-sm sm:text-base font-semibold text-amber-600 dark:text-yellow-400 border-2 border-amber-500/70 dark:border-yellow-400/50 hover:bg-amber-50 dark:hover:bg-yellow-400/10 transition-all duration-300 group"
+                    >
+                      <svg
+                        className="w-4 h-4 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      Book Consultation
+                    </a>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
 
-          <aside className="mt-10 reveal reveal-4 grid grid-cols-3 items-center w-full rounded-xl px-5 py-5 sm:px-8 sm:py-7 bg-white/70 dark:bg-white/[0.03] backdrop-blur-xl border border-gray-200/70 dark:border-white/10 hover:shadow-md hover:shadow-amber-500/10 dark:hover:shadow-yellow-400/5 hover:border-amber-300/70 dark:hover:border-yellow-400/30 transition-all duration-300">
-            {channels.map((channel) => (
-              <a
-                key={channel.label}
-                href={channel.href}
-                target={channel.external ? "_blank" : undefined}
-                rel={channel.external ? "noopener noreferrer" : undefined}
-                className="group col-span-1 flex items-center gap-4 px-3 py-3 sm:px-5 md:py-2 w-full"
-              >
-                <span
-                  className="shrink-0 grid h-12 w-12 place-items-center rounded-xl border border-black/10 dark:border-white/20 bg-black/5 dark:bg-white/10 text-gray-600 dark:text-gray-200 shadow-none transition-colors duration-300 group-hover:bg-white/20"
-                >
-                  {channel.icon}
-                </span>
+          <aside className="mt-10 reveal reveal-4">
+            <div className="rounded-xl p-[1px] bg-gradient-to-b from-amber-200/80 via-gray-200/40 to-transparent dark:from-yellow-400/25 dark:via-white/10 dark:to-transparent shadow-xl shadow-gray-200/50 dark:shadow-black/40">
+              <div className="relative overflow-hidden rounded-xl bg-white/85 dark:bg-[#0b0b0b]/85 backdrop-blur-2xl px-6 py-8 sm:px-10 sm:py-10">
+                {/* Decorative glow */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div className="absolute -top-20 -left-16 w-64 h-64 rounded-full blur-3xl bg-gradient-to-br from-amber-200/25 to-orange-200/25 dark:from-amber-500/5 dark:to-orange-500/5"></div>
+                  <div className="absolute -bottom-20 -right-16 w-64 h-64 rounded-full blur-3xl bg-gradient-to-tr from-yellow-200/25 to-amber-200/25 dark:from-yellow-500/5 dark:to-amber-500/5"></div>
+                </div>
 
-                <span className="min-w-0 flex-1">
-                  <span className="hidden md:block text-[11px] font-semibold uppercase tracking-[0.16em] text-orange-500">
-                    {channel.label}
-                  </span>
-                  <span className="hidden md:block truncate text-sm font-medium text-gray-600 dark:text-gray-400 sm:text-[15px] transition-colors duration-300 group-hover:text-black dark:group-hover:text-white">
-                    {channel.value}
-                  </span>
-                </span>
-              </a>
-            ))}
+                <div className="relative">
+                  {/* <div className="text-center sm:text-left">
+                    <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-semibold uppercase tracking-[0.16em] bg-amber-50 dark:bg-yellow-400/10 text-amber-700 dark:text-yellow-400 border border-amber-200/70 dark:border-yellow-400/20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500 dark:bg-yellow-400"></span>
+                      Direct channels
+                    </span>
 
+                    <h2 className="mt-5 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Reach me{" "}
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 dark:from-yellow-400 dark:via-amber-400 dark:to-yellow-400">
+                        directly
+                      </span>
+                    </h2>
+
+                    <p className="mt-4 text-sm sm:text-base leading-relaxed text-gray-600 dark:text-gray-400 max-w-xl mx-auto sm:mx-0">
+                      Skip the form if you&apos;d rather not fill one in — WhatsApp
+                      is the fastest, email works just as well.
+                    </p>
+                  </div> */}
+
+                  <div className="mt-0 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
+                    {channels.map((channel) => {
+                      const Tag = channel.href ? "a" : "div";
+                      return (
+                        <Tag
+                          key={channel.label}
+                          href={channel.href}
+                          target={channel.external ? "_blank" : undefined}
+                          rel={channel.external ? "noopener noreferrer" : undefined}
+                          className={`group flex items-center gap-4 rounded-xl border border-gray-200/70 dark:border-white/10 bg-gray-50/70 dark:bg-white/[0.03] px-4 py-4 sm:px-5 transition-all duration-300 ${channel.href
+                            ? "hover:border-amber-300/70 dark:hover:border-yellow-400/30 hover:bg-white dark:hover:bg-white/[0.06] shadow-sm hover:shadow-md hover:shadow-amber-500/10 dark:hover:shadow-yellow-400/5"
+                            : ""
+                            }`}
+                        >
+                          <span
+                            className={`shrink-0 grid h-12 w-12 place-items-center rounded-xl text-white shadow-md transition-transform duration-300 ${channel.iconWrap}`}
+                          >
+                            {channel.icon}
+                          </span>
+
+                          <span className="min-w-0 flex-1">
+                            <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-amber-600 dark:text-yellow-400">
+                              {channel.label}
+                            </span>
+                            <span className="block truncate text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors duration-300 group-hover:text-gray-900 dark:group-hover:text-white">
+                              {channel.value}
+                            </span>
+                          </span>
+                        </Tag>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
           </aside>
+
+          {/* ===== Consultation CTA ===== */}
+          <ConsultationCTA />
 
           {/* ===== FAQ ===== */}
           {/* <section className="mt-20 sm:mt-24 reveal reveal-6">
