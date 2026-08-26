@@ -3,6 +3,7 @@ import blackLogo from "../assets/c2codebase-black.png";
 import { Link } from "react-router-dom";
 import { StackContext } from "../context/StackContext";
 import { useContext } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 const quickLinkClass =
   "w-fit text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 hover:translate-x-1 transition-[color,transform] duration-300 text-sm flex items-center gap-2 group";
@@ -170,10 +171,21 @@ function Footer() {
             </div>
 
             <a
-              href="mailto:chandanchaudhary533@gmail.com"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-colors duration-300"
+              href="https://www.chandanchaudhary.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 rounded-full bg-amber-500 px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 hover:bg-amber-600 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-yellow-300"
             >
-              chandanchaudhary533@gmail.com
+              <span>Portfolio</span>
+              {/* <ArrowUpRight className="w-4" /> */}
+            </a>
+
+            <a
+              href="https://www.chandanchaudhary.in"
+              className="mt-2 text-sm flex gap-1 items-center text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-yellow-400 transition-colors duration-300"
+            >
+              <span>www.chandanchaudhary.in</span>
+              <ArrowUpRight className="w-4" />
             </a>
           </div>
         </div>

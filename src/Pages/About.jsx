@@ -5,7 +5,8 @@ import Navbar from "../components/Navbar";
 import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
 import "../style.css";
-import { CONSULTATION_LINK } from "../components/ConsultationCTA";
+import { CONSULTATION_LINK } from "../components/CTA2";
+
 import { Calendar, Download, ExternalLink } from "lucide-react";
 
 const highlight = "text-amber-600 dark:text-yellow-400 font-medium";

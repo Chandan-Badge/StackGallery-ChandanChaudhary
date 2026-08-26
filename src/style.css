@@ -111,9 +111,23 @@ html.dark {
   position: relative !important;
 }
 
+/* @media (max-width: 1440px) { */
+  .swiper-button-next, .swiper-button-prev {
+    width: 45px !important;
+    height: 45px !important;
+    padding: 0 !important;
+  }
+
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 14px !important;
+  }
+/* } */
+
 @media (max-width: 1024px) {
   .swiper-button-next, .swiper-button-prev {
-    padding: 0px 22px !important;
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
     border-radius: 50% !important;
     margin: 0px !important;
 
@@ -128,6 +142,13 @@ html.dark {
 @media (max-width: 768px) {
   .swiper-button-next, .swiper-button-prev {
     top: 8vw !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+  }
+
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 8px !important;
   }
 }
 

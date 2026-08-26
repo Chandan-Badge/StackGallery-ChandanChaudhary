@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CONSULTATION_LINK } from "./ConsultationCTA";
+import { CONSULTATION_LINK } from "./CTA2";
 import { ArrowRight, Calendar } from "lucide-react";
 
 function CTA() {

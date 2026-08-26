@@ -6,8 +6,9 @@ import HeroDesign from "../components/hero/HeroDesign";
 import SEO from "../components/SEO";
 import "./Contact.css";
 import { assets } from "../assets/assets";
-import ConsultationCTA, { CONSULTATION_LINK } from "../components/ConsultationCTA";
+import CTA2, { CONSULTATION_LINK } from "../components/CTA2";
 import CTA from "../components/CTA";
+// import CTA2 from "../components/CTA2";
 
 const EMAIL = "chandanchaudhary533@gmail.com";
 const WHATSAPP_LINK =
@@ -486,7 +487,7 @@ function Contact() {
           </aside>
 
           {/* ===== Consultation CTA ===== */}
-          <ConsultationCTA />
+          <CTA2 />
 
           {/* ===== FAQ ===== */}
           {/* <section className="mt-20 sm:mt-24 reveal reveal-6">
