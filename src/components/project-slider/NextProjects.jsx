@@ -19,18 +19,32 @@ const SLIDE_CLASS =
 // hoverBorder must be a FULL Tailwind class literal so it isn't purged.
 const nextProjects = [
   {
-    href: 'https://strong-password-generator-c2.netlify.app/',
-    img: assets.courseProject,
-    title: 'Physics Course',
-    subtitle: 'Physics Students',
-    hoverBorder: 'hover:border-yellow-500/40',
-  },
-  {
     href: 'https://lucknowtradinghouse.com/',
     img: assets.lth,
     title: 'Lucknow Trading House',
     subtitle: 'Internship Project',
     hoverBorder: 'hover:border-[#31b4ed]/40',
+  },
+  {
+    href: 'https://c2image-toolkit.vercel.app',
+    img: assets.ImageToolkit,
+    title: 'Image Toolkit',
+    subtitle: 'Image Compressor',
+    hoverBorder: 'hover:border-[#31b4ed]/40',
+  },
+  {
+    href: 'https://website-speed-checker-omega.vercel.app',
+    img: assets.WebsiteSpeedChecker,
+    title: 'Website Speed Checker',
+    subtitle: 'SEO Tool',
+    hoverBorder: 'hover:border-[#31b4ed]/40',
+  },
+  {
+    href: 'https://soon.chandanchaudhary.in',
+    img: assets.courseProject,
+    title: 'Course Website',
+    subtitle: 'Physics Students',
+    hoverBorder: 'hover:border-yellow-500/40',
   },
 ];
 

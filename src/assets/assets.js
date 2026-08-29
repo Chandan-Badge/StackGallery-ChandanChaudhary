@@ -2,7 +2,7 @@ import coder from "./coder.webp";
 
 // Major Projects
 import C2Codebase from "./ProjectImages/C2Codebase.webp";
-import clientPortal from "./ProjectImages/C2Client-Portal.webp";
+import ClientPortal from "./ProjectImages/C2Client-Portal.webp";
 import portfolio from "./ProjectImages/Portfolio.webp";
 import strongPassword from "./ProjectImages/StrongPassword.webp";
 import strongPasswordDark from "./ProjectImages/StrongPasswordDark.webp";
@@ -11,9 +11,13 @@ import linktree from "./ProjectImages/LinkTree.webp";
 
 // Freelance Project
 import saronex from "./ProjectImages/Saronex.webp";
+import SalshanAcademy from "./ProjectImages/Salshan-Academy.webp";
 
 // Next.js Projects
 import lth from "./ProjectImages/LTH.webp";
+import ImageToolkit from "./ProjectImages/ImageToolkit.webp";
+import ImageToolkit2 from "./ProjectImages/ImageToolkit2.webp";
+import WebsiteSpeedChecker from "./ProjectImages/WebsiteSpeedChecker.webp";
 import courseProject from "./ProjectImages/courseProject.webp";
 
 // React.js Projects
@@ -23,6 +27,9 @@ import gateUBCNET from "./ProjectImages/GATE-UGCNET.webp";
 import aiAssistant from "./ProjectImages/AI-Assistant.webp";
 import bgChanger from "./ProjectImages/bgChanger.webp";
 import todoLocalstorage from "./ProjectImages/todo-localstorage.webp";
+import RateStore from "./ProjectImages/RateStore.webp";
+import TaskManagement from "./ProjectImages/TaskManagement.webp";
+import AttendanceMS from "./ProjectImages/AttendanceMS.webp";
 
 // JS Projects
 import aiChatBot from "./ProjectImages/AI-ChatBot.webp";
@@ -50,23 +57,27 @@ import chatApp from "./ProjectImages/ChattingApplication.webp";
 export const assets = {
 
     coder,
-
+    
     // Major Projects
     C2Codebase,
-    clientPortal,
+    ClientPortal,
     portfolio,
     strongPassword,
     strongPasswordDark,
     safesphere,
     linktree,
-
+    
     // Freelance Projects
     saronex,
-
+    SalshanAcademy,
+    
     // Next.js Projects
     lth,
+    ImageToolkit,
+    ImageToolkit2,
+    WebsiteSpeedChecker,
     courseProject,
-
+    
     // React.js Projects
     nexera,
     gateUBCNET,
@@ -74,7 +85,10 @@ export const assets = {
     aiAssistant,
     bgChanger,
     todoLocalstorage,
-
+    RateStore,
+    TaskManagement,
+    AttendanceMS,
+    
     // JavaScript Projects
     aiChatBot,
     autoTyper,

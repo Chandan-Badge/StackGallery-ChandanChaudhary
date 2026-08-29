@@ -23,14 +23,14 @@ const majorProjects = [
     img: assets.portfolio,
     title: 'Portfolio Website',
     subtitle: 'Chandan Chaudhary',
-    hoverBorder: 'hover:border-yellow-500/40',
+    hoverBorder: 'hover:border-blue-500/40',
   },
   {
-    href: 'https://c2codebase.chandanchaudhary.in',
-    img: assets.clientPortal,
+    href: 'https://clientportal.chandanchaudhary.in',
+    img: assets.ClientPortal,
     title: 'Client Portal',
     subtitle: 'Personal Client Portal',
-    hoverBorder: 'hover:border-[#b6bee5]/40',
+    hoverBorder: 'hover:border-yellow-500/40',
   },
   {
     href: 'https://c2codebase.chandanchaudhary.in',

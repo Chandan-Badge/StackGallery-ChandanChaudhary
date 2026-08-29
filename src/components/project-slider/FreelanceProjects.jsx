@@ -32,13 +32,13 @@ const freelanceProjects = [
     subtitle: 'Client Project',
     hoverBorder: 'hover:border-green-400/40',
   },
-  // {
-  //   href: 'https://lucknowtradinghouse.com/',
-  //   img: assets.lth,
-  //   title: 'Lucknow Trading House',
-  //   subtitle: 'Internship Project',
-  //   hoverBorder: 'hover:border-[#31b4ed]/40',
-  // },
+  {
+    href: 'https://salshan-academy.vercel.app',
+    img: assets.SalshanAcademy,
+    title: 'Salshan Academy',
+    subtitle: 'Learning Platform',
+    hoverBorder: 'hover:border-blue/40',
+  },
 ];
 
 // How many "Coming soon..." placeholder slides to show at the end.

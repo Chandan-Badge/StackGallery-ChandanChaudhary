@@ -19,7 +19,7 @@ const SLIDE_CLASS =
 // hoverBorder must be a FULL Tailwind class literal so it isn't purged.
 const reactProjects = [
   {
-    href: 'https://www.nexeraonline.in/',
+    href: 'https://www.nexeraonline.in',
     img: assets.nexera,
     title: 'Nexera',
     subtitle: 'Client Project',
@@ -40,28 +40,49 @@ const reactProjects = [
     hoverBorder: 'hover:border-green-600/60',
   },
   {
-    href: 'https://strong-password-generator-c2.netlify.app/',
+    href: 'https://ratestore.onrender.com',
+    img: assets.RateStore,
+    title: 'Rate Store',
+    subtitle: 'Store Manager',
+    hoverBorder: 'hover:border-blue-600/60',
+  },
+  {
+    href: 'https://task-management-nao8.onrender.com',
+    img: assets.TaskManagement,
+    title: 'Task Management',
+    subtitle: 'Task Handler',
+    hoverBorder: 'hover:border-purple-400/60',
+  },
+  {
+    href: 'https://attendance-management-system-3bxv.onrender.com',
+    img: assets.AttendanceMS,
+    title: 'Attendance Management System',
+    subtitle: 'Management Application',
+    hoverBorder: 'hover:border-orange-400/60',
+  },
+  {
+    href: 'https://strong-password-generator-c2.netlify.app',
     img: assets.strongPasswordDark,
     title: 'Strong Password Generator',
     subtitle: 'Password Suggestion application',
     hoverBorder: 'hover:border-[#00afb9]/40',
   },
   {
-    href: 'https://c2-ai-assistant.vercel.app/',
+    href: 'https://c2-ai-assistant.vercel.app',
     img: assets.aiAssistant,
     title: 'AI Assistant',
     subtitle: 'Assistant ChatBot',
     hoverBorder: 'hover:border-[#885df5]/60',
   },
   {
-    href: 'https://localstorage-todoapp-c2.vercel.app/',
+    href: 'https://localstorage-todoapp-c2.vercel.app',
     img: assets.todoLocalstorage,
     title: 'React Todo-App',
     subtitle: 'Local Storage',
     hoverBorder: 'hover:border-[#ccbed7]/60',
   },
   {
-    href: 'https://bg-changer-c2.netlify.app/',
+    href: 'https://bg-changer-c2.netlify.app',
     img: assets.bgChanger,
     title: 'React BG Changer',
     subtitle: 'React App',
