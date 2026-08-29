@@ -26,7 +26,7 @@ const freelanceProjects = [
     hoverBorder: 'hover:border-[#926c50]/40',
   },
   {
-    href: 'https://soon.chandanchaudhary.in',
+    href: 'https://www.saronex.com',
     img: assets.saronex,
     title: 'Saronex Nature Sciences',
     subtitle: 'Client Project',

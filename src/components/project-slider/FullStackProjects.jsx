@@ -20,9 +20,9 @@ const SLIDE_CLASS =
 const fullStackProjects = [
   {
     href: 'https://c2codebase.chandanchaudhary.in',
-    img: assets.c2explains,
-    title: 'C2 Explains',
-    subtitle: 'Developer Tools Platform',
+    img: assets.C2Codebase,
+    title: 'C2Codebase',
+    subtitle: 'Developer Platform',
     hoverBorder: 'hover:border-[#b6bee5]/40',
   },
   {

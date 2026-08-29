@@ -1,11 +1,12 @@
 import coder from "./coder.webp";
 
 // Major Projects
-import c2explains from "./ProjectImages/c2explains.webp";
-import safesphere from "./ProjectImages/SafeSphere.webp";
+import C2Codebase from "./ProjectImages/C2Codebase.webp";
+import clientPortal from "./ProjectImages/C2Client-Portal.webp";
 import portfolio from "./ProjectImages/Portfolio.webp";
 import strongPassword from "./ProjectImages/StrongPassword.webp";
 import strongPasswordDark from "./ProjectImages/StrongPasswordDark.webp";
+import safesphere from "./ProjectImages/SafeSphere.webp";
 import linktree from "./ProjectImages/LinkTree.webp";
 
 // Freelance Project
@@ -51,11 +52,12 @@ export const assets = {
     coder,
 
     // Major Projects
-    c2explains,
-    safesphere,
+    C2Codebase,
+    clientPortal,
     portfolio,
     strongPassword,
     strongPasswordDark,
+    safesphere,
     linktree,
 
     // Freelance Projects
