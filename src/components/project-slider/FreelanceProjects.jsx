@@ -33,9 +33,9 @@ const freelanceProjects = [
     hoverBorder: 'hover:border-green-400/40',
   },
   {
-    href: 'https://salshan-academy.vercel.app',
+    href: 'https://www.roshantacademy.in',
     img: assets.SalshanAcademy,
-    title: 'Salshan Academy',
+    title: 'Roshant Academy',
     subtitle: 'Learning Platform',
     hoverBorder: 'hover:border-blue/40',
   },
